@@ -1,8 +1,8 @@
-# Worldcupp 2026 Odds — Design Spec
+# World Cup 2026 Odds — Design Spec
 
 **Date:** 2026-05-31
 **Status:** Approved design, pending implementation plan
-**App name / GitHub repo / local folder:** `Worldcupp 2026 Odds` (repo & folder: `worldcupp-2026-odds`) — chosen for App Store SEO. Note the intentional double-p "Worldcupp". See §6 for the FIFA trademark risk.
+**App name / GitHub repo / local folder:** `World Cup 2026 Odds` (repo & folder: `world-cup-2026-odds`). The name uses the protected mark directly — see §6.7 for the FIFA trademark risk and its mitigations.
 
 ## 1. Summary
 
@@ -35,7 +35,7 @@ The app reads a pre-computed static JSON file; all odds-fetching and probability
 | Architecture | Static JSON (Approach C), no database | Supabase free tier exhausted; guarantees 0 € cost |
 | Monetization | Free + AdMob | Consistent with user's other iOS apps; max reach in short window |
 | Language | English only | International marketability (NA/UK World Cup audience) |
-| Name | "Worldcupp 2026 Odds" | App Store SEO; double-p is intentional |
+| Name | "World Cup 2026 Odds" | Direct, descriptive App Store name (FIFA-mark risk accepted, see §6.7) |
 | Running cost | 0 € guaranteed | Strict free-tier discipline (see §4) |
 
 ## 3. Architecture & Data Flow
@@ -126,7 +126,7 @@ Odds-adjacent apps get extra scrutiny. Required to pass review:
 4. **No affiliate / bookmaker links in v1** — the single most important rule; links trigger Apple Guideline 5.3.4 (licensing/geo) and German GlüStV. Precedents that ship link-free: BettingPros, Action Network.
 5. **No real-money language** anywhere — use "predict", "likelihood", "most likely score", never "bet/wager/stake".
 6. **Privacy:** AdMob ⇒ ATT prompt + Privacy Nutrition Labels + privacy policy. Reuse the RateRadar/TitiBina template.
-7. **FIFA trademark risk (name):** "World Cup" / "FIFA World Cup" are FIFA trademarks; Apple rejects apps whose names use protected marks or imply official affiliation. The intentional misspelling "Worldcupp" may soften this but is not a guaranteed shield. Mitigations: keep the listing explicitly **unofficial** ("unofficial, not affiliated with FIFA"), avoid FIFA logos/official emblems, and have a fallback name ready (e.g. "WC26 Odds", "Football 2026 Odds") in case of rejection.
+7. **FIFA trademark risk (name):** "World Cup" / "FIFA World Cup" are FIFA trademarks; Apple rejects apps whose names use protected marks or imply official affiliation. The name "World Cup 2026 Odds" uses the protected mark directly, so the rejection risk is real. Mitigations: keep the listing explicitly **unofficial** ("unofficial, not affiliated with FIFA"), avoid FIFA logos/official emblems, and have a fallback name ready (e.g. "WC26 Odds", "Football 2026 Odds") in case of rejection.
 
 **Review-timing strategy (~11 days):** Submit as early as possible with a minimal-but-complete build. Request **Expedited Review** if tight (the World Cup is a valid time-critical justification). If group stage is missed, the knockout stage (from ~July 4) is still a large window.
 

@@ -49,7 +49,7 @@ web/
 
 ```json
 {
-  "name": "worldcupp-2026-odds-pipeline",
+  "name": "world-cup-2026-odds-pipeline",
   "version": "1.0.0",
   "private": true,
   "type": "module",
@@ -872,7 +872,7 @@ Edit the spec's §3 to replace the generic "Vercel" reference with the actual `h
 
 Run:
 ```bash
-cd ~/Data/Claude/worldcupp-2026-odds && git add web/vercel.json docs/superpowers/specs/2026-05-31-worldcup-odds-app-design.md
+cd ~/Data/Claude/world-cup-2026-odds && git add web/vercel.json docs/superpowers/specs/2026-05-31-worldcup-odds-app-design.md
 git commit -m "chore: vercel static hosting config + record JSON URL"
 ```
 
@@ -925,8 +925,8 @@ jobs:
 - [ ] **Step 2: Create the GitHub repo and add the secret**
 
 ```bash
-cd ~/Data/Claude/worldcupp-2026-odds
-gh repo create worldcupp-2026-odds --private --source=. --remote=origin --push
+cd ~/Data/Claude/world-cup-2026-odds
+gh repo create world-cup-2026-odds --private --source=. --remote=origin --push
 gh secret set ODDS_API_KEY --body "<your_odds_api_key>"
 ```
 Expected: repo created, code pushed, secret stored.

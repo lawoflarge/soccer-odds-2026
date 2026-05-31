@@ -4,3 +4,4 @@ node_modules/
 *.p8
 .secrets/
 build/
+.vercel
