@@ -1,0 +1,11 @@
+{
+  "name": "worldcupp-2026-odds-pipeline",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "engines": { "node": ">=18" },
+  "scripts": {
+    "test": "node --test",
+    "build": "node src/buildPredictions.js"
+  }
+}
