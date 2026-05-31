@@ -1,0 +1,18 @@
+{
+  "updated": "2026-06-01T00:00:00Z",
+  "count": 1,
+  "matches": [
+    {
+      "id": "evt_demo_001",
+      "teams": { "home": "Mexico", "away": "Poland" },
+      "kickoff": "2026-06-11T19:00:00Z",
+      "probs_1x2": { "home": 48.3, "draw": 27.4, "away": 24.3 },
+      "top_scores": [
+        { "score": "1:1", "pct": 13.1 },
+        { "score": "1:0", "pct": 11.2 },
+        { "score": "2:1", "pct": 9.4 }
+      ],
+      "goal_markets": { "over_under_2_5": 47.4, "btts": 51.4 }
+    }
+  ]
+}

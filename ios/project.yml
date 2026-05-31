@@ -1,0 +1,39 @@
+name: WorldCup2026Odds
+options:
+  bundleIdPrefix: com.lawoflarge
+  deploymentTarget:
+    iOS: "17.0"
+  createIntermediateGroups: true
+settings:
+  base:
+    SWIFT_VERSION: "5.0"
+    CODE_SIGNING_ALLOWED: "NO"
+    GENERATE_INFOPLIST_FILE: "YES"
+    MARKETING_VERSION: "1.0"
+    CURRENT_PROJECT_VERSION: "1"
+    INFOPLIST_KEY_CFBundleDisplayName: "World Cup 2026 Odds"
+    INFOPLIST_KEY_UILaunchScreen_Generation: "YES"
+    INFOPLIST_KEY_UIApplicationSceneManifest_Generation: "YES"
+    INFOPLIST_KEY_NSUserTrackingUsageDescription: "We use your data to show more relevant ads. This keeps the app free."
+targets:
+  WorldCup2026Odds:
+    type: application
+    platform: iOS
+    sources:
+      - path: WorldCup2026Odds
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: com.lawoflarge.worldcup2026odds
+        ASSETCATALOG_COMPILER_APPICON_NAME: AppIcon
+  WorldCup2026OddsTests:
+    type: bundle.unit-test
+    platform: iOS
+    sources:
+      - path: WorldCup2026OddsTests
+      - path: WorldCup2026Odds/Resources/sample-predictions.json
+        buildPhase: resources
+    dependencies:
+      - target: WorldCup2026Odds
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: com.lawoflarge.worldcup2026oddsTests
