@@ -68,7 +68,7 @@ struct FixturesView: View {
             }
             .navigationDestination(for: Match.self) { MatchDetailView(match: $0) }
             .refreshable { await service.refresh() }
-            .safeAreaInset(edge: .bottom) { AdBannerView() }
+            .safeAreaInset(edge: .bottom) { AdBannerView().frame(height: 50) }
         }
         .task {
             await service.refresh()
