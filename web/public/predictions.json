@@ -1,0 +1,2814 @@
+{
+  "updated": "2026-05-31T19:30:46.048Z",
+  "count": 72,
+  "matches": [
+    {
+      "id": "80d82d1113934bfbea4ce8daf37a2433",
+      "teams": {
+        "home": "Mexico",
+        "away": "South Africa"
+      },
+      "kickoff": "2026-06-11T19:00:00Z",
+      "probs_1x2": {
+        "home": 65.8,
+        "draw": 22.7,
+        "away": 11.5
+      },
+      "top_scores": [
+        {
+          "score": "1:0",
+          "pct": 14
+        },
+        {
+          "score": "2:0",
+          "pct": 13.9
+        },
+        {
+          "score": "1:1",
+          "pct": 10.6
+        },
+        {
+          "score": "2:1",
+          "pct": 9.2
+        },
+        {
+          "score": "3:0",
+          "pct": 8.8
+        }
+      ],
+      "goal_markets": {
+        "over_under_2_5": 46.8,
+        "btts": 41.8
+      }
+    },
+    {
+      "id": "384cbb5d76b535896a24fe65f93cfac8",
+      "teams": {
+        "home": "South Korea",
+        "away": "Czech Republic"
+      },
+      "kickoff": "2026-06-12T02:00:00Z",
+      "probs_1x2": {
+        "home": 35.3,
+        "draw": 29.9,
+        "away": 34.8
+      },
+      "top_scores": [
+        {
+          "score": "1:1",
+          "pct": 14.2
+        },
+        {
+          "score": "0:0",
+          "pct": 10.3
+        },
+        {
+          "score": "1:0",
+          "pct": 10
+        },
+        {
+          "score": "0:1",
+          "pct": 9.9
+        },
+        {
+          "score": "2:1",
+          "pct": 7.8
+        }
+      ],
+      "goal_markets": {
+        "over_under_2_5": 42.4,
+        "btts": 49.4
+      }
+    },
+    {
+      "id": "d1f4f946c70a0b4e81f5d43e9d32361c",
+      "teams": {
+        "home": "Canada",
+        "away": "Bosnia & Herzegovina"
+      },
+      "kickoff": "2026-06-12T19:00:00Z",
+      "probs_1x2": {
+        "home": 52.2,
+        "draw": 27.5,
+        "away": 20.3
+      },
+      "top_scores": [
+        {
+          "score": "1:1",
+          "pct": 13
+        },
+        {
+          "score": "1:0",
+          "pct": 12.8
+        },
+        {
+          "score": "2:0",
+          "pct": 10.6
+        },
+        {
+          "score": "0:0",
+          "pct": 9.8
+        },
+        {
+          "score": "2:1",
+          "pct": 9.3
+        }
+      ],
+      "goal_markets": {
+        "over_under_2_5": 43.6,
+        "btts": 46.9
+      }
+    },
+    {
+      "id": "c12986f447a515fbe641addd786dbb24",
+      "teams": {
+        "home": "USA",
+        "away": "Paraguay"
+      },
+      "kickoff": "2026-06-13T01:00:00Z",
+      "probs_1x2": {
+        "home": 47.9,
+        "draw": 28.7,
+        "away": 23.4
+      },
+      "top_scores": [
+        {
+          "score": "1:1",
+          "pct": 13.5
+        },
+        {
+          "score": "1:0",
+          "pct": 12.4
+        },
+        {
+          "score": "0:0",
+          "pct": 10.3
+        },
+        {
+          "score": "2:0",
+          "pct": 9.7
+        },
+        {
+          "score": "2:1",
+          "pct": 9
+        }
+      ],
+      "goal_markets": {
+        "over_under_2_5": 42.4,
+        "btts": 47.3
+      }
+    },
+    {
+      "id": "26634922d3f78c146440816023e40de8",
+      "teams": {
+        "home": "Qatar",
+        "away": "Switzerland"
+      },
+      "kickoff": "2026-06-13T19:00:00Z",
+      "probs_1x2": {
+        "home": 8.4,
+        "draw": 17.8,
+        "away": 73.8
+      },
+      "top_scores": [
+        {
+          "score": "0:2",
+          "pct": 13.7
+        },
+        {
+          "score": "0:1",
+          "pct": 11.2
+        },
+        {
+          "score": "0:3",
+          "pct": 10.5
+        },
+        {
+          "score": "1:2",
+          "pct": 9
+        },
+        {
+          "score": "1:1",
+          "pct": 8.5
+        }
+      ],
+      "goal_markets": {
+        "over_under_2_5": 56.9,
+        "btts": 44.2
+      }
+    },
+    {
+      "id": "f6c8748a16516e0998f95de14235432a",
+      "teams": {
+        "home": "Brazil",
+        "away": "Morocco"
+      },
+      "kickoff": "2026-06-13T22:00:00Z",
+      "probs_1x2": {
+        "home": 58.8,
+        "draw": 24.8,
+        "away": 16.5
+      },
+      "top_scores": [
+        {
+          "score": "1:0",
+          "pct": 12.2
+        },
+        {
+          "score": "1:1",
+          "pct": 11.8
+        },
+        {
+          "score": "2:0",
+          "pct": 11.6
+        },
+        {
+          "score": "2:1",
+          "pct": 9.7
+        },
+        {
+          "score": "0:0",
+          "pct": 8.2
+        }
+      ],
+      "goal_markets": {
+        "over_under_2_5": 48.4,
+        "btts": 47.9
+      }
+    },
+    {
+      "id": "5ae41a06735c926eeb7f74006933adce",
+      "teams": {
+        "home": "Haiti",
+        "away": "Scotland"
+      },
+      "kickoff": "2026-06-14T01:00:00Z",
+      "probs_1x2": {
+        "home": 13.5,
+        "draw": 22.8,
+        "away": 63.7
+      },
+      "top_scores": [
+        {
+          "score": "0:2",
+          "pct": 12.5
+        },
+        {
+          "score": "0:1",
+          "pct": 12.2
+        },
+        {
+          "score": "1:1",
+          "pct": 10.8
+        },
+        {
+          "score": "1:2",
+          "pct": 9.6
+        },
+        {
+          "score": "0:3",
+          "pct": 8
+        }
+      ],
+      "goal_markets": {
+        "over_under_2_5": 50.5,
+        "btts": 46.7
+      }
+    },
+    {
+      "id": "564084f52cc9f1abcc18187c168a7cdc",
+      "teams": {
+        "home": "Australia",
+        "away": "Turkey"
+      },
+      "kickoff": "2026-06-14T04:00:00Z",
+      "probs_1x2": {
+        "home": 20.6,
+        "draw": 26.8,
+        "away": 52.6
+      },
+      "top_scores": [
+        {
+          "score": "1:1",
+          "pct": 12.7
+        },
+        {
+          "score": "0:1",
+          "pct": 11.9
+        },
+        {
+          "score": "0:2",
+          "pct": 10.3
+        },
+        {
+          "score": "1:2",
+          "pct": 9.5
+        },
+        {
+          "score": "0:0",
+          "pct": 8.9
+        }
+      ],
+      "goal_markets": {
+        "over_under_2_5": 46.4,
+        "btts": 49.1
+      }
+    },
+    {
+      "id": "d79edbd6aaeb578d33e313446b18d333",
+      "teams": {
+        "home": "Germany",
+        "away": "Curaçao"
+      },
+      "kickoff": "2026-06-14T17:00:00Z",
+      "probs_1x2": {
+        "home": 92.1,
+        "draw": 6.2,
+        "away": 1.7
+      },
+      "top_scores": [
+        {
+          "score": "3:0",
+          "pct": 13.1
+        },
+        {
+          "score": "4:0",
+          "pct": 12.2
+        },
+        {
+          "score": "2:0",
+          "pct": 10.6
+        },
+        {
+          "score": "5:0",
+          "pct": 9
+        },
+        {
+          "score": "3:1",
+          "pct": 6.3
+        }
+      ],
+      "goal_markets": {
+        "over_under_2_5": 78.5,
+        "btts": 37.2
+      }
+    },
+    {
+      "id": "32ec06abda2398ac41501c86eb9aa376",
+      "teams": {
+        "home": "Netherlands",
+        "away": "Japan"
+      },
+      "kickoff": "2026-06-14T20:00:00Z",
+      "probs_1x2": {
+        "home": 47.5,
+        "draw": 27,
+        "away": 25.6
+      },
+      "top_scores": [
+        {
+          "score": "1:1",
+          "pct": 12.9
+        },
+        {
+          "score": "1:0",
+          "pct": 9.9
+        },
+        {
+          "score": "2:1",
+          "pct": 9.4
+        },
+        {
+          "score": "2:0",
+          "pct": 8.5
+        },
+        {
+          "score": "0:0",
+          "pct": 7.8
+        }
+      ],
+      "goal_markets": {
+        "over_under_2_5": 50.2,
+        "btts": 54
+      }
+    },
+    {
+      "id": "05752bb341e197001387b64f3a06b9b2",
+      "teams": {
+        "home": "Ivory Coast",
+        "away": "Ecuador"
+      },
+      "kickoff": "2026-06-14T23:00:00Z",
+      "probs_1x2": {
+        "home": 26.5,
+        "draw": 31.4,
+        "away": 42.1
+      },
+      "top_scores": [
+        {
+          "score": "1:1",
+          "pct": 14.3
+        },
+        {
+          "score": "0:1",
+          "pct": 13.5
+        },
+        {
+          "score": "0:0",
+          "pct": 13
+        },
+        {
+          "score": "1:0",
+          "pct": 9.8
+        },
+        {
+          "score": "0:2",
+          "pct": 8.8
+        }
+      ],
+      "goal_markets": {
+        "over_under_2_5": 35.6,
+        "btts": 43
+      }
+    },
+    {
+      "id": "b55f9569de3f4d731bc5537ff5ff43e4",
+      "teams": {
+        "home": "Sweden",
+        "away": "Tunisia"
+      },
+      "kickoff": "2026-06-15T02:00:00Z",
+      "probs_1x2": {
+        "home": 48.9,
+        "draw": 28.6,
+        "away": 22.5
+      },
+      "top_scores": [
+        {
+          "score": "1:1",
+          "pct": 13.4
+        },
+        {
+          "score": "1:0",
+          "pct": 12.7
+        },
+        {
+          "score": "0:0",
+          "pct": 10.4
+        },
+        {
+          "score": "2:0",
+          "pct": 10
+        },
+        {
+          "score": "2:1",
+          "pct": 9
+        }
+      ],
+      "goal_markets": {
+        "over_under_2_5": 42,
+        "btts": 46.7
+      }
+    },
+    {
+      "id": "c54f00b11925751d2b62988775c6c239",
+      "teams": {
+        "home": "Spain",
+        "away": "Cape Verde"
+      },
+      "kickoff": "2026-06-15T16:00:00Z",
+      "probs_1x2": {
+        "home": 87.5,
+        "draw": 9.5,
+        "away": 3
+      },
+      "top_scores": [
+        {
+          "score": "3:0",
+          "pct": 13.6
+        },
+        {
+          "score": "2:0",
+          "pct": 13.1
+        },
+        {
+          "score": "4:0",
+          "pct": 10.6
+        },
+        {
+          "score": "1:0",
+          "pct": 8.1
+        },
+        {
+          "score": "3:1",
+          "pct": 6.8
+        }
+      ],
+      "goal_markets": {
+        "over_under_2_5": 70,
+        "btts": 37.9
+      }
+    },
+    {
+      "id": "fbfb95c62003fd6d828b309f96ee1f9b",
+      "teams": {
+        "home": "Belgium",
+        "away": "Egypt"
+      },
+      "kickoff": "2026-06-15T19:00:00Z",
+      "probs_1x2": {
+        "home": 57.4,
+        "draw": 24.4,
+        "away": 18.2
+      },
+      "top_scores": [
+        {
+          "score": "1:1",
+          "pct": 11.6
+        },
+        {
+          "score": "1:0",
+          "pct": 10.6
+        },
+        {
+          "score": "2:0",
+          "pct": 10.5
+        },
+        {
+          "score": "2:1",
+          "pct": 9.9
+        },
+        {
+          "score": "0:0",
+          "pct": 7.1
+        }
+      ],
+      "goal_markets": {
+        "over_under_2_5": 52.5,
+        "btts": 52.2
+      }
+    },
+    {
+      "id": "64b91c5f2db61c7358a4f05459e83c52",
+      "teams": {
+        "home": "Saudi Arabia",
+        "away": "Uruguay"
+      },
+      "kickoff": "2026-06-15T22:00:00Z",
+      "probs_1x2": {
+        "home": 14.1,
+        "draw": 23.2,
+        "away": 62.7
+      },
+      "top_scores": [
+        {
+          "score": "0:2",
+          "pct": 12.3
+        },
+        {
+          "score": "0:1",
+          "pct": 12.2
+        },
+        {
+          "score": "1:1",
+          "pct": 11
+        },
+        {
+          "score": "1:2",
+          "pct": 9.7
+        },
+        {
+          "score": "0:3",
+          "pct": 7.7
+        }
+      ],
+      "goal_markets": {
+        "over_under_2_5": 50.1,
+        "btts": 47.1
+      }
+    },
+    {
+      "id": "ec51b9c44ad5e34552f3ab53f7262813",
+      "teams": {
+        "home": "Iran",
+        "away": "New Zealand"
+      },
+      "kickoff": "2026-06-16T01:00:00Z",
+      "probs_1x2": {
+        "home": 50.6,
+        "draw": 28,
+        "away": 21.4
+      },
+      "top_scores": [
+        {
+          "score": "1:1",
+          "pct": 13.2
+        },
+        {
+          "score": "1:0",
+          "pct": 12.7
+        },
+        {
+          "score": "2:0",
+          "pct": 10.3
+        },
+        {
+          "score": "0:0",
+          "pct": 10
+        },
+        {
+          "score": "2:1",
+          "pct": 9.2
+        }
+      ],
+      "goal_markets": {
+        "over_under_2_5": 43.1,
+        "btts": 47
+      }
+    },
+    {
+      "id": "73a4fcd14cc9766b9b9bfd50b8ca153a",
+      "teams": {
+        "home": "France",
+        "away": "Senegal"
+      },
+      "kickoff": "2026-06-16T19:00:00Z",
+      "probs_1x2": {
+        "home": 65.8,
+        "draw": 21.9,
+        "away": 12.3
+      },
+      "top_scores": [
+        {
+          "score": "2:0",
+          "pct": 12.9
+        },
+        {
+          "score": "1:0",
+          "pct": 12.2
+        },
+        {
+          "score": "1:1",
+          "pct": 10.4
+        },
+        {
+          "score": "2:1",
+          "pct": 9.6
+        },
+        {
+          "score": "3:0",
+          "pct": 8.5
+        }
+      ],
+      "goal_markets": {
+        "over_under_2_5": 51.3,
+        "btts": 45.9
+      }
+    },
+    {
+      "id": "4d4f2b9b78182b557d4fbf8dcf4f4af2",
+      "teams": {
+        "home": "Iraq",
+        "away": "Norway"
+      },
+      "kickoff": "2026-06-16T22:00:00Z",
+      "probs_1x2": {
+        "home": 7.7,
+        "draw": 16.7,
+        "away": 75.5
+      },
+      "top_scores": [
+        {
+          "score": "0:2",
+          "pct": 13.5
+        },
+        {
+          "score": "0:3",
+          "pct": 10.8
+        },
+        {
+          "score": "0:1",
+          "pct": 10.6
+        },
+        {
+          "score": "1:2",
+          "pct": 8.9
+        },
+        {
+          "score": "1:1",
+          "pct": 8
+        }
+      ],
+      "goal_markets": {
+        "over_under_2_5": 59.2,
+        "btts": 44.6
+      }
+    },
+    {
+      "id": "f31b2ee9e1cc6f7e641467f8237eaa21",
+      "teams": {
+        "home": "Argentina",
+        "away": "Algeria"
+      },
+      "kickoff": "2026-06-17T01:00:00Z",
+      "probs_1x2": {
+        "home": 67.2,
+        "draw": 21.6,
+        "away": 11.2
+      },
+      "top_scores": [
+        {
+          "score": "2:0",
+          "pct": 13.6
+        },
+        {
+          "score": "1:0",
+          "pct": 12.9
+        },
+        {
+          "score": "1:1",
+          "pct": 10.2
+        },
+        {
+          "score": "2:1",
+          "pct": 9.4
+        },
+        {
+          "score": "3:0",
+          "pct": 9
+        }
+      ],
+      "goal_markets": {
+        "over_under_2_5": 50,
+        "btts": 43.7
+      }
+    },
+    {
+      "id": "25161cf6cf0cd9be17ae2e7e224a1f45",
+      "teams": {
+        "home": "Austria",
+        "away": "Jordan"
+      },
+      "kickoff": "2026-06-17T04:00:00Z",
+      "probs_1x2": {
+        "home": 71.5,
+        "draw": 18.5,
+        "away": 10
+      },
+      "top_scores": [
+        {
+          "score": "2:0",
+          "pct": 12.4
+        },
+        {
+          "score": "1:0",
+          "pct": 10.2
+        },
+        {
+          "score": "3:0",
+          "pct": 9.5
+        },
+        {
+          "score": "2:1",
+          "pct": 9.4
+        },
+        {
+          "score": "1:1",
+          "pct": 8.8
+        }
+      ],
+      "goal_markets": {
+        "over_under_2_5": 58.9,
+        "btts": 48.4
+      }
+    },
+    {
+      "id": "6cc871c121a1869b4612d3fb22fa9d55",
+      "teams": {
+        "home": "Portugal",
+        "away": "DR Congo"
+      },
+      "kickoff": "2026-06-17T17:00:00Z",
+      "probs_1x2": {
+        "home": 75,
+        "draw": 17.1,
+        "away": 7.9
+      },
+      "top_scores": [
+        {
+          "score": "2:0",
+          "pct": 13.5
+        },
+        {
+          "score": "1:0",
+          "pct": 10.8
+        },
+        {
+          "score": "3:0",
+          "pct": 10.7
+        },
+        {
+          "score": "2:1",
+          "pct": 9
+        },
+        {
+          "score": "1:1",
+          "pct": 8.1
+        }
+      ],
+      "goal_markets": {
+        "over_under_2_5": 58.6,
+        "btts": 44.6
+      }
+    },
+    {
+      "id": "689096c8cd7e2753b9fec95321943c5d",
+      "teams": {
+        "home": "England",
+        "away": "Croatia"
+      },
+      "kickoff": "2026-06-17T20:00:00Z",
+      "probs_1x2": {
+        "home": 54.5,
+        "draw": 26.4,
+        "away": 19.1
+      },
+      "top_scores": [
+        {
+          "score": "1:1",
+          "pct": 12.5
+        },
+        {
+          "score": "1:0",
+          "pct": 12.2
+        },
+        {
+          "score": "2:0",
+          "pct": 10.8
+        },
+        {
+          "score": "2:1",
+          "pct": 9.5
+        },
+        {
+          "score": "0:0",
+          "pct": 8.9
+        }
+      ],
+      "goal_markets": {
+        "over_under_2_5": 46.4,
+        "btts": 48.3
+      }
+    },
+    {
+      "id": "87afdb85c977b451e1c00f5e3e632601",
+      "teams": {
+        "home": "Ghana",
+        "away": "Panama"
+      },
+      "kickoff": "2026-06-17T23:00:00Z",
+      "probs_1x2": {
+        "home": 47,
+        "draw": 28.4,
+        "away": 24.6
+      },
+      "top_scores": [
+        {
+          "score": "1:1",
+          "pct": 13.5
+        },
+        {
+          "score": "1:0",
+          "pct": 11.6
+        },
+        {
+          "score": "0:0",
+          "pct": 9.6
+        },
+        {
+          "score": "2:0",
+          "pct": 9.2
+        },
+        {
+          "score": "2:1",
+          "pct": 9.1
+        }
+      ],
+      "goal_markets": {
+        "over_under_2_5": 44.4,
+        "btts": 49.3
+      }
+    },
+    {
+      "id": "22083e7a8e5362c711bc05c1e1319a1f",
+      "teams": {
+        "home": "Uzbekistan",
+        "away": "Colombia"
+      },
+      "kickoff": "2026-06-18T02:00:00Z",
+      "probs_1x2": {
+        "home": 11.9,
+        "draw": 22,
+        "away": 66.1
+      },
+      "top_scores": [
+        {
+          "score": "0:2",
+          "pct": 13.3
+        },
+        {
+          "score": "0:1",
+          "pct": 12.8
+        },
+        {
+          "score": "1:1",
+          "pct": 10.4
+        },
+        {
+          "score": "1:2",
+          "pct": 9.4
+        },
+        {
+          "score": "0:3",
+          "pct": 8.7
+        }
+      ],
+      "goal_markets": {
+        "over_under_2_5": 49.9,
+        "btts": 44.5
+      }
+    },
+    {
+      "id": "66ebb9e3f949caded535d97ce686ca09",
+      "teams": {
+        "home": "Czech Republic",
+        "away": "South Africa"
+      },
+      "kickoff": "2026-06-18T16:00:00Z",
+      "probs_1x2": {
+        "home": 46.9,
+        "draw": 29.1,
+        "away": 23.9
+      },
+      "top_scores": [
+        {
+          "score": "1:1",
+          "pct": 13.7
+        },
+        {
+          "score": "1:0",
+          "pct": 12.6
+        },
+        {
+          "score": "0:0",
+          "pct": 10.7
+        },
+        {
+          "score": "2:0",
+          "pct": 9.5
+        },
+        {
+          "score": "2:1",
+          "pct": 8.9
+        }
+      ],
+      "goal_markets": {
+        "over_under_2_5": 41.4,
+        "btts": 46.8
+      }
+    },
+    {
+      "id": "289bc2e9f5adad8ae4d9a75a7c5461ad",
+      "teams": {
+        "home": "Switzerland",
+        "away": "Bosnia & Herzegovina"
+      },
+      "kickoff": "2026-06-18T19:00:00Z",
+      "probs_1x2": {
+        "home": 60,
+        "draw": 24.4,
+        "away": 15.6
+      },
+      "top_scores": [
+        {
+          "score": "1:0",
+          "pct": 12.4
+        },
+        {
+          "score": "2:0",
+          "pct": 11.9
+        },
+        {
+          "score": "1:1",
+          "pct": 11.6
+        },
+        {
+          "score": "2:1",
+          "pct": 9.6
+        },
+        {
+          "score": "0:0",
+          "pct": 8.3
+        }
+      ],
+      "goal_markets": {
+        "over_under_2_5": 48.3,
+        "btts": 47.1
+      }
+    },
+    {
+      "id": "fa9502285b257b03e62968d50d9229fc",
+      "teams": {
+        "home": "Canada",
+        "away": "Qatar"
+      },
+      "kickoff": "2026-06-18T22:00:00Z",
+      "probs_1x2": {
+        "home": 70.2,
+        "draw": 20.8,
+        "away": 9.1
+      },
+      "top_scores": [
+        {
+          "score": "2:0",
+          "pct": 15.1
+        },
+        {
+          "score": "1:0",
+          "pct": 14.5
+        },
+        {
+          "score": "3:0",
+          "pct": 10.1
+        },
+        {
+          "score": "1:1",
+          "pct": 9.5
+        },
+        {
+          "score": "2:1",
+          "pct": 8.8
+        }
+      ],
+      "goal_markets": {
+        "over_under_2_5": 47.6,
+        "btts": 38.8
+      }
+    },
+    {
+      "id": "0f2aeae6ac8e77223848d23a4ca86b0d",
+      "teams": {
+        "home": "Mexico",
+        "away": "South Korea"
+      },
+      "kickoff": "2026-06-19T01:00:00Z",
+      "probs_1x2": {
+        "home": 52.4,
+        "draw": 27.6,
+        "away": 19.9
+      },
+      "top_scores": [
+        {
+          "score": "1:0",
+          "pct": 13.1
+        },
+        {
+          "score": "1:1",
+          "pct": 13
+        },
+        {
+          "score": "2:0",
+          "pct": 10.8
+        },
+        {
+          "score": "0:0",
+          "pct": 10.1
+        },
+        {
+          "score": "2:1",
+          "pct": 9.2
+        }
+      ],
+      "goal_markets": {
+        "over_under_2_5": 42.9,
+        "btts": 46.1
+      }
+    },
+    {
+      "id": "065b3573e875f8d23803357f73e5b99e",
+      "teams": {
+        "home": "USA",
+        "away": "Australia"
+      },
+      "kickoff": "2026-06-19T19:00:00Z",
+      "probs_1x2": {
+        "home": 54.1,
+        "draw": 26.1,
+        "away": 19.8
+      },
+      "top_scores": [
+        {
+          "score": "1:1",
+          "pct": 12.4
+        },
+        {
+          "score": "1:0",
+          "pct": 11.6
+        },
+        {
+          "score": "2:0",
+          "pct": 10.4
+        },
+        {
+          "score": "2:1",
+          "pct": 9.6
+        },
+        {
+          "score": "0:0",
+          "pct": 8.4
+        }
+      ],
+      "goal_markets": {
+        "over_under_2_5": 48,
+        "btts": 49.9
+      }
+    },
+    {
+      "id": "4cd769aa7bae0ad9762bd69b80ef2903",
+      "teams": {
+        "home": "Scotland",
+        "away": "Morocco"
+      },
+      "kickoff": "2026-06-19T22:00:00Z",
+      "probs_1x2": {
+        "home": 24.5,
+        "draw": 29.2,
+        "away": 46.3
+      },
+      "top_scores": [
+        {
+          "score": "1:1",
+          "pct": 13.7
+        },
+        {
+          "score": "0:1",
+          "pct": 12.4
+        },
+        {
+          "score": "0:0",
+          "pct": 10.6
+        },
+        {
+          "score": "0:2",
+          "pct": 9.4
+        },
+        {
+          "score": "1:2",
+          "pct": 8.9
+        }
+      ],
+      "goal_markets": {
+        "over_under_2_5": 41.5,
+        "btts": 47
+      }
+    },
+    {
+      "id": "ef0f74a991d3e35798ae5af77667bce1",
+      "teams": {
+        "home": "Brazil",
+        "away": "Haiti"
+      },
+      "kickoff": "2026-06-20T01:00:00Z",
+      "probs_1x2": {
+        "home": 89.7,
+        "draw": 7.8,
+        "away": 2.5
+      },
+      "top_scores": [
+        {
+          "score": "3:0",
+          "pct": 12.8
+        },
+        {
+          "score": "2:0",
+          "pct": 11.1
+        },
+        {
+          "score": "4:0",
+          "pct": 11.1
+        },
+        {
+          "score": "5:0",
+          "pct": 7.7
+        },
+        {
+          "score": "3:1",
+          "pct": 6.9
+        }
+      ],
+      "goal_markets": {
+        "over_under_2_5": 75.9,
+        "btts": 40.5
+      }
+    },
+    {
+      "id": "f955d4b3395ce6e3b5ac1031ca52ca4e",
+      "teams": {
+        "home": "Turkey",
+        "away": "Paraguay"
+      },
+      "kickoff": "2026-06-20T03:00:00Z",
+      "probs_1x2": {
+        "home": 42,
+        "draw": 30,
+        "away": 28
+      },
+      "top_scores": [
+        {
+          "score": "1:1",
+          "pct": 14.1
+        },
+        {
+          "score": "1:0",
+          "pct": 11.8
+        },
+        {
+          "score": "0:0",
+          "pct": 10.9
+        },
+        {
+          "score": "0:1",
+          "pct": 9
+        },
+        {
+          "score": "2:1",
+          "pct": 8.5
+        }
+      ],
+      "goal_markets": {
+        "over_under_2_5": 40.8,
+        "btts": 47.5
+      }
+    },
+    {
+      "id": "4f0c518545b0096c68326daf25bffc1e",
+      "teams": {
+        "home": "Netherlands",
+        "away": "Sweden"
+      },
+      "kickoff": "2026-06-20T17:00:00Z",
+      "probs_1x2": {
+        "home": 56.6,
+        "draw": 25,
+        "away": 18.3
+      },
+      "top_scores": [
+        {
+          "score": "1:1",
+          "pct": 11.9
+        },
+        {
+          "score": "1:0",
+          "pct": 11.2
+        },
+        {
+          "score": "2:0",
+          "pct": 10.7
+        },
+        {
+          "score": "2:1",
+          "pct": 9.8
+        },
+        {
+          "score": "0:0",
+          "pct": 7.7
+        }
+      ],
+      "goal_markets": {
+        "over_under_2_5": 50.2,
+        "btts": 50.5
+      }
+    },
+    {
+      "id": "f1ab0f69832972a329243522ceaa7804",
+      "teams": {
+        "home": "Germany",
+        "away": "Ivory Coast"
+      },
+      "kickoff": "2026-06-20T20:00:00Z",
+      "probs_1x2": {
+        "home": 61,
+        "draw": 22.9,
+        "away": 16.1
+      },
+      "top_scores": [
+        {
+          "score": "1:1",
+          "pct": 10.9
+        },
+        {
+          "score": "2:0",
+          "pct": 10.8
+        },
+        {
+          "score": "1:0",
+          "pct": 10.2
+        },
+        {
+          "score": "2:1",
+          "pct": 9.9
+        },
+        {
+          "score": "3:0",
+          "pct": 7.1
+        }
+      ],
+      "goal_markets": {
+        "over_under_2_5": 54.9,
+        "btts": 52.4
+      }
+    },
+    {
+      "id": "681895f294b670b4c7b14495dfb583bc",
+      "teams": {
+        "home": "Ecuador",
+        "away": "Curaçao"
+      },
+      "kickoff": "2026-06-21T00:00:00Z",
+      "probs_1x2": {
+        "home": 74.4,
+        "draw": 18.1,
+        "away": 7.5
+      },
+      "top_scores": [
+        {
+          "score": "2:0",
+          "pct": 15.1
+        },
+        {
+          "score": "1:0",
+          "pct": 13
+        },
+        {
+          "score": "3:0",
+          "pct": 11.1
+        },
+        {
+          "score": "2:1",
+          "pct": 8.7
+        },
+        {
+          "score": "1:1",
+          "pct": 8.5
+        }
+      ],
+      "goal_markets": {
+        "over_under_2_5": 52.8,
+        "btts": 39.6
+      }
+    },
+    {
+      "id": "dfc5202cf1b8ae002cf952cd04f235b9",
+      "teams": {
+        "home": "Tunisia",
+        "away": "Japan"
+      },
+      "kickoff": "2026-06-21T04:00:00Z",
+      "probs_1x2": {
+        "home": 21.2,
+        "draw": 28.6,
+        "away": 50.2
+      },
+      "top_scores": [
+        {
+          "score": "0:1",
+          "pct": 13.4
+        },
+        {
+          "score": "1:1",
+          "pct": 13.3
+        },
+        {
+          "score": "0:0",
+          "pct": 10.8
+        },
+        {
+          "score": "0:2",
+          "pct": 10.5
+        },
+        {
+          "score": "1:2",
+          "pct": 9
+        }
+      ],
+      "goal_markets": {
+        "over_under_2_5": 40.8,
+        "btts": 45.2
+      }
+    },
+    {
+      "id": "73529a242e319a86bf3d00ddb4accc37",
+      "teams": {
+        "home": "Spain",
+        "away": "Saudi Arabia"
+      },
+      "kickoff": "2026-06-21T16:00:00Z",
+      "probs_1x2": {
+        "home": 85.1,
+        "draw": 11.6,
+        "away": 3.3
+      },
+      "top_scores": [
+        {
+          "score": "2:0",
+          "pct": 15.9
+        },
+        {
+          "score": "3:0",
+          "pct": 14.5
+        },
+        {
+          "score": "1:0",
+          "pct": 11.3
+        },
+        {
+          "score": "4:0",
+          "pct": 9.9
+        },
+        {
+          "score": "2:1",
+          "pct": 6.7
+        }
+      ],
+      "goal_markets": {
+        "over_under_2_5": 61,
+        "btts": 32.7
+      }
+    },
+    {
+      "id": "5f92f257386ec5bf7c6e2498a21f3a61",
+      "teams": {
+        "home": "Belgium",
+        "away": "Iran"
+      },
+      "kickoff": "2026-06-21T19:00:00Z",
+      "probs_1x2": {
+        "home": 66.7,
+        "draw": 21.7,
+        "away": 11.7
+      },
+      "top_scores": [
+        {
+          "score": "2:0",
+          "pct": 13.3
+        },
+        {
+          "score": "1:0",
+          "pct": 12.5
+        },
+        {
+          "score": "1:1",
+          "pct": 10.3
+        },
+        {
+          "score": "2:1",
+          "pct": 9.5
+        },
+        {
+          "score": "3:0",
+          "pct": 8.8
+        }
+      ],
+      "goal_markets": {
+        "over_under_2_5": 50.8,
+        "btts": 44.8
+      }
+    },
+    {
+      "id": "852a3abe6d46820720febc0fedebff9a",
+      "teams": {
+        "home": "Uruguay",
+        "away": "Cape Verde"
+      },
+      "kickoff": "2026-06-21T22:00:00Z",
+      "probs_1x2": {
+        "home": 65.1,
+        "draw": 22.4,
+        "away": 12.5
+      },
+      "top_scores": [
+        {
+          "score": "2:0",
+          "pct": 13
+        },
+        {
+          "score": "1:0",
+          "pct": 12.6
+        },
+        {
+          "score": "1:1",
+          "pct": 10.6
+        },
+        {
+          "score": "2:1",
+          "pct": 9.5
+        },
+        {
+          "score": "3:0",
+          "pct": 8.4
+        }
+      ],
+      "goal_markets": {
+        "over_under_2_5": 50,
+        "btts": 45.3
+      }
+    },
+    {
+      "id": "c1ec9a65f4b4cf74477b368a7d6282de",
+      "teams": {
+        "home": "New Zealand",
+        "away": "Egypt"
+      },
+      "kickoff": "2026-06-22T01:00:00Z",
+      "probs_1x2": {
+        "home": 19.6,
+        "draw": 27.6,
+        "away": 52.9
+      },
+      "top_scores": [
+        {
+          "score": "0:1",
+          "pct": 13.2
+        },
+        {
+          "score": "1:1",
+          "pct": 12.9
+        },
+        {
+          "score": "0:2",
+          "pct": 10.9
+        },
+        {
+          "score": "0:0",
+          "pct": 10.1
+        },
+        {
+          "score": "1:2",
+          "pct": 9.2
+        }
+      ],
+      "goal_markets": {
+        "over_under_2_5": 42.8,
+        "btts": 45.8
+      }
+    },
+    {
+      "id": "be6c63f416c67bca1300a98f5b89c3af",
+      "teams": {
+        "home": "Argentina",
+        "away": "Austria"
+      },
+      "kickoff": "2026-06-22T17:00:00Z",
+      "probs_1x2": {
+        "home": 57,
+        "draw": 25.3,
+        "away": 17.6
+      },
+      "top_scores": [
+        {
+          "score": "1:1",
+          "pct": 12.1
+        },
+        {
+          "score": "1:0",
+          "pct": 12
+        },
+        {
+          "score": "2:0",
+          "pct": 11.2
+        },
+        {
+          "score": "2:1",
+          "pct": 9.7
+        },
+        {
+          "score": "0:0",
+          "pct": 8.3
+        }
+      ],
+      "goal_markets": {
+        "over_under_2_5": 48.1,
+        "btts": 48.5
+      }
+    },
+    {
+      "id": "7ad7a0ce2ef2618bb59b066da5642f70",
+      "teams": {
+        "home": "France",
+        "away": "Iraq"
+      },
+      "kickoff": "2026-06-22T21:00:00Z",
+      "probs_1x2": {
+        "home": 85.3,
+        "draw": 11.3,
+        "away": 3.4
+      },
+      "top_scores": [
+        {
+          "score": "2:0",
+          "pct": 15.1
+        },
+        {
+          "score": "3:0",
+          "pct": 14.1
+        },
+        {
+          "score": "1:0",
+          "pct": 10.3
+        },
+        {
+          "score": "4:0",
+          "pct": 9.9
+        },
+        {
+          "score": "2:1",
+          "pct": 6.9
+        }
+      ],
+      "goal_markets": {
+        "over_under_2_5": 63.4,
+        "btts": 34.8
+      }
+    },
+    {
+      "id": "3f48473742ca0fd2a85930554720c75e",
+      "teams": {
+        "home": "Norway",
+        "away": "Senegal"
+      },
+      "kickoff": "2026-06-23T00:00:00Z",
+      "probs_1x2": {
+        "home": 45,
+        "draw": 27.4,
+        "away": 27.6
+      },
+      "top_scores": [
+        {
+          "score": "1:1",
+          "pct": 13
+        },
+        {
+          "score": "1:0",
+          "pct": 9.5
+        },
+        {
+          "score": "2:1",
+          "pct": 9.2
+        },
+        {
+          "score": "2:0",
+          "pct": 8
+        },
+        {
+          "score": "0:0",
+          "pct": 7.9
+        }
+      ],
+      "goal_markets": {
+        "over_under_2_5": 50,
+        "btts": 54.4
+      }
+    },
+    {
+      "id": "fd8533b650e655030f6a7946f8795db2",
+      "teams": {
+        "home": "Jordan",
+        "away": "Algeria"
+      },
+      "kickoff": "2026-06-23T03:00:00Z",
+      "probs_1x2": {
+        "home": 18.1,
+        "draw": 25.3,
+        "away": 56.5
+      },
+      "top_scores": [
+        {
+          "score": "1:1",
+          "pct": 12.1
+        },
+        {
+          "score": "0:1",
+          "pct": 11.7
+        },
+        {
+          "score": "0:2",
+          "pct": 10.9
+        },
+        {
+          "score": "1:2",
+          "pct": 9.7
+        },
+        {
+          "score": "0:0",
+          "pct": 8.2
+        }
+      ],
+      "goal_markets": {
+        "over_under_2_5": 48.7,
+        "btts": 49.4
+      }
+    },
+    {
+      "id": "8ba93d190f1f934e33862a97a6353a6e",
+      "teams": {
+        "home": "Portugal",
+        "away": "Uzbekistan"
+      },
+      "kickoff": "2026-06-23T17:00:00Z",
+      "probs_1x2": {
+        "home": 76.1,
+        "draw": 16.2,
+        "away": 7.7
+      },
+      "top_scores": [
+        {
+          "score": "2:0",
+          "pct": 12.9
+        },
+        {
+          "score": "3:0",
+          "pct": 10.7
+        },
+        {
+          "score": "1:0",
+          "pct": 9.8
+        },
+        {
+          "score": "2:1",
+          "pct": 8.9
+        },
+        {
+          "score": "1:1",
+          "pct": 7.7
+        }
+      ],
+      "goal_markets": {
+        "over_under_2_5": 61.5,
+        "btts": 46.3
+      }
+    },
+    {
+      "id": "2f49dd8deae3079dc4eb2d634d18a99c",
+      "teams": {
+        "home": "England",
+        "away": "Ghana"
+      },
+      "kickoff": "2026-06-23T20:00:00Z",
+      "probs_1x2": {
+        "home": 71.4,
+        "draw": 19,
+        "away": 9.6
+      },
+      "top_scores": [
+        {
+          "score": "2:0",
+          "pct": 13.3
+        },
+        {
+          "score": "1:0",
+          "pct": 11.3
+        },
+        {
+          "score": "3:0",
+          "pct": 9.8
+        },
+        {
+          "score": "2:1",
+          "pct": 9.3
+        },
+        {
+          "score": "1:1",
+          "pct": 9.1
+        }
+      ],
+      "goal_markets": {
+        "over_under_2_5": 55.9,
+        "btts": 45.6
+      }
+    },
+    {
+      "id": "c1bc8c26480cd42b89a0de5329581314",
+      "teams": {
+        "home": "Panama",
+        "away": "Croatia"
+      },
+      "kickoff": "2026-06-23T23:00:00Z",
+      "probs_1x2": {
+        "home": 14.1,
+        "draw": 24.1,
+        "away": 61.8
+      },
+      "top_scores": [
+        {
+          "score": "0:1",
+          "pct": 13.2
+        },
+        {
+          "score": "0:2",
+          "pct": 12.7
+        },
+        {
+          "score": "1:1",
+          "pct": 11.3
+        },
+        {
+          "score": "1:2",
+          "pct": 9.5
+        },
+        {
+          "score": "0:0",
+          "pct": 8.6
+        }
+      ],
+      "goal_markets": {
+        "over_under_2_5": 47.1,
+        "btts": 44.9
+      }
+    },
+    {
+      "id": "68bfc965eb267508e04d8e8d75c1a0ae",
+      "teams": {
+        "home": "Colombia",
+        "away": "DR Congo"
+      },
+      "kickoff": "2026-06-24T02:00:00Z",
+      "probs_1x2": {
+        "home": 64.4,
+        "draw": 23.8,
+        "away": 11.9
+      },
+      "top_scores": [
+        {
+          "score": "1:0",
+          "pct": 15
+        },
+        {
+          "score": "2:0",
+          "pct": 14.2
+        },
+        {
+          "score": "1:1",
+          "pct": 10.9
+        },
+        {
+          "score": "0:0",
+          "pct": 9.6
+        },
+        {
+          "score": "2:1",
+          "pct": 9
+        }
+      ],
+      "goal_markets": {
+        "over_under_2_5": 43.7,
+        "btts": 40
+      }
+    },
+    {
+      "id": "512ac18beb5aa936a59f7ea3e497ada2",
+      "teams": {
+        "home": "Bosnia & Herzegovina",
+        "away": "Qatar"
+      },
+      "kickoff": "2026-06-24T19:00:00Z",
+      "probs_1x2": {
+        "home": 59,
+        "draw": 24.9,
+        "away": 16
+      },
+      "top_scores": [
+        {
+          "score": "1:0",
+          "pct": 12.7
+        },
+        {
+          "score": "2:0",
+          "pct": 11.9
+        },
+        {
+          "score": "1:1",
+          "pct": 11.8
+        },
+        {
+          "score": "2:1",
+          "pct": 9.6
+        },
+        {
+          "score": "0:0",
+          "pct": 8.6
+        }
+      ],
+      "goal_markets": {
+        "over_under_2_5": 47.1,
+        "btts": 46.6
+      }
+    },
+    {
+      "id": "c9ef5822ee64fd5275f7c73251bb56c7",
+      "teams": {
+        "home": "Switzerland",
+        "away": "Canada"
+      },
+      "kickoff": "2026-06-24T19:00:00Z",
+      "probs_1x2": {
+        "home": 45.8,
+        "draw": 28.5,
+        "away": 25.6
+      },
+      "top_scores": [
+        {
+          "score": "1:1",
+          "pct": 13.6
+        },
+        {
+          "score": "1:0",
+          "pct": 11.3
+        },
+        {
+          "score": "0:0",
+          "pct": 9.6
+        },
+        {
+          "score": "2:1",
+          "pct": 9
+        },
+        {
+          "score": "2:0",
+          "pct": 8.9
+        }
+      ],
+      "goal_markets": {
+        "over_under_2_5": 44.5,
+        "btts": 49.7
+      }
+    },
+    {
+      "id": "885ba95805db310a7bcc3fb1a7a6dd28",
+      "teams": {
+        "home": "Scotland",
+        "away": "Brazil"
+      },
+      "kickoff": "2026-06-24T22:00:00Z",
+      "probs_1x2": {
+        "home": 12.3,
+        "draw": 21.7,
+        "away": 65.9
+      },
+      "top_scores": [
+        {
+          "score": "0:2",
+          "pct": 12.8
+        },
+        {
+          "score": "0:1",
+          "pct": 12
+        },
+        {
+          "score": "1:1",
+          "pct": 10.3
+        },
+        {
+          "score": "1:2",
+          "pct": 9.6
+        },
+        {
+          "score": "0:3",
+          "pct": 8.5
+        }
+      ],
+      "goal_markets": {
+        "over_under_2_5": 52,
+        "btts": 46.5
+      }
+    },
+    {
+      "id": "d1279ce7f33136a33e99ad442fc855e8",
+      "teams": {
+        "home": "Morocco",
+        "away": "Haiti"
+      },
+      "kickoff": "2026-06-24T22:00:00Z",
+      "probs_1x2": {
+        "home": 70.6,
+        "draw": 19.4,
+        "away": 9.9
+      },
+      "top_scores": [
+        {
+          "score": "2:0",
+          "pct": 13.3
+        },
+        {
+          "score": "1:0",
+          "pct": 11.5
+        },
+        {
+          "score": "3:0",
+          "pct": 9.7
+        },
+        {
+          "score": "2:1",
+          "pct": 9.3
+        },
+        {
+          "score": "1:1",
+          "pct": 9.3
+        }
+      ],
+      "goal_markets": {
+        "over_under_2_5": 55,
+        "btts": 45.4
+      }
+    },
+    {
+      "id": "5993bd5196ca09f83990f0c3261e442e",
+      "teams": {
+        "home": "Czech Republic",
+        "away": "Mexico"
+      },
+      "kickoff": "2026-06-25T01:00:00Z",
+      "probs_1x2": {
+        "home": 24.4,
+        "draw": 28.4,
+        "away": 47.3
+      },
+      "top_scores": [
+        {
+          "score": "1:1",
+          "pct": 13.5
+        },
+        {
+          "score": "0:1",
+          "pct": 11.7
+        },
+        {
+          "score": "0:0",
+          "pct": 9.6
+        },
+        {
+          "score": "0:2",
+          "pct": 9.3
+        },
+        {
+          "score": "1:2",
+          "pct": 9.1
+        }
+      ],
+      "goal_markets": {
+        "over_under_2_5": 44.3,
+        "btts": 49.1
+      }
+    },
+    {
+      "id": "c0355dfc6e26ec327e379b6ef5824a5f",
+      "teams": {
+        "home": "South Africa",
+        "away": "South Korea"
+      },
+      "kickoff": "2026-06-25T01:00:00Z",
+      "probs_1x2": {
+        "home": 25.4,
+        "draw": 28.8,
+        "away": 45.9
+      },
+      "top_scores": [
+        {
+          "score": "1:1",
+          "pct": 13.6
+        },
+        {
+          "score": "0:1",
+          "pct": 11.7
+        },
+        {
+          "score": "0:0",
+          "pct": 9.9
+        },
+        {
+          "score": "0:2",
+          "pct": 9
+        },
+        {
+          "score": "1:2",
+          "pct": 9
+        }
+      ],
+      "goal_markets": {
+        "over_under_2_5": 43.6,
+        "btts": 48.9
+      }
+    },
+    {
+      "id": "a5a0b544a984ab16e564264f3e859b43",
+      "teams": {
+        "home": "Curaçao",
+        "away": "Ivory Coast"
+      },
+      "kickoff": "2026-06-25T20:00:00Z",
+      "probs_1x2": {
+        "home": 10.7,
+        "draw": 20.6,
+        "away": 68.7
+      },
+      "top_scores": [
+        {
+          "score": "0:2",
+          "pct": 13.4
+        },
+        {
+          "score": "0:1",
+          "pct": 12.1
+        },
+        {
+          "score": "1:1",
+          "pct": 9.8
+        },
+        {
+          "score": "1:2",
+          "pct": 9.4
+        },
+        {
+          "score": "0:3",
+          "pct": 9.3
+        }
+      ],
+      "goal_markets": {
+        "over_under_2_5": 52.6,
+        "btts": 44.9
+      }
+    },
+    {
+      "id": "0ec28b84ec399bd4dffbe8d1bc72b3c4",
+      "teams": {
+        "home": "Ecuador",
+        "away": "Germany"
+      },
+      "kickoff": "2026-06-25T20:00:00Z",
+      "probs_1x2": {
+        "home": 19,
+        "draw": 25.2,
+        "away": 55.8
+      },
+      "top_scores": [
+        {
+          "score": "1:1",
+          "pct": 12
+        },
+        {
+          "score": "0:1",
+          "pct": 11
+        },
+        {
+          "score": "0:2",
+          "pct": 10.5
+        },
+        {
+          "score": "1:2",
+          "pct": 9.8
+        },
+        {
+          "score": "0:0",
+          "pct": 7.7
+        }
+      ],
+      "goal_markets": {
+        "over_under_2_5": 50.4,
+        "btts": 51.1
+      }
+    },
+    {
+      "id": "0ed0233bddc4eafc8507f86a9c17b998",
+      "teams": {
+        "home": "Japan",
+        "away": "Sweden"
+      },
+      "kickoff": "2026-06-25T23:00:00Z",
+      "probs_1x2": {
+        "home": 45.7,
+        "draw": 28.4,
+        "away": 25.9
+      },
+      "top_scores": [
+        {
+          "score": "1:1",
+          "pct": 13.5
+        },
+        {
+          "score": "1:0",
+          "pct": 11.1
+        },
+        {
+          "score": "0:0",
+          "pct": 9.3
+        },
+        {
+          "score": "2:1",
+          "pct": 9.1
+        },
+        {
+          "score": "2:0",
+          "pct": 8.8
+        }
+      ],
+      "goal_markets": {
+        "over_under_2_5": 45.3,
+        "btts": 50.4
+      }
+    },
+    {
+      "id": "f3c4657daa143a0c5bd62cb370d01ce4",
+      "teams": {
+        "home": "Tunisia",
+        "away": "Netherlands"
+      },
+      "kickoff": "2026-06-25T23:00:00Z",
+      "probs_1x2": {
+        "home": 16,
+        "draw": 24.1,
+        "away": 59.9
+      },
+      "top_scores": [
+        {
+          "score": "0:1",
+          "pct": 11.7
+        },
+        {
+          "score": "0:2",
+          "pct": 11.5
+        },
+        {
+          "score": "1:1",
+          "pct": 11.5
+        },
+        {
+          "score": "1:2",
+          "pct": 9.8
+        },
+        {
+          "score": "0:0",
+          "pct": 7.7
+        }
+      ],
+      "goal_markets": {
+        "over_under_2_5": 50.1,
+        "btts": 48.8
+      }
+    },
+    {
+      "id": "22f6ac06dfcc88a847920f62633e6459",
+      "teams": {
+        "home": "Paraguay",
+        "away": "Australia"
+      },
+      "kickoff": "2026-06-26T02:00:00Z",
+      "probs_1x2": {
+        "home": 43.1,
+        "draw": 29.7,
+        "away": 27.2
+      },
+      "top_scores": [
+        {
+          "score": "1:1",
+          "pct": 14
+        },
+        {
+          "score": "1:0",
+          "pct": 11.8
+        },
+        {
+          "score": "0:0",
+          "pct": 10.6
+        },
+        {
+          "score": "0:1",
+          "pct": 8.7
+        },
+        {
+          "score": "2:1",
+          "pct": 8.6
+        }
+      ],
+      "goal_markets": {
+        "over_under_2_5": 41.5,
+        "btts": 47.8
+      }
+    },
+    {
+      "id": "f41aeac9a8343a84b4950f15ea25fba2",
+      "teams": {
+        "home": "Turkey",
+        "away": "USA"
+      },
+      "kickoff": "2026-06-26T02:00:00Z",
+      "probs_1x2": {
+        "home": 34.7,
+        "draw": 28.6,
+        "away": 36.7
+      },
+      "top_scores": [
+        {
+          "score": "1:1",
+          "pct": 13.7
+        },
+        {
+          "score": "0:1",
+          "pct": 9
+        },
+        {
+          "score": "0:0",
+          "pct": 8.7
+        },
+        {
+          "score": "1:0",
+          "pct": 8.7
+        },
+        {
+          "score": "1:2",
+          "pct": 8.2
+        }
+      ],
+      "goal_markets": {
+        "over_under_2_5": 47.3,
+        "btts": 53.3
+      }
+    },
+    {
+      "id": "b86b4d60f773e9e3c46c00e9a6496e79",
+      "teams": {
+        "home": "Norway",
+        "away": "France"
+      },
+      "kickoff": "2026-06-26T19:00:00Z",
+      "probs_1x2": {
+        "home": 19.3,
+        "draw": 25.5,
+        "away": 55.2
+      },
+      "top_scores": [
+        {
+          "score": "1:1",
+          "pct": 12.2
+        },
+        {
+          "score": "0:1",
+          "pct": 11.2
+        },
+        {
+          "score": "0:2",
+          "pct": 10.4
+        },
+        {
+          "score": "1:2",
+          "pct": 9.7
+        },
+        {
+          "score": "0:0",
+          "pct": 7.9
+        }
+      ],
+      "goal_markets": {
+        "over_under_2_5": 49.7,
+        "btts": 50.8
+      }
+    },
+    {
+      "id": "7e6aee294ea1a4792c59558791084528",
+      "teams": {
+        "home": "Senegal",
+        "away": "Iraq"
+      },
+      "kickoff": "2026-06-26T19:00:00Z",
+      "probs_1x2": {
+        "home": 65.2,
+        "draw": 22.4,
+        "away": 12.5
+      },
+      "top_scores": [
+        {
+          "score": "2:0",
+          "pct": 13
+        },
+        {
+          "score": "1:0",
+          "pct": 12.6
+        },
+        {
+          "score": "1:1",
+          "pct": 10.6
+        },
+        {
+          "score": "2:1",
+          "pct": 9.5
+        },
+        {
+          "score": "3:0",
+          "pct": 8.4
+        }
+      ],
+      "goal_markets": {
+        "over_under_2_5": 50,
+        "btts": 45.2
+      }
+    },
+    {
+      "id": "e07b1926be5a4d515c7eb108dbcee9c5",
+      "teams": {
+        "home": "Cape Verde",
+        "away": "Saudi Arabia"
+      },
+      "kickoff": "2026-06-27T00:00:00Z",
+      "probs_1x2": {
+        "home": 35.1,
+        "draw": 30,
+        "away": 34.9
+      },
+      "top_scores": [
+        {
+          "score": "1:1",
+          "pct": 14.2
+        },
+        {
+          "score": "0:0",
+          "pct": 10.5
+        },
+        {
+          "score": "1:0",
+          "pct": 10.1
+        },
+        {
+          "score": "0:1",
+          "pct": 10.1
+        },
+        {
+          "score": "2:1",
+          "pct": 7.8
+        }
+      ],
+      "goal_markets": {
+        "over_under_2_5": 42,
+        "btts": 49.1
+      }
+    },
+    {
+      "id": "dcff2e31c0bce001a4db5caaf4fa8822",
+      "teams": {
+        "home": "Uruguay",
+        "away": "Spain"
+      },
+      "kickoff": "2026-06-27T00:00:00Z",
+      "probs_1x2": {
+        "home": 18.2,
+        "draw": 25.2,
+        "away": 56.6
+      },
+      "top_scores": [
+        {
+          "score": "1:1",
+          "pct": 12
+        },
+        {
+          "score": "0:1",
+          "pct": 11.4
+        },
+        {
+          "score": "0:2",
+          "pct": 10.8
+        },
+        {
+          "score": "1:2",
+          "pct": 9.7
+        },
+        {
+          "score": "0:0",
+          "pct": 7.9
+        }
+      ],
+      "goal_markets": {
+        "over_under_2_5": 49.6,
+        "btts": 50.1
+      }
+    },
+    {
+      "id": "581691da05dcd75b5c6d3be91ee9d2ab",
+      "teams": {
+        "home": "New Zealand",
+        "away": "Belgium"
+      },
+      "kickoff": "2026-06-27T03:00:00Z",
+      "probs_1x2": {
+        "home": 9.8,
+        "draw": 19.1,
+        "away": 71.1
+      },
+      "top_scores": [
+        {
+          "score": "0:2",
+          "pct": 13.1
+        },
+        {
+          "score": "0:1",
+          "pct": 11.1
+        },
+        {
+          "score": "0:3",
+          "pct": 9.7
+        },
+        {
+          "score": "1:2",
+          "pct": 9.4
+        },
+        {
+          "score": "1:1",
+          "pct": 9.1
+        }
+      ],
+      "goal_markets": {
+        "over_under_2_5": 56.3,
+        "btts": 46.2
+      }
+    },
+    {
+      "id": "3e3b5fa2b3c963e74cf044c60db0b573",
+      "teams": {
+        "home": "Egypt",
+        "away": "Iran"
+      },
+      "kickoff": "2026-06-27T03:00:00Z",
+      "probs_1x2": {
+        "home": 40.6,
+        "draw": 30.4,
+        "away": 29
+      },
+      "top_scores": [
+        {
+          "score": "1:1",
+          "pct": 14.2
+        },
+        {
+          "score": "1:0",
+          "pct": 11.8
+        },
+        {
+          "score": "0:0",
+          "pct": 11.3
+        },
+        {
+          "score": "0:1",
+          "pct": 9.4
+        },
+        {
+          "score": "2:1",
+          "pct": 8.3
+        }
+      ],
+      "goal_markets": {
+        "over_under_2_5": 39.7,
+        "btts": 46.8
+      }
+    },
+    {
+      "id": "537c0997cd899394f47f16545b7068b2",
+      "teams": {
+        "home": "Croatia",
+        "away": "Ghana"
+      },
+      "kickoff": "2026-06-27T21:00:00Z",
+      "probs_1x2": {
+        "home": 54.4,
+        "draw": 26.7,
+        "away": 18.9
+      },
+      "top_scores": [
+        {
+          "score": "1:0",
+          "pct": 12.8
+        },
+        {
+          "score": "1:1",
+          "pct": 12.6
+        },
+        {
+          "score": "2:0",
+          "pct": 11
+        },
+        {
+          "score": "0:0",
+          "pct": 9.4
+        },
+        {
+          "score": "2:1",
+          "pct": 9.4
+        }
+      ],
+      "goal_markets": {
+        "over_under_2_5": 44.7,
+        "btts": 46.9
+      }
+    },
+    {
+      "id": "4be17c8e1ccfecb0f2a5ef79e045c415",
+      "teams": {
+        "home": "Panama",
+        "away": "England"
+      },
+      "kickoff": "2026-06-27T21:00:00Z",
+      "probs_1x2": {
+        "home": 8.4,
+        "draw": 17.6,
+        "away": 74
+      },
+      "top_scores": [
+        {
+          "score": "0:2",
+          "pct": 13.4
+        },
+        {
+          "score": "0:1",
+          "pct": 10.8
+        },
+        {
+          "score": "0:3",
+          "pct": 10.5
+        },
+        {
+          "score": "1:2",
+          "pct": 9.1
+        },
+        {
+          "score": "1:1",
+          "pct": 8.4
+        }
+      ],
+      "goal_markets": {
+        "over_under_2_5": 58,
+        "btts": 45
+      }
+    },
+    {
+      "id": "67ae5751c401a98409b8566ae4897069",
+      "teams": {
+        "home": "Colombia",
+        "away": "Portugal"
+      },
+      "kickoff": "2026-06-27T23:30:00Z",
+      "probs_1x2": {
+        "home": 27.6,
+        "draw": 28.9,
+        "away": 43.5
+      },
+      "top_scores": [
+        {
+          "score": "1:1",
+          "pct": 13.7
+        },
+        {
+          "score": "0:1",
+          "pct": 11
+        },
+        {
+          "score": "0:0",
+          "pct": 9.6
+        },
+        {
+          "score": "1:2",
+          "pct": 8.8
+        },
+        {
+          "score": "0:2",
+          "pct": 8.3
+        }
+      ],
+      "goal_markets": {
+        "over_under_2_5": 44.4,
+        "btts": 50.1
+      }
+    },
+    {
+      "id": "13eab94a136b9c264ba974cf437a5f71",
+      "teams": {
+        "home": "DR Congo",
+        "away": "Uzbekistan"
+      },
+      "kickoff": "2026-06-27T23:30:00Z",
+      "probs_1x2": {
+        "home": 37.7,
+        "draw": 30,
+        "away": 32.3
+      },
+      "top_scores": [
+        {
+          "score": "1:1",
+          "pct": 14.2
+        },
+        {
+          "score": "1:0",
+          "pct": 10.7
+        },
+        {
+          "score": "0:0",
+          "pct": 10.6
+        },
+        {
+          "score": "0:1",
+          "pct": 9.6
+        },
+        {
+          "score": "2:1",
+          "pct": 8.1
+        }
+      ],
+      "goal_markets": {
+        "over_under_2_5": 41.8,
+        "btts": 48.8
+      }
+    },
+    {
+      "id": "8756200e539155e571557c4f2e0d7f05",
+      "teams": {
+        "home": "Algeria",
+        "away": "Austria"
+      },
+      "kickoff": "2026-06-28T02:00:00Z",
+      "probs_1x2": {
+        "home": 26.7,
+        "draw": 29.1,
+        "away": 44.2
+      },
+      "top_scores": [
+        {
+          "score": "1:1",
+          "pct": 13.8
+        },
+        {
+          "score": "0:1",
+          "pct": 11.5
+        },
+        {
+          "score": "0:0",
+          "pct": 10.1
+        },
+        {
+          "score": "1:2",
+          "pct": 8.8
+        },
+        {
+          "score": "0:2",
+          "pct": 8.7
+        }
+      ],
+      "goal_markets": {
+        "over_under_2_5": 43.1,
+        "btts": 48.9
+      }
+    },
+    {
+      "id": "54697f453437ab26276d773be1d72e9b",
+      "teams": {
+        "home": "Jordan",
+        "away": "Argentina"
+      },
+      "kickoff": "2026-06-28T02:00:00Z",
+      "probs_1x2": {
+        "home": 7.1,
+        "draw": 15.8,
+        "away": 77.1
+      },
+      "top_scores": [
+        {
+          "score": "0:2",
+          "pct": 13.4
+        },
+        {
+          "score": "0:3",
+          "pct": 11.2
+        },
+        {
+          "score": "0:1",
+          "pct": 10.2
+        },
+        {
+          "score": "1:2",
+          "pct": 8.7
+        },
+        {
+          "score": "1:1",
+          "pct": 7.6
+        }
+      ],
+      "goal_markets": {
+        "over_under_2_5": 60.8,
+        "btts": 44.4
+      }
+    }
+  ]
+}
