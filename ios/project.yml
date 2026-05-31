@@ -11,9 +11,11 @@ packages:
 settings:
   base:
     SWIFT_VERSION: "5.0"
-    CODE_SIGNING_ALLOWED: "NO"
     MARKETING_VERSION: "1.0"
     CURRENT_PROJECT_VERSION: "1"
+  configs:
+    Debug:
+      CODE_SIGNING_ALLOWED: "NO"
 targets:
   WorldCup2026Odds:
     type: application
@@ -27,8 +29,9 @@ targets:
         UILaunchScreen: {}
         UISupportedInterfaceOrientations:
           - UIInterfaceOrientationPortrait
-        GADApplicationIdentifier: ca-app-pub-3940256099942544~1458002511
+        GADApplicationIdentifier: ca-app-pub-6563643868702361~1733904595
         NSUserTrackingUsageDescription: "We use your data to show more relevant ads. This keeps the app free."
+        ITSAppUsesNonExemptEncryption: false
         SKAdNetworkItems:
           - SKAdNetworkIdentifier: cstr6suwn9.skadnetwork
           - SKAdNetworkIdentifier: 4fzdc2evr5.skadnetwork
@@ -36,6 +39,14 @@ targets:
       base:
         PRODUCT_BUNDLE_IDENTIFIER: com.lawoflarge.worldcup2026odds
         ASSETCATALOG_COMPILER_APPICON_NAME: AppIcon
+        TARGETED_DEVICE_FAMILY: "1"
+      configs:
+        Release:
+          CODE_SIGNING_ALLOWED: "YES"
+          CODE_SIGN_STYLE: Manual
+          DEVELOPMENT_TEAM: R95M36AU2X
+          CODE_SIGN_IDENTITY: "Apple Distribution"
+          PROVISIONING_PROFILE_SPECIFIER: "WorldCup2026Odds ios_app_store 1780260189"
     dependencies:
       - package: GoogleMobileAds
         product: GoogleMobileAds
@@ -51,3 +62,4 @@ targets:
     settings:
       base:
         PRODUCT_BUNDLE_IDENTIFIER: com.lawoflarge.worldcup2026oddsTests
+        CODE_SIGNING_ALLOWED: "NO"
