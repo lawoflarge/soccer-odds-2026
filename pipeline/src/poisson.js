@@ -1,13 +1,11 @@
 // pipeline/src/poisson.js
 
-export function factorial(n) {
-  let r = 1;
-  for (let i = 2; i <= n; i++) r *= i;
-  return r;
-}
-
 export function poissonPmf(k, lambda) {
-  return (Math.exp(-lambda) * lambda ** k) / factorial(k);
+  // Log-space accumulation avoids factorial overflow for large k
+  // and stays correct at lambda=0 (returns 1 for k=0, 0 otherwise).
+  let logP = -lambda;
+  for (let i = 1; i <= k; i++) logP += Math.log(lambda) - Math.log(i);
+  return Math.exp(logP);
 }
 
 // P(N >= threshold) for N ~ Poisson(lambda)
@@ -85,6 +83,8 @@ export function solveMu(targetOver, threshold = 3) {
 // Step 2: bisection on supremacy s=lambdaHome-lambdaAway to match home-win prob.
 export function solveLambdas(target1x2, targetOver, rho = -0.08) {
   const mu = solveMu(targetOver);
+  if (mu <= 0.1)
+    throw new Error(`solveLambdas: total goal expectation mu=${mu.toFixed(3)} too low to split`);
   let lo = -mu + 0.05,
     hi = mu - 0.05;
   for (let i = 0; i < 60; i++) {

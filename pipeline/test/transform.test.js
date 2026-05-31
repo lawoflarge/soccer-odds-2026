@@ -31,3 +31,8 @@ test("transformMatch returns null when h2h or totals data is missing", () => {
   const broken = { ...sample, bookmakers: [] };
   assert.equal(transformMatch(broken), null);
 });
+
+test("transformMatch returns null when commence_time is missing", () => {
+  const noKickoff = { ...sample, commence_time: undefined };
+  assert.equal(transformMatch(noKickoff), null);
+});
