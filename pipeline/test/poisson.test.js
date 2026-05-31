@@ -31,3 +31,15 @@ test("marketsFromGrid: stronger home rate => higher home win prob", () => {
   assert.ok(m.over > 0 && m.over < 1, `over was ${m.over}`);
   assert.ok(m.btts > 0 && m.btts < 1, `btts was ${m.btts}`);
 });
+
+import { solveLambdas } from "../src/poisson.js";
+
+test("solveLambdas reproduces the target market within tolerance", () => {
+  const target1x2 = { home: 0.55, draw: 0.26, away: 0.19 };
+  const targetOver = 0.52;
+  const { lambdaHome, lambdaAway } = solveLambdas(target1x2, targetOver);
+  const m = marketsFromGrid(scoreGrid(lambdaHome, lambdaAway));
+  assert.ok(close(m.home, target1x2.home, 0.02), `home ${m.home}`);
+  assert.ok(close(m.over, targetOver, 0.03), `over ${m.over}`);
+  assert.ok(lambdaHome > lambdaAway, "home rate should exceed away rate");
+});
