@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		1A88FB52694F4A5BAF2167A6 /* FavoriteStoreTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3F5621F9F425E2F66280DD2 /* FavoriteStoreTests.swift */; };
+		254485226718F352A46849AE /* GoogleMobileAds in Frameworks */ = {isa = PBXBuildFile; productRef = 53FD1F3E04A13BC3817DBAE3 /* GoogleMobileAds */; };
 		3A2A839AE9A72697F4786964 /* AdBannerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CA2FF48FB343FACFA5F1B14 /* AdBannerView.swift */; };
 		46CB6BB47E9F09AA3AD5299F /* Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03AE555071FB5EC1339A68A5 /* Theme.swift */; };
 		50EC19DB5A4F20A911219BAC /* sample-predictions.json in Resources */ = {isa = PBXBuildFile; fileRef = D4D79725E299C1DECF64E35C /* sample-predictions.json */; };
@@ -44,6 +45,7 @@
 /* Begin PBXFileReference section */
 		03AE555071FB5EC1339A68A5 /* Theme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Theme.swift; sourceTree = "<group>"; };
 		132B955427DDC858BEC32E57 /* AboutView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutView.swift; sourceTree = "<group>"; };
+		15A990D95957E35A4073DF04 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		1B178E27641CAA3E63543262 /* MatchRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MatchRow.swift; sourceTree = "<group>"; };
 		20EF740134C44D1F256B9D86 /* PredictionsService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PredictionsService.swift; sourceTree = "<group>"; };
 		280A83B170659DFB960E1A6E /* MatchDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MatchDetailView.swift; sourceTree = "<group>"; };
@@ -66,6 +68,17 @@
 		F4D711711B80968734DAFBCC /* FlagView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlagView.swift; sourceTree = "<group>"; };
 		F93B34657D9EAE8F3ED39DC8 /* Prediction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Prediction.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		4868F8914277A7A63AD670F5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				254485226718F352A46849AE /* GoogleMobileAds in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
 		02FF1A2E5641F67FE75C069C /* Models */ = {
@@ -99,6 +112,7 @@
 				F22C7445723D2531CA285B34 /* App.swift */,
 				6751C2597D55963B63EE3293 /* Assets.xcassets */,
 				31B0A7E0D55185AC35A5818D /* Config.swift */,
+				15A990D95957E35A4073DF04 /* Info.plist */,
 				02FF1A2E5641F67FE75C069C /* Models */,
 				B30DD5919823EE2DA8E2369C /* Resources */,
 				883D1696F4AB4BEA1DCEE254 /* Services */,
@@ -178,6 +192,7 @@
 			buildPhases = (
 				2CE93199610179A350F7422A /* Sources */,
 				6665264C4537F2328D88FF6A /* Resources */,
+				4868F8914277A7A63AD670F5 /* Frameworks */,
 			);
 			buildRules = (
 			);
@@ -185,6 +200,7 @@
 			);
 			name = WorldCup2026Odds;
 			packageProductDependencies = (
+				53FD1F3E04A13BC3817DBAE3 /* GoogleMobileAds */,
 			);
 			productName = WorldCup2026Odds;
 			productReference = 402AC0114CFDB54A09A9CDD9 /* WorldCup2026Odds.app */;
@@ -229,6 +245,9 @@
 			);
 			mainGroup = 267E1BA350812459AA6C1480;
 			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				39003E51BCBC196279F21252 /* XCRemoteSwiftPackageReference "swift-package-manager-google-mobile-ads" */,
+			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = 3ADDC2D37B53B8F6DBD5A9E5 /* Products */;
 			projectDirPath = "";
@@ -310,6 +329,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
+				INFOPLIST_FILE = WorldCup2026Odds/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -389,11 +409,6 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_KEY_CFBundleDisplayName = "World Cup 2026 Odds";
-				INFOPLIST_KEY_NSUserTrackingUsageDescription = "We use your data to show more relevant ads. This keeps the app free.";
-				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
-				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				MARKETING_VERSION = 1.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
@@ -412,6 +427,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
+				INFOPLIST_FILE = WorldCup2026Odds/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -485,11 +501,6 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_KEY_CFBundleDisplayName = "World Cup 2026 Odds";
-				INFOPLIST_KEY_NSUserTrackingUsageDescription = "We use your data to show more relevant ads. This keeps the app free.";
-				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
-				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				MARKETING_VERSION = 1.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
@@ -533,6 +544,25 @@
 			defaultConfigurationName = Debug;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		39003E51BCBC196279F21252 /* XCRemoteSwiftPackageReference "swift-package-manager-google-mobile-ads" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/googleads/swift-package-manager-google-mobile-ads.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 11.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		53FD1F3E04A13BC3817DBAE3 /* GoogleMobileAds */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 39003E51BCBC196279F21252 /* XCRemoteSwiftPackageReference "swift-package-manager-google-mobile-ads" */;
+			productName = GoogleMobileAds;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = A4A05A7A5011C5A0094786C0 /* Project object */;
 }

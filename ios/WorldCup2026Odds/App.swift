@@ -1,10 +1,13 @@
 import SwiftUI
 import AppTrackingTransparency
+import GoogleMobileAds
 
 @main
 struct WorldCup2026OddsApp: App {
     @StateObject private var service = PredictionsService()
     @StateObject private var favorites = FavoriteStore()
+
+    init() { GADMobileAds.sharedInstance().start(completionHandler: nil) }
 
     var body: some Scene {
         WindowGroup {
