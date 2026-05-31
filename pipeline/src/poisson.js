@@ -66,3 +66,35 @@ export function marketsFromGrid(grid) {
     }
   return { home, draw, away, over, btts };
 }
+
+// Find total goal expectation mu so that P(total>=3) == targetOver,
+// total ~ Poisson(mu). Bisection.
+export function solveMu(targetOver, threshold = 3) {
+  let lo = 0.2,
+    hi = 8;
+  for (let i = 0; i < 60; i++) {
+    const mid = (lo + hi) / 2;
+    if (poissonTail(mid, threshold) < targetOver) lo = mid;
+    else hi = mid;
+  }
+  return (lo + hi) / 2;
+}
+
+// Given consensus 1X2 + over-2.5, back out home/away scoring rates.
+// Step 1: mu = lambdaHome+lambdaAway from the totals market.
+// Step 2: bisection on supremacy s=lambdaHome-lambdaAway to match home-win prob.
+export function solveLambdas(target1x2, targetOver, rho = -0.08) {
+  const mu = solveMu(targetOver);
+  let lo = -mu + 0.05,
+    hi = mu - 0.05;
+  for (let i = 0; i < 60; i++) {
+    const s = (lo + hi) / 2;
+    const lh = (mu + s) / 2;
+    const la = (mu - s) / 2;
+    const m = marketsFromGrid(scoreGrid(lh, la, rho));
+    if (m.home < target1x2.home) lo = s;
+    else hi = s;
+  }
+  const s = (lo + hi) / 2;
+  return { lambdaHome: (mu + s) / 2, lambdaAway: (mu - s) / 2 };
+}
