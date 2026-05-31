@@ -61,7 +61,7 @@ Get a free key at <https://the-odds-api.com/>.
 ## Status
 
 - ✅ Data pipeline core — implemented, unit-tested, reviewed
-- ⏳ Live build + Vercel hosting + Actions cron — needs an Odds API key
+- ✅ Live feed — served at <https://world-cup-2026-odds.vercel.app/predictions.json> (CORS-enabled), refreshed every 6h by GitHub Actions
 - ⏳ iOS app — planned (`docs/superpowers/plans/`)
 
 ## License
