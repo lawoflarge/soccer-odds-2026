@@ -98,3 +98,17 @@ export function solveLambdas(target1x2, targetOver, rho = -0.08) {
   const s = (lo + hi) / 2;
   return { lambdaHome: (mu + s) / 2, lambdaAway: (mu - s) / 2 };
 }
+
+// Flatten a grid into the N most likely scorelines.
+// Returns [{ score: "2:1", pct: 9.1 }, ...] with pct rounded to 1 dp.
+export function topScores(grid, n = 5) {
+  const flat = [];
+  for (let x = 0; x < grid.length; x++)
+    for (let y = 0; y < grid[x].length; y++)
+      flat.push({ score: `${x}:${y}`, p: grid[x][y] });
+  flat.sort((a, b) => b.p - a.p);
+  return flat.slice(0, n).map((s) => ({
+    score: s.score,
+    pct: Math.round(s.p * 1000) / 10,
+  }));
+}

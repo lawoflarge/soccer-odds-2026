@@ -43,3 +43,13 @@ test("solveLambdas reproduces the target market within tolerance", () => {
   assert.ok(close(m.over, targetOver, 0.03), `over ${m.over}`);
   assert.ok(lambdaHome > lambdaAway, "home rate should exceed away rate");
 });
+
+import { topScores } from "../src/poisson.js";
+
+test("topScores returns N most likely scorelines, descending", () => {
+  const top = topScores(scoreGrid(1.6, 1.1), 5);
+  assert.equal(top.length, 5);
+  for (let i = 1; i < top.length; i++)
+    assert.ok(top[i - 1].pct >= top[i].pct, "must be sorted descending");
+  assert.match(top[0].score, /^\d+:\d+$/, "score formatted as H:A");
+});
