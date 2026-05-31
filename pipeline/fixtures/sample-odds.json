@@ -1,0 +1,48 @@
+{
+  "id": "evt_demo_001",
+  "commence_time": "2026-06-11T19:00:00Z",
+  "home_team": "Mexico",
+  "away_team": "Poland",
+  "bookmakers": [
+    {
+      "key": "book_a",
+      "markets": [
+        {
+          "key": "h2h",
+          "outcomes": [
+            { "name": "Mexico", "price": 1.95 },
+            { "name": "Draw", "price": 3.4 },
+            { "name": "Poland", "price": 4.2 }
+          ]
+        },
+        {
+          "key": "totals",
+          "outcomes": [
+            { "name": "Over", "point": 2.5, "price": 2.05 },
+            { "name": "Under", "point": 2.5, "price": 1.8 }
+          ]
+        }
+      ]
+    },
+    {
+      "key": "book_b",
+      "markets": [
+        {
+          "key": "h2h",
+          "outcomes": [
+            { "name": "Mexico", "price": 2.0 },
+            { "name": "Draw", "price": 3.3 },
+            { "name": "Poland", "price": 4.0 }
+          ]
+        },
+        {
+          "key": "totals",
+          "outcomes": [
+            { "name": "Over", "point": 2.5, "price": 2.0 },
+            { "name": "Under", "point": 2.5, "price": 1.85 }
+          ]
+        }
+      ]
+    }
+  ]
+}
