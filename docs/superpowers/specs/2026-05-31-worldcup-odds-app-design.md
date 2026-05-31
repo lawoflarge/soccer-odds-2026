@@ -100,6 +100,23 @@ SwiftUI, consistent with user's other iOS 26 apps (optional Liquid Glass styling
 
 **Data loading:** On launch, fetch `predictions.json` from Vercel once, cache locally, refresh on reopen. Works offline with last-cached data.
 
+### 5.1 Design quality & direction (must not look "AI slop")
+
+Hard requirement: a premium, native-feeling iOS app. Note this is **native SwiftUI** — web component MCPs (21st.dev, shadcn) target React/web and do **not** apply directly; premium iOS polish comes from Apple HIG + iOS 26 material + the installed design-intelligence skills. During implementation, invoke (in this order):
+- **`ui-ux-pro-max`** (SwiftUI stack) — establishes the type scale, color system, spacing, and layout direction up front.
+- **`ecc:liquid-glass-design`** — iOS 26 Liquid Glass material for surfaces/cards (the user's signature look, consistent with their other apps).
+- **`ecc:make-interfaces-feel-better`** + **`ecc:frontend-design-direction`** — motion, interaction states, microinteractions, polish pass.
+- **`banana-claude`** — app icon and visual assets (flag treatment, hero/empty-state art).
+
+Concrete craft bar (the difference between polished and generic):
+- Deliberate type scale (SF Pro / SF Rounded), one cohesive accent palette, generous whitespace, consistent corner radii.
+- **Custom 1X2 probability bars** — bespoke component, not a default `ProgressView`.
+- Proper flag rendering for all 48 nations.
+- Real loading / empty / error states (skeletons, not blank screens); subtle data-load motion; haptics on key taps.
+- Full dark mode; Dynamic Type support; respects reduced-motion.
+
+Verification: **screenshot every screen on the simulator before calling any UI work done** (user's standing rule — HTTP 200 / "compiles" is not visual verification).
+
 ## 6. App Store Compliance (critical path)
 
 Odds-adjacent apps get extra scrutiny. Required to pass review:
