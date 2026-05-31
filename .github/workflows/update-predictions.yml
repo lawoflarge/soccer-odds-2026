@@ -1,0 +1,33 @@
+name: Update predictions
+on:
+  schedule:
+    - cron: "0 */6 * * *" # every 6 hours (2 credits/run => ~240/month, under the 500 free tier)
+  workflow_dispatch: {}
+
+permissions:
+  contents: write
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+      - name: Build predictions
+        working-directory: pipeline
+        env:
+          ODDS_API_KEY: ${{ secrets.ODDS_API_KEY }}
+        run: npm run build
+      - name: Commit if changed
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          if ! git diff --quiet -- web/public/predictions.json; then
+            git add web/public/predictions.json
+            git commit -m "data: refresh predictions [skip ci]"
+            git push
+          else
+            echo "No change in predictions.json"
+          fi
