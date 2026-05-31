@@ -1,4 +1,4 @@
-# Worldcupp 2026 Odds
+# World Cup 2026 Odds
 
 Market-consensus match predictions for the 2026 World Cup — a free iOS app backed by a zero-cost data pipeline.
 
