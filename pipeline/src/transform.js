@@ -36,6 +36,7 @@ export function transformMatch(event) {
   const h2h = h2hBooks(event);
   const totals = totalsBooks(event);
   if (h2h.length === 0 || totals.length === 0) return null;
+  if (!event.commence_time) return null;
 
   const c = consensus1x2(h2h);
   const over = consensusOver(totals);

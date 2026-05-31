@@ -16,6 +16,8 @@ async function main() {
   }
 
   const events = await fetchWorldCupOdds(apiKey);
+  if (!Array.isArray(events))
+    throw new Error(`Unexpected Odds API response: ${JSON.stringify(events).slice(0, 200)}`);
   const matches = events.map(transformMatch).filter(Boolean);
   // Stable ordering by kickoff so diffs are minimal between runs.
   matches.sort((a, b) => a.kickoff.localeCompare(b.kickoff));
