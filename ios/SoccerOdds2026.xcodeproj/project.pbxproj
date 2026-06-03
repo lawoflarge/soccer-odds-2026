@@ -454,7 +454,7 @@
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.lawoflarge.worldcup2026odds;
-				PROVISIONING_PROFILE_SPECIFIER = "WorldCup2026Odds ios_app_store 1780260189";
+				PROVISIONING_PROFILE_SPECIFIER = "SoccerOdds2026 ios_app_store 1780498369";
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
