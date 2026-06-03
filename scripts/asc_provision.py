@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Register bundle ID + create/install an App Store provisioning profile for World Cup 2026 Odds."""
+"""Register bundle ID + create/install an App Store provisioning profile for Soccer Odds 2026."""
 import jwt as pyjwt, time, json, sys, base64, pathlib, urllib.request, urllib.error, urllib.parse
 
 KEY_ID="8XWLD2B2RQ"; ISSUER_ID="538cb0d4-b8c6-4bc7-8b59-75da5d2b9411"
