@@ -3,35 +3,36 @@ import jwt as pyjwt, time, json, sys, pathlib, urllib.request, urllib.error
 KEY_ID="REDACTED_ASC_KEY_ID"; ISSUER_ID="REDACTED_ASC_ISSUER_ID"
 KEY_PATH=pathlib.Path.home()/".appstoreconnect/private_keys/AuthKey_REDACTED_ASC_KEY_ID.p8"
 APP_ID="6775278722"
+NAME="Soccer Odds 2026"
 SUBTITLE="Match predictions & odds"
-PROMO="Free predictions for every World Cup 2026 match - win/draw probabilities, most likely scores and goal markets, from the betting-market consensus."
-KEYWORDS="world cup,2026,odds,prediction,football,soccer,score,kicktipp,tips,fixtures,probability,bracket"
-MARKETING_URL="https://world-cup-2026-odds.vercel.app"
-PRIVACY_URL="https://world-cup-2026-odds.vercel.app/privacy.html"
-SUPPORT_URL="https://world-cup-2026-odds.vercel.app/support.html"
-DESCRIPTION="""The smart way to predict the World Cup.
+PROMO="Free predictions for every match of the 2026 tournament - win/draw probabilities, most likely scores and goal markets, from the betting-market consensus."
+KEYWORDS="soccer,odds,2026,prediction,football,score,tournament,tips,fixtures,probability,bracket,kicktipp"
+MARKETING_URL="https://soccer-odds-2026.vercel.app"
+PRIVACY_URL="https://soccer-odds-2026.vercel.app/privacy.html"
+SUPPORT_URL="https://soccer-odds-2026.vercel.app/support.html"
+DESCRIPTION="""The smart way to predict the 2026 tournament.
 
-World Cup 2026 Odds shows you the betting-market consensus for every match of the tournament - so you can make sharper predictions in your office pool, with friends, or just to follow your favourite team.
+Soccer Odds 2026 shows you the betting-market consensus for every match - so you can make sharper predictions in your office pool, with friends, or just to follow your favourite team.
 
 WHAT YOU GET
 
 - Win / draw / win probabilities for all matches, derived from aggregated bookmaker odds
 - The most likely scoreline for each match, right on the home screen
 - Goal markets: over/under 2.5 goals and both-teams-to-score
-- Pick your favourite team and follow its predicted path through the tournament
+- Pick your favourite team and follow its predicted path
 - Clean, fast, and free
 
 HOW IT WORKS
 
 For every match we aggregate the odds from multiple bookmakers, remove the bookmaker margin, and turn them into fair probabilities and a statistical goal model. The result is the market consensus - what the betting market, in aggregate, expects to happen.
 
-UNOFFICIAL & FOR ENTERTAINMENT
+INDEPENDENT & FOR ENTERTAINMENT
 
-World Cup 2026 Odds is an independent, unofficial app. It is not affiliated with, endorsed by, or connected to FIFA. It offers no real-money gaming and accepts no bets - all information is for entertainment and informational purposes only. Predictions reflect the market and are not guaranteed.
+Soccer Odds 2026 is an independent app. It is not affiliated with, endorsed by, or connected to any football organisation or governing body. It offers no real-money gaming and accepts no bets - all information is for entertainment and informational purposes only. Predictions reflect the market and are not guaranteed.
 
 CONTACT
 Email: levin.schwab@gmx.de
-Privacy: https://world-cup-2026-odds.vercel.app/privacy.html
+Privacy: https://soccer-odds-2026.vercel.app/privacy.html
 """
 def jwtok():
     n=int(time.time())
@@ -54,7 +55,7 @@ try:
 except urllib.error.HTTPError as e: print("  WARN category:",e)
 locs=api("GET",f"/v1/appInfos/{iid}/appInfoLocalizations?limit=20")
 en=next((x for x in locs["data"] if x["attributes"]["locale"]=="en-US"),None)
-api("PATCH",f"/v1/appInfoLocalizations/{en['id']}",{"data":{"type":"appInfoLocalizations","id":en["id"],"attributes":{"subtitle":SUBTITLE,"privacyPolicyUrl":PRIVACY_URL}}})
+api("PATCH",f"/v1/appInfoLocalizations/{en['id']}",{"data":{"type":"appInfoLocalizations","id":en["id"],"attributes":{"name":NAME,"subtitle":SUBTITLE,"privacyPolicyUrl":PRIVACY_URL}}})
 print("  subtitle + privacy url set")
 vs=api("GET",f"/v1/apps/{APP_ID}/appStoreVersions?filter[platform]=IOS&limit=5")
 v=vs["data"][0]; vid=v["id"]; print("version",v["attributes"]["versionString"],vid)
