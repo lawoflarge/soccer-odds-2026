@@ -1,5 +1,5 @@
 import XCTest
-@testable import WorldCup2026Odds
+@testable import SoccerOdds2026
 
 final class PredictionDecodingTests: XCTestCase {
     private func fixtureData() throws -> Data {
