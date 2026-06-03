@@ -1,10 +1,10 @@
-# World Cup 2026 Odds
+# Soccer Odds 2026
 
-Market-consensus match predictions for the 2026 World Cup — a free iOS app backed by a zero-cost data pipeline.
+Market-consensus match predictions for the 2026 tournament — a free iOS app backed by a zero-cost data pipeline.
 
 For each match the app shows what the betting market expects: win/draw/win probabilities, the most likely scorelines, and goal markets (Over/Under 2.5, both teams to score) — derived from aggregated bookmaker odds. Built to help people make smarter predictions in their friends' prediction pools, and to follow how their favorite team is likely to perform.
 
-> **Unofficial.** Not affiliated with, endorsed by, or connected to FIFA. For entertainment and information only — no betting, no real-money gaming.
+> **Independent app.** Not affiliated with, endorsed by, or connected to any football organisation or governing body. For entertainment and information only — no betting, no real-money gaming.
 
 ## How it works
 
@@ -61,7 +61,7 @@ Get a free key at <https://the-odds-api.com/>.
 ## Status
 
 - ✅ Data pipeline core — implemented, unit-tested, reviewed
-- ✅ Live feed — served at <https://world-cup-2026-odds.vercel.app/predictions.json> (CORS-enabled), refreshed every 6h by GitHub Actions
+- ✅ Live feed — served at <https://soccer-odds-2026.vercel.app/predictions.json> (CORS-enabled), refreshed every 6h by GitHub Actions
 - ⏳ iOS app — planned (`docs/superpowers/plans/`)
 
 ## License
