@@ -1,4 +1,4 @@
-name: WorldCup2026Odds
+name: SoccerOdds2026
 options:
   bundleIdPrefix: com.lawoflarge
   deploymentTarget:
@@ -12,20 +12,20 @@ settings:
   base:
     SWIFT_VERSION: "5.0"
     MARKETING_VERSION: "1.0"
-    CURRENT_PROJECT_VERSION: "1"
+    CURRENT_PROJECT_VERSION: "2"
   configs:
     Debug:
       CODE_SIGNING_ALLOWED: "NO"
 targets:
-  WorldCup2026Odds:
+  SoccerOdds2026:
     type: application
     platform: iOS
     sources:
-      - path: WorldCup2026Odds
+      - path: SoccerOdds2026
     info:
-      path: WorldCup2026Odds/Info.plist
+      path: SoccerOdds2026/Info.plist
       properties:
-        CFBundleDisplayName: World Cup 2026 Odds
+        CFBundleDisplayName: Soccer Odds 2026
         UILaunchScreen: {}
         UISupportedInterfaceOrientations:
           - UIInterfaceOrientationPortrait
@@ -50,15 +50,15 @@ targets:
     dependencies:
       - package: GoogleMobileAds
         product: GoogleMobileAds
-  WorldCup2026OddsTests:
+  SoccerOdds2026Tests:
     type: bundle.unit-test
     platform: iOS
     sources:
-      - path: WorldCup2026OddsTests
-      - path: WorldCup2026Odds/Resources/sample-predictions.json
+      - path: SoccerOdds2026Tests
+      - path: SoccerOdds2026/Resources/sample-predictions.json
         buildPhase: resources
     dependencies:
-      - target: WorldCup2026Odds
+      - target: SoccerOdds2026
     settings:
       base:
         PRODUCT_BUNDLE_IDENTIFIER: com.lawoflarge.worldcup2026oddsTests

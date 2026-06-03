@@ -1,0 +1,573 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		04716530A879F57B8FF2E07F /* FavoriteStoreTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2CB77F6452F1B52A2275C7A /* FavoriteStoreTests.swift */; };
+		090A95D918912B6AE3FB9DE9 /* MyTeamView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F303D116E930E8C8D3E5E952 /* MyTeamView.swift */; };
+		24130C58D7ABAFD8A96509E3 /* MatchDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE9695D6877BBF66681F3C51 /* MatchDetailView.swift */; };
+		2922A3100621AD99FCA4CED6 /* AboutView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 076B507B2BADAFB8B916C90F /* AboutView.swift */; };
+		323C8ED3645C9894B904415F /* RootView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A578C72BB9008E339AAC2A59 /* RootView.swift */; };
+		357CD803B590AED9C270DED8 /* AdBannerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE04F9ECA29C2EF425FCDF24 /* AdBannerView.swift */; };
+		3945E7455A4EC04A41009653 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1DC5B743FF911CE172AFAD19 /* Assets.xcassets */; };
+		41E8BA9A6D9062901CB99FB5 /* PredictionsServiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 732DC682E91C33A304118BA6 /* PredictionsServiceTests.swift */; };
+		4D9BAEAEF9930539861830B2 /* ProbabilityBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0036AD59A536B21C82BA73D /* ProbabilityBar.swift */; };
+		678F53F055C5165A0D7F6138 /* Prediction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5642033C0A828278F124C07E /* Prediction.swift */; };
+		6B30B1D6AA7FA29526437567 /* sample-predictions.json in Resources */ = {isa = PBXBuildFile; fileRef = CCFD8F74505FFB4361E9A7D3 /* sample-predictions.json */; };
+		6BE9F092BA374C4000B0BB9C /* Config.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0FD98C995BFADDF0F0CA51F /* Config.swift */; };
+		82359E2E367706F647311892 /* Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA1AEBB76FBA40832EE43238 /* Theme.swift */; };
+		868B8CF8ED3383F706926E4C /* FixturesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5546523E3B0407C97967560F /* FixturesView.swift */; };
+		96FD4DDF978C4D83BDA6E417 /* PredictionsService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BEC38261F1A140D6770CA9A /* PredictionsService.swift */; };
+		992015AA5357FB73AD8CDACD /* FlagView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE4400CCE38784F43D157F41 /* FlagView.swift */; };
+		9EA61099F270EDEFB111803E /* App.swift in Sources */ = {isa = PBXBuildFile; fileRef = D73678F4151D7408E2E6EE42 /* App.swift */; };
+		A7EB5AFAA09A544ABCC18F66 /* GoogleMobileAds in Frameworks */ = {isa = PBXBuildFile; productRef = FF3AE00D5D50568169F57A87 /* GoogleMobileAds */; };
+		A8F580A7C4B5C5083AA559E9 /* teams.json in Resources */ = {isa = PBXBuildFile; fileRef = 252D33F14C15CB697C1B30D2 /* teams.json */; };
+		C6A30613192F778546EA4ECD /* PredictionDecodingTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3049C850410F8D301ACE08CA /* PredictionDecodingTests.swift */; };
+		CBE45FDE3A9A157DE5FFE0D4 /* sample-predictions.json in Resources */ = {isa = PBXBuildFile; fileRef = CCFD8F74505FFB4361E9A7D3 /* sample-predictions.json */; };
+		E268AC7FD83016CB67F748EB /* FavoriteStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F81B53C2611FDCD06DEA778 /* FavoriteStore.swift */; };
+		FA58E6A3DE8EBC24A5A28323 /* MatchRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00B1AE5E2315A37C1C74D6D8 /* MatchRow.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		0EDBE15CBACFED241843E754 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6CA35BDA31AB420C8E6823F6 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C9E6BBB32DE825D349A9097E;
+			remoteInfo = SoccerOdds2026;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		00B1AE5E2315A37C1C74D6D8 /* MatchRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MatchRow.swift; sourceTree = "<group>"; };
+		076B507B2BADAFB8B916C90F /* AboutView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutView.swift; sourceTree = "<group>"; };
+		1DC5B743FF911CE172AFAD19 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		252D33F14C15CB697C1B30D2 /* teams.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = teams.json; sourceTree = "<group>"; };
+		2BEC38261F1A140D6770CA9A /* PredictionsService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PredictionsService.swift; sourceTree = "<group>"; };
+		3049C850410F8D301ACE08CA /* PredictionDecodingTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PredictionDecodingTests.swift; sourceTree = "<group>"; };
+		5546523E3B0407C97967560F /* FixturesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FixturesView.swift; sourceTree = "<group>"; };
+		5642033C0A828278F124C07E /* Prediction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Prediction.swift; sourceTree = "<group>"; };
+		732DC682E91C33A304118BA6 /* PredictionsServiceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PredictionsServiceTests.swift; sourceTree = "<group>"; };
+		8AED1460D908C0CB365BB93F /* SoccerOdds2026.app */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.application; path = SoccerOdds2026.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		9F81B53C2611FDCD06DEA778 /* FavoriteStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteStore.swift; sourceTree = "<group>"; };
+		A0FD98C995BFADDF0F0CA51F /* Config.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Config.swift; sourceTree = "<group>"; };
+		A17D004D0F32027AE5F2CA90 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		A578C72BB9008E339AAC2A59 /* RootView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootView.swift; sourceTree = "<group>"; };
+		CCFD8F74505FFB4361E9A7D3 /* sample-predictions.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = "sample-predictions.json"; sourceTree = "<group>"; };
+		D0036AD59A536B21C82BA73D /* ProbabilityBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProbabilityBar.swift; sourceTree = "<group>"; };
+		D2CB77F6452F1B52A2275C7A /* FavoriteStoreTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteStoreTests.swift; sourceTree = "<group>"; };
+		D73678F4151D7408E2E6EE42 /* App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = App.swift; sourceTree = "<group>"; };
+		DE04F9ECA29C2EF425FCDF24 /* AdBannerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdBannerView.swift; sourceTree = "<group>"; };
+		DE4400CCE38784F43D157F41 /* FlagView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlagView.swift; sourceTree = "<group>"; };
+		E02C894C21CDA156BF89A0A4 /* SoccerOdds2026Tests.xctest */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.cfbundle; path = SoccerOdds2026Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		EA1AEBB76FBA40832EE43238 /* Theme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Theme.swift; sourceTree = "<group>"; };
+		F303D116E930E8C8D3E5E952 /* MyTeamView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyTeamView.swift; sourceTree = "<group>"; };
+		FE9695D6877BBF66681F3C51 /* MatchDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MatchDetailView.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		98A55FC9E1CC63F8A862B7BA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A7EB5AFAA09A544ABCC18F66 /* GoogleMobileAds in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0CCBBB0D77CDC34099DFA8F1 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				CCFD8F74505FFB4361E9A7D3 /* sample-predictions.json */,
+				252D33F14C15CB697C1B30D2 /* teams.json */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		0D713943B291C0A4B2A9BC43 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				076B507B2BADAFB8B916C90F /* AboutView.swift */,
+				5546523E3B0407C97967560F /* FixturesView.swift */,
+				FE9695D6877BBF66681F3C51 /* MatchDetailView.swift */,
+				00B1AE5E2315A37C1C74D6D8 /* MatchRow.swift */,
+				F303D116E930E8C8D3E5E952 /* MyTeamView.swift */,
+				A578C72BB9008E339AAC2A59 /* RootView.swift */,
+				41F6FA8A55A66C3880DA0075 /* Components */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		143C1E440D0A8FA5A011EC84 = {
+			isa = PBXGroup;
+			children = (
+				4B8E25E107A8630A227B695A /* SoccerOdds2026 */,
+				C236D2457008521FFEA98265 /* SoccerOdds2026Tests */,
+				8AB7C2424D17A89238C3C96D /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		41F6FA8A55A66C3880DA0075 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				DE04F9ECA29C2EF425FCDF24 /* AdBannerView.swift */,
+				DE4400CCE38784F43D157F41 /* FlagView.swift */,
+				D0036AD59A536B21C82BA73D /* ProbabilityBar.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		4B8E25E107A8630A227B695A /* SoccerOdds2026 */ = {
+			isa = PBXGroup;
+			children = (
+				D73678F4151D7408E2E6EE42 /* App.swift */,
+				1DC5B743FF911CE172AFAD19 /* Assets.xcassets */,
+				A0FD98C995BFADDF0F0CA51F /* Config.swift */,
+				A17D004D0F32027AE5F2CA90 /* Info.plist */,
+				5BE421196620D49CF4498DD8 /* Models */,
+				0CCBBB0D77CDC34099DFA8F1 /* Resources */,
+				CD9F01E9E306899AA923B4E8 /* Services */,
+				6C508AACFDE0D7FC3B782FEA /* Theme */,
+				0D713943B291C0A4B2A9BC43 /* Views */,
+			);
+			path = SoccerOdds2026;
+			sourceTree = "<group>";
+		};
+		5BE421196620D49CF4498DD8 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				5642033C0A828278F124C07E /* Prediction.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		6C508AACFDE0D7FC3B782FEA /* Theme */ = {
+			isa = PBXGroup;
+			children = (
+				EA1AEBB76FBA40832EE43238 /* Theme.swift */,
+			);
+			path = Theme;
+			sourceTree = "<group>";
+		};
+		8AB7C2424D17A89238C3C96D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8AED1460D908C0CB365BB93F /* SoccerOdds2026.app */,
+				E02C894C21CDA156BF89A0A4 /* SoccerOdds2026Tests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C236D2457008521FFEA98265 /* SoccerOdds2026Tests */ = {
+			isa = PBXGroup;
+			children = (
+				D2CB77F6452F1B52A2275C7A /* FavoriteStoreTests.swift */,
+				3049C850410F8D301ACE08CA /* PredictionDecodingTests.swift */,
+				732DC682E91C33A304118BA6 /* PredictionsServiceTests.swift */,
+			);
+			path = SoccerOdds2026Tests;
+			sourceTree = "<group>";
+		};
+		CD9F01E9E306899AA923B4E8 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				9F81B53C2611FDCD06DEA778 /* FavoriteStore.swift */,
+				2BEC38261F1A140D6770CA9A /* PredictionsService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		C8CF9B5463524D4C79A67557 /* SoccerOdds2026Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9C9505E47DBC6F9514F128EF /* Build configuration list for PBXNativeTarget "SoccerOdds2026Tests" */;
+			buildPhases = (
+				81AF4D7FA9436DFEA8C88893 /* Sources */,
+				D4BEE751FBB060AD2CE074BE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A2F51A29DF548317A904DD97 /* PBXTargetDependency */,
+			);
+			name = SoccerOdds2026Tests;
+			packageProductDependencies = (
+			);
+			productName = SoccerOdds2026Tests;
+			productReference = E02C894C21CDA156BF89A0A4 /* SoccerOdds2026Tests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		C9E6BBB32DE825D349A9097E /* SoccerOdds2026 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FFFE7C617E9ECBE9553E295D /* Build configuration list for PBXNativeTarget "SoccerOdds2026" */;
+			buildPhases = (
+				1F06ED727E211D7772A470F9 /* Sources */,
+				4A6FB026E4727EE16CA142FE /* Resources */,
+				98A55FC9E1CC63F8A862B7BA /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SoccerOdds2026;
+			packageProductDependencies = (
+				FF3AE00D5D50568169F57A87 /* GoogleMobileAds */,
+			);
+			productName = SoccerOdds2026;
+			productReference = 8AED1460D908C0CB365BB93F /* SoccerOdds2026.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		6CA35BDA31AB420C8E6823F6 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = YES;
+				LastUpgradeCheck = 1430;
+				TargetAttributes = {
+				};
+			};
+			buildConfigurationList = C2CF3CBF2A7E241C549D81EC /* Build configuration list for PBXProject "SoccerOdds2026" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				Base,
+				en,
+			);
+			mainGroup = 143C1E440D0A8FA5A011EC84;
+			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				2865C426F4904245F09D2FE2 /* XCRemoteSwiftPackageReference "swift-package-manager-google-mobile-ads" */,
+			);
+			preferredProjectObjectVersion = 77;
+			productRefGroup = 8AB7C2424D17A89238C3C96D /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C9E6BBB32DE825D349A9097E /* SoccerOdds2026 */,
+				C8CF9B5463524D4C79A67557 /* SoccerOdds2026Tests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		4A6FB026E4727EE16CA142FE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3945E7455A4EC04A41009653 /* Assets.xcassets in Resources */,
+				CBE45FDE3A9A157DE5FFE0D4 /* sample-predictions.json in Resources */,
+				A8F580A7C4B5C5083AA559E9 /* teams.json in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D4BEE751FBB060AD2CE074BE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6B30B1D6AA7FA29526437567 /* sample-predictions.json in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1F06ED727E211D7772A470F9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2922A3100621AD99FCA4CED6 /* AboutView.swift in Sources */,
+				357CD803B590AED9C270DED8 /* AdBannerView.swift in Sources */,
+				9EA61099F270EDEFB111803E /* App.swift in Sources */,
+				6BE9F092BA374C4000B0BB9C /* Config.swift in Sources */,
+				E268AC7FD83016CB67F748EB /* FavoriteStore.swift in Sources */,
+				868B8CF8ED3383F706926E4C /* FixturesView.swift in Sources */,
+				992015AA5357FB73AD8CDACD /* FlagView.swift in Sources */,
+				24130C58D7ABAFD8A96509E3 /* MatchDetailView.swift in Sources */,
+				FA58E6A3DE8EBC24A5A28323 /* MatchRow.swift in Sources */,
+				090A95D918912B6AE3FB9DE9 /* MyTeamView.swift in Sources */,
+				678F53F055C5165A0D7F6138 /* Prediction.swift in Sources */,
+				96FD4DDF978C4D83BDA6E417 /* PredictionsService.swift in Sources */,
+				4D9BAEAEF9930539861830B2 /* ProbabilityBar.swift in Sources */,
+				323C8ED3645C9894B904415F /* RootView.swift in Sources */,
+				82359E2E367706F647311892 /* Theme.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		81AF4D7FA9436DFEA8C88893 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				04716530A879F57B8FF2E07F /* FavoriteStoreTests.swift in Sources */,
+				C6A30613192F778546EA4ECD /* PredictionDecodingTests.swift in Sources */,
+				41E8BA9A6D9062901CB99FB5 /* PredictionsServiceTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		A2F51A29DF548317A904DD97 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C9E6BBB32DE825D349A9097E /* SoccerOdds2026 */;
+			targetProxy = 0EDBE15CBACFED241843E754 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		3B9840A87E2F8B02D224EA96 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				INFOPLIST_FILE = SoccerOdds2026/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.lawoflarge.worldcup2026odds;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		507CC711CE9A4FAC78CD03DC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGNING_ALLOWED = NO;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.lawoflarge.worldcup2026oddsTests;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SoccerOdds2026.app/SoccerOdds2026";
+			};
+			name = Release;
+		};
+		70F430947072785FAAF662B7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGNING_ALLOWED = NO;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.lawoflarge.worldcup2026oddsTests;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SoccerOdds2026.app/SoccerOdds2026";
+			};
+			name = Debug;
+		};
+		AEA334CD224DDCC36A250FE8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_ALLOWED = NO;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 2;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					"DEBUG=1",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MARKETING_VERSION = 1.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		CFC2157B2FAD1D78F46B63C7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGNING_ALLOWED = YES;
+				CODE_SIGN_IDENTITY = "Apple Distribution";
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = R95M36AU2X;
+				INFOPLIST_FILE = SoccerOdds2026/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.lawoflarge.worldcup2026odds;
+				PROVISIONING_PROFILE_SPECIFIER = "WorldCup2026Odds ios_app_store 1780260189";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		E00D42E8C69D94EE1844F3A8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 2;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MARKETING_VERSION = 1.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		9C9505E47DBC6F9514F128EF /* Build configuration list for PBXNativeTarget "SoccerOdds2026Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				70F430947072785FAAF662B7 /* Debug */,
+				507CC711CE9A4FAC78CD03DC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		C2CF3CBF2A7E241C549D81EC /* Build configuration list for PBXProject "SoccerOdds2026" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AEA334CD224DDCC36A250FE8 /* Debug */,
+				E00D42E8C69D94EE1844F3A8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		FFFE7C617E9ECBE9553E295D /* Build configuration list for PBXNativeTarget "SoccerOdds2026" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3B9840A87E2F8B02D224EA96 /* Debug */,
+				CFC2157B2FAD1D78F46B63C7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		2865C426F4904245F09D2FE2 /* XCRemoteSwiftPackageReference "swift-package-manager-google-mobile-ads" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/googleads/swift-package-manager-google-mobile-ads.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 11.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		FF3AE00D5D50568169F57A87 /* GoogleMobileAds */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 2865C426F4904245F09D2FE2 /* XCRemoteSwiftPackageReference "swift-package-manager-google-mobile-ads" */;
+			productName = GoogleMobileAds;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = 6CA35BDA31AB420C8E6823F6 /* Project object */;
+}
