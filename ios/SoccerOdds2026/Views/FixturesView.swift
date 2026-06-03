@@ -58,7 +58,7 @@ struct FixturesView: View {
                     .background(Color(.systemGroupedBackground))
                 }
             }
-            .navigationTitle("World Cup 2026")
+            .navigationTitle("Soccer Odds 2026")
             .toolbar {
                 ToolbarItem(placement: .topBarTrailing) {
                     Picker("Filter", selection: $filter) {
