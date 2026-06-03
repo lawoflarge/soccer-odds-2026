@@ -7,7 +7,7 @@
   <key>signingStyle</key><string>manual</string>
   <key>signingCertificate</key><string>Apple Distribution</string>
   <key>provisioningProfiles</key><dict>
-    <key>com.lawoflarge.worldcup2026odds</key><string>WorldCup2026Odds ios_app_store 1780260189</string>
+    <key>com.lawoflarge.worldcup2026odds</key><string>SoccerOdds2026 ios_app_store 1780498369</string>
   </dict>
   <key>stripSwiftSymbols</key><true/>
   <key>uploadSymbols</key><true/>

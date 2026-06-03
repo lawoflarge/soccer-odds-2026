@@ -46,7 +46,7 @@ targets:
           CODE_SIGN_STYLE: Manual
           DEVELOPMENT_TEAM: R95M36AU2X
           CODE_SIGN_IDENTITY: "Apple Distribution"
-          PROVISIONING_PROFILE_SPECIFIER: "WorldCup2026Odds ios_app_store 1780260189"
+          PROVISIONING_PROFILE_SPECIFIER: "SoccerOdds2026 ios_app_store 1780498369"
     dependencies:
       - package: GoogleMobileAds
         product: GoogleMobileAds

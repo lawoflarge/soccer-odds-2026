@@ -4,7 +4,7 @@ import jwt as pyjwt, time, json, sys, base64, pathlib, urllib.request, urllib.er
 
 KEY_ID="8XWLD2B2RQ"; ISSUER_ID="538cb0d4-b8c6-4bc7-8b59-75da5d2b9411"
 KEY_PATH=pathlib.Path.home()/".appstoreconnect/private_keys/AuthKey_8XWLD2B2RQ.p8"
-TEAM_ID="R95M36AU2X"; BUNDLE_ID="com.lawoflarge.worldcup2026odds"; BUNDLE_NAME="WorldCup2026Odds"
+TEAM_ID="R95M36AU2X"; BUNDLE_ID="com.lawoflarge.worldcup2026odds"; BUNDLE_NAME="SoccerOdds2026"
 CERT_SHA="40E10E788FF7B1A9CD97319E260DFE1E1E886E89"
 PROFILES_DIR=pathlib.Path.home()/"Library/MobileDevice/Provisioning Profiles"
 TS=int(time.time())
@@ -55,7 +55,7 @@ def install(p):
 
 print("== bundle id =="); bres=ensure_bundle()
 print("== cert =="); cres=pick_cert()
-print("== profile =="); name=f"WorldCup2026Odds ios_app_store {TS}"
+print("== profile =="); name=f"SoccerOdds2026 ios_app_store {TS}"
 p=make_profile(name,bres,cres); install(p)
 print("\nPROFILE_NAME="+name)
 print("CERT_SHA="+CERT_SHA)
