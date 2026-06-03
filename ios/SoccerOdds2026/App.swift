@@ -3,7 +3,7 @@ import AppTrackingTransparency
 import GoogleMobileAds
 
 @main
-struct WorldCup2026OddsApp: App {
+struct SoccerOdds2026App: App {
     @StateObject private var service = PredictionsService()
     @StateObject private var favorites = FavoriteStore()
 
