@@ -1,5 +1,5 @@
 {
-  "updated": "2026-06-06T08:31:42.692Z",
+  "updated": "2026-06-06T13:39:31.067Z",
   "count": 72,
   "matches": [
     {
@@ -10,14 +10,14 @@
       },
       "kickoff": "2026-06-11T19:00:00Z",
       "probs_1x2": {
-        "home": 66.8,
-        "draw": 22.6,
-        "away": 10.6
+        "home": 67,
+        "draw": 22.5,
+        "away": 10.5
       },
       "top_scores": [
         {
           "score": "1:0",
-          "pct": 14.9
+          "pct": 15
         },
         {
           "score": "2:0",
@@ -33,12 +33,12 @@
         },
         {
           "score": "3:0",
-          "pct": 9.1
+          "pct": 9.2
         }
       ],
       "goal_markets": {
-        "over_under_2_5": 45,
-        "btts": 39.3
+        "over_under_2_5": 44.9,
+        "btts": 39
       }
     },
     {
@@ -64,7 +64,7 @@
         },
         {
           "score": "1:0",
-          "pct": 10
+          "pct": 10.1
         },
         {
           "score": "0:1",
@@ -76,7 +76,7 @@
         }
       ],
       "goal_markets": {
-        "over_under_2_5": 42.5,
+        "over_under_2_5": 42.4,
         "btts": 49.4
       }
     },
@@ -88,8 +88,8 @@
       },
       "kickoff": "2026-06-12T19:00:00Z",
       "probs_1x2": {
-        "home": 52.6,
-        "draw": 27.5,
+        "home": 52.5,
+        "draw": 27.6,
         "away": 19.9
       },
       "top_scores": [
@@ -99,7 +99,7 @@
         },
         {
           "score": "1:1",
-          "pct": 12.9
+          "pct": 13
         },
         {
           "score": "2:0",
@@ -115,7 +115,7 @@
         }
       ],
       "goal_markets": {
-        "over_under_2_5": 43.2,
+        "over_under_2_5": 43.1,
         "btts": 46.3
       }
     },
@@ -127,9 +127,9 @@
       },
       "kickoff": "2026-06-13T01:00:00Z",
       "probs_1x2": {
-        "home": 48,
+        "home": 48.1,
         "draw": 28.8,
-        "away": 23.2
+        "away": 23.1
       },
       "top_scores": [
         {
@@ -146,7 +146,7 @@
         },
         {
           "score": "2:0",
-          "pct": 9.7
+          "pct": 9.8
         },
         {
           "score": "2:1",
@@ -166,18 +166,18 @@
       },
       "kickoff": "2026-06-13T19:00:00Z",
       "probs_1x2": {
-        "home": 7.5,
-        "draw": 17,
-        "away": 75.4
+        "home": 7.6,
+        "draw": 17.1,
+        "away": 75.3
       },
       "top_scores": [
         {
           "score": "0:2",
-          "pct": 14.1
+          "pct": 14
         },
         {
           "score": "0:1",
-          "pct": 11.4
+          "pct": 11.3
         },
         {
           "score": "0:3",
@@ -194,7 +194,7 @@
       ],
       "goal_markets": {
         "over_under_2_5": 57.2,
-        "btts": 42.8
+        "btts": 42.9
       }
     },
     {
@@ -206,7 +206,7 @@
       "kickoff": "2026-06-13T22:00:00Z",
       "probs_1x2": {
         "home": 59,
-        "draw": 24.8,
+        "draw": 24.9,
         "away": 16.2
       },
       "top_scores": [
@@ -233,7 +233,7 @@
       ],
       "goal_markets": {
         "over_under_2_5": 47.7,
-        "btts": 47.1
+        "btts": 47.2
       }
     },
     {
@@ -271,8 +271,8 @@
         }
       ],
       "goal_markets": {
-        "over_under_2_5": 50.1,
-        "btts": 47.4
+        "over_under_2_5": 50,
+        "btts": 47.3
       }
     },
     {
@@ -283,8 +283,8 @@
       },
       "kickoff": "2026-06-14T04:00:00Z",
       "probs_1x2": {
-        "home": 20.3,
-        "draw": 26.6,
+        "home": 20.2,
+        "draw": 26.5,
         "away": 53.2
       },
       "top_scores": [
@@ -310,7 +310,7 @@
         }
       ],
       "goal_markets": {
-        "over_under_2_5": 47,
+        "over_under_2_5": 46.9,
         "btts": 49.3
       }
     },
@@ -329,11 +329,11 @@
       "top_scores": [
         {
           "score": "3:0",
-          "pct": 12.9
+          "pct": 12.8
         },
         {
           "score": "4:0",
-          "pct": 12.3
+          "pct": 12.2
         },
         {
           "score": "2:0",
@@ -345,7 +345,7 @@
         },
         {
           "score": "3:1",
-          "pct": 6.1
+          "pct": 6.2
         }
       ],
       "goal_markets": {
@@ -362,7 +362,7 @@
       "kickoff": "2026-06-14T20:00:00Z",
       "probs_1x2": {
         "home": 48.2,
-        "draw": 26.9,
+        "draw": 27,
         "away": 24.9
       },
       "top_scores": [
@@ -388,8 +388,8 @@
         }
       ],
       "goal_markets": {
-        "over_under_2_5": 49.8,
-        "btts": 53.5
+        "over_under_2_5": 49.7,
+        "btts": 53.4
       }
     },
     {
@@ -400,8 +400,8 @@
       },
       "kickoff": "2026-06-14T23:00:00Z",
       "probs_1x2": {
-        "home": 26.2,
-        "draw": 32.1,
+        "home": 26.1,
+        "draw": 32,
         "away": 41.8
       },
       "top_scores": [
@@ -532,7 +532,7 @@
         },
         {
           "score": "2:0",
-          "pct": 11.1
+          "pct": 11.2
         },
         {
           "score": "2:1",
@@ -544,8 +544,8 @@
         }
       ],
       "goal_markets": {
-        "over_under_2_5": 48.5,
-        "btts": 48.9
+        "over_under_2_5": 48.4,
+        "btts": 48.7
       }
     },
     {
@@ -556,9 +556,9 @@
       },
       "kickoff": "2026-06-15T22:00:00Z",
       "probs_1x2": {
-        "home": 13.4,
+        "home": 13.5,
         "draw": 22.9,
-        "away": 63.7
+        "away": 63.6
       },
       "top_scores": [
         {
@@ -567,7 +567,7 @@
         },
         {
           "score": "0:1",
-          "pct": 12.3
+          "pct": 12.4
         },
         {
           "score": "1:1",
@@ -583,8 +583,8 @@
         }
       ],
       "goal_markets": {
-        "over_under_2_5": 50.1,
-        "btts": 46.4
+        "over_under_2_5": 49.9,
+        "btts": 46.3
       }
     },
     {
@@ -645,11 +645,11 @@
         },
         {
           "score": "1:0",
-          "pct": 12.2
+          "pct": 12.3
         },
         {
           "score": "1:1",
-          "pct": 10.4
+          "pct": 10.5
         },
         {
           "score": "2:1",
@@ -661,8 +661,8 @@
         }
       ],
       "goal_markets": {
-        "over_under_2_5": 51.1,
-        "btts": 46
+        "over_under_2_5": 51,
+        "btts": 45.8
       }
     },
     {
@@ -673,9 +673,9 @@
       },
       "kickoff": "2026-06-16T22:00:00Z",
       "probs_1x2": {
-        "home": 7.3,
-        "draw": 16.2,
-        "away": 76.5
+        "home": 7.1,
+        "draw": 16,
+        "away": 76.9
       },
       "top_scores": [
         {
@@ -684,24 +684,24 @@
         },
         {
           "score": "0:3",
-          "pct": 11
+          "pct": 11.1
         },
         {
           "score": "0:1",
-          "pct": 10.4
+          "pct": 10.3
         },
         {
           "score": "1:2",
-          "pct": 8.8
+          "pct": 8.7
         },
         {
           "score": "1:1",
-          "pct": 7.7
+          "pct": 7.6
         }
       ],
       "goal_markets": {
-        "over_under_2_5": 60.2,
-        "btts": 44.5
+        "over_under_2_5": 60.5,
+        "btts": 44.3
       }
     },
     {
@@ -723,7 +723,7 @@
         },
         {
           "score": "1:0",
-          "pct": 12.9
+          "pct": 13
         },
         {
           "score": "1:1",
@@ -739,7 +739,7 @@
         }
       ],
       "goal_markets": {
-        "over_under_2_5": 50.4,
+        "over_under_2_5": 50.3,
         "btts": 43.2
       }
     },
@@ -751,9 +751,9 @@
       },
       "kickoff": "2026-06-17T04:00:00Z",
       "probs_1x2": {
-        "home": 72.2,
-        "draw": 18.3,
-        "away": 9.5
+        "home": 72.4,
+        "draw": 18.2,
+        "away": 9.4
       },
       "top_scores": [
         {
@@ -766,7 +766,7 @@
         },
         {
           "score": "3:0",
-          "pct": 9.8
+          "pct": 9.9
         },
         {
           "score": "2:1",
@@ -778,8 +778,8 @@
         }
       ],
       "goal_markets": {
-        "over_under_2_5": 58.7,
-        "btts": 47.5
+        "over_under_2_5": 58.8,
+        "btts": 47.4
       }
     },
     {
@@ -790,9 +790,9 @@
       },
       "kickoff": "2026-06-17T17:00:00Z",
       "probs_1x2": {
-        "home": 74.8,
+        "home": 74.7,
         "draw": 17.3,
-        "away": 7.9
+        "away": 8
       },
       "top_scores": [
         {
@@ -801,11 +801,11 @@
         },
         {
           "score": "1:0",
-          "pct": 11.1
+          "pct": 11
         },
         {
           "score": "3:0",
-          "pct": 10.8
+          "pct": 10.7
         },
         {
           "score": "2:1",
@@ -818,7 +818,7 @@
       ],
       "goal_markets": {
         "over_under_2_5": 57.7,
-        "btts": 44
+        "btts": 44.1
       }
     },
     {
@@ -870,7 +870,7 @@
       "probs_1x2": {
         "home": 46.7,
         "draw": 28.7,
-        "away": 24.6
+        "away": 24.7
       },
       "top_scores": [
         {
@@ -908,17 +908,17 @@
       "kickoff": "2026-06-18T02:00:00Z",
       "probs_1x2": {
         "home": 11.8,
-        "draw": 22,
+        "draw": 22.1,
         "away": 66.1
       },
       "top_scores": [
         {
           "score": "0:2",
-          "pct": 13.3
+          "pct": 13.4
         },
         {
           "score": "0:1",
-          "pct": 12.8
+          "pct": 12.9
         },
         {
           "score": "1:1",
@@ -934,8 +934,8 @@
         }
       ],
       "goal_markets": {
-        "over_under_2_5": 49.8,
-        "btts": 44.4
+        "over_under_2_5": 49.6,
+        "btts": 44.2
       }
     },
     {
@@ -985,7 +985,7 @@
       },
       "kickoff": "2026-06-18T19:00:00Z",
       "probs_1x2": {
-        "home": 59.7,
+        "home": 59.8,
         "draw": 24.7,
         "away": 15.6
       },
@@ -1031,7 +1031,7 @@
       "top_scores": [
         {
           "score": "2:0",
-          "pct": 15.3
+          "pct": 15.4
         },
         {
           "score": "1:0",
@@ -1052,7 +1052,7 @@
       ],
       "goal_markets": {
         "over_under_2_5": 48.3,
-        "btts": 38.4
+        "btts": 38.3
       }
     },
     {
@@ -1064,8 +1064,8 @@
       "kickoff": "2026-06-19T01:00:00Z",
       "probs_1x2": {
         "home": 51.9,
-        "draw": 27.8,
-        "away": 20.4
+        "draw": 27.7,
+        "away": 20.3
       },
       "top_scores": [
         {
@@ -1074,11 +1074,11 @@
         },
         {
           "score": "1:0",
-          "pct": 12.9
+          "pct": 13
         },
         {
           "score": "2:0",
-          "pct": 10.6
+          "pct": 10.7
         },
         {
           "score": "0:0",
@@ -1141,7 +1141,7 @@
       },
       "kickoff": "2026-06-19T22:00:00Z",
       "probs_1x2": {
-        "home": 23.5,
+        "home": 23.4,
         "draw": 29.1,
         "away": 47.5
       },
@@ -1180,14 +1180,14 @@
       },
       "kickoff": "2026-06-20T01:00:00Z",
       "probs_1x2": {
-        "home": 88.7,
-        "draw": 8.5,
+        "home": 88.6,
+        "draw": 8.6,
         "away": 2.8
       },
       "top_scores": [
         {
           "score": "3:0",
-          "pct": 13.2
+          "pct": 13.1
         },
         {
           "score": "2:0",
@@ -1195,7 +1195,7 @@
         },
         {
           "score": "4:0",
-          "pct": 10.9
+          "pct": 10.8
         },
         {
           "score": "5:0",
@@ -1208,7 +1208,7 @@
       ],
       "goal_markets": {
         "over_under_2_5": 73.5,
-        "btts": 39.6
+        "btts": 39.8
       }
     },
     {
@@ -1258,7 +1258,7 @@
       },
       "kickoff": "2026-06-20T17:00:00Z",
       "probs_1x2": {
-        "home": 57.7,
+        "home": 57.6,
         "draw": 24.9,
         "away": 17.5
       },
@@ -1286,7 +1286,7 @@
       ],
       "goal_markets": {
         "over_under_2_5": 49.6,
-        "btts": 49.5
+        "btts": 49.6
       }
     },
     {
@@ -1297,9 +1297,9 @@
       },
       "kickoff": "2026-06-20T20:00:00Z",
       "probs_1x2": {
-        "home": 61.4,
+        "home": 61.5,
         "draw": 23.1,
-        "away": 15.5
+        "away": 15.4
       },
       "top_scores": [
         {
@@ -1336,7 +1336,7 @@
       },
       "kickoff": "2026-06-21T00:00:00Z",
       "probs_1x2": {
-        "home": 78.8,
+        "home": 78.9,
         "draw": 15.3,
         "away": 5.8
       },
@@ -1347,11 +1347,11 @@
         },
         {
           "score": "3:0",
-          "pct": 12.2
+          "pct": 12.3
         },
         {
           "score": "1:0",
-          "pct": 11.6
+          "pct": 11.7
         },
         {
           "score": "2:1",
@@ -1414,8 +1414,8 @@
       },
       "kickoff": "2026-06-21T16:00:00Z",
       "probs_1x2": {
-        "home": 85.6,
-        "draw": 11.1,
+        "home": 85.5,
+        "draw": 11.2,
         "away": 3.3
       },
       "top_scores": [
@@ -1453,9 +1453,9 @@
       },
       "kickoff": "2026-06-21T19:00:00Z",
       "probs_1x2": {
-        "home": 67.4,
+        "home": 67.3,
         "draw": 21.4,
-        "away": 11.2
+        "away": 11.3
       },
       "top_scores": [
         {
@@ -1481,7 +1481,7 @@
       ],
       "goal_markets": {
         "over_under_2_5": 50.9,
-        "btts": 44.4
+        "btts": 44.5
       }
     },
     {
@@ -1492,7 +1492,7 @@
       },
       "kickoff": "2026-06-21T22:00:00Z",
       "probs_1x2": {
-        "home": 65.5,
+        "home": 65.6,
         "draw": 22.3,
         "away": 12.2
       },
@@ -1531,7 +1531,7 @@
       },
       "kickoff": "2026-06-22T01:00:00Z",
       "probs_1x2": {
-        "home": 18.9,
+        "home": 19,
         "draw": 27.3,
         "away": 53.7
       },
@@ -1570,9 +1570,9 @@
       },
       "kickoff": "2026-06-22T17:00:00Z",
       "probs_1x2": {
-        "home": 57.1,
-        "draw": 25.3,
-        "away": 17.7
+        "home": 57.2,
+        "draw": 25.2,
+        "away": 17.6
       },
       "top_scores": [
         {
@@ -1585,7 +1585,7 @@
         },
         {
           "score": "2:0",
-          "pct": 11.1
+          "pct": 11.2
         },
         {
           "score": "2:1",
@@ -1637,7 +1637,7 @@
       ],
       "goal_markets": {
         "over_under_2_5": 61.5,
-        "btts": 34.2
+        "btts": 34.3
       }
     },
     {
@@ -1687,9 +1687,9 @@
       },
       "kickoff": "2026-06-23T03:00:00Z",
       "probs_1x2": {
-        "home": 16.4,
-        "draw": 24.6,
-        "away": 59
+        "home": 16.3,
+        "draw": 24.5,
+        "away": 59.1
       },
       "top_scores": [
         {
@@ -1714,7 +1714,7 @@
         }
       ],
       "goal_markets": {
-        "over_under_2_5": 49,
+        "over_under_2_5": 49.1,
         "btts": 48.3
       }
     },
@@ -1728,7 +1728,7 @@
       "probs_1x2": {
         "home": 75.8,
         "draw": 16.3,
-        "away": 7.8
+        "away": 7.9
       },
       "top_scores": [
         {
@@ -1745,7 +1745,7 @@
         },
         {
           "score": "2:1",
-          "pct": 8.9
+          "pct": 9
         },
         {
           "score": "1:1",
@@ -1780,7 +1780,7 @@
         },
         {
           "score": "3:0",
-          "pct": 9.9
+          "pct": 10
         },
         {
           "score": "2:1",
@@ -1805,7 +1805,7 @@
       "kickoff": "2026-06-23T23:00:00Z",
       "probs_1x2": {
         "home": 13.5,
-        "draw": 23.4,
+        "draw": 23.5,
         "away": 63
       },
       "top_scores": [
@@ -1882,8 +1882,8 @@
       },
       "kickoff": "2026-06-24T19:00:00Z",
       "probs_1x2": {
-        "home": 60.7,
-        "draw": 24.4,
+        "home": 60.6,
+        "draw": 24.5,
         "away": 14.9
       },
       "top_scores": [
@@ -1893,11 +1893,11 @@
         },
         {
           "score": "2:0",
-          "pct": 12.4
+          "pct": 12.3
         },
         {
           "score": "1:1",
-          "pct": 11.5
+          "pct": 11.6
         },
         {
           "score": "2:1",
@@ -1909,7 +1909,7 @@
         }
       ],
       "goal_markets": {
-        "over_under_2_5": 47.1,
+        "over_under_2_5": 47,
         "btts": 45.6
       }
     },
@@ -1921,9 +1921,9 @@
       },
       "kickoff": "2026-06-24T19:00:00Z",
       "probs_1x2": {
-        "home": 45.1,
+        "home": 45,
         "draw": 28.7,
-        "away": 26.2
+        "away": 26.3
       },
       "top_scores": [
         {
@@ -1960,9 +1960,9 @@
       },
       "kickoff": "2026-06-24T22:00:00Z",
       "probs_1x2": {
-        "home": 15.2,
+        "home": 15.3,
         "draw": 23.3,
-        "away": 61.5
+        "away": 61.4
       },
       "top_scores": [
         {
@@ -1988,7 +1988,7 @@
       ],
       "goal_markets": {
         "over_under_2_5": 51.8,
-        "btts": 49.3
+        "btts": 49.4
       }
     },
     {
