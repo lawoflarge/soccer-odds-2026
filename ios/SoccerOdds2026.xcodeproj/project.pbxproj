@@ -18,6 +18,7 @@
 		4D9BAEAEF9930539861830B2 /* ProbabilityBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0036AD59A536B21C82BA73D /* ProbabilityBar.swift */; };
 		678F53F055C5165A0D7F6138 /* Prediction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5642033C0A828278F124C07E /* Prediction.swift */; };
 		6B30B1D6AA7FA29526437567 /* sample-predictions.json in Resources */ = {isa = PBXBuildFile; fileRef = CCFD8F74505FFB4361E9A7D3 /* sample-predictions.json */; };
+		6B690F3A5F6C4529F84BA8DD /* GoogleUserMessagingPlatform in Frameworks */ = {isa = PBXBuildFile; productRef = 2C98D03613CDC9354BC078E6 /* GoogleUserMessagingPlatform */; };
 		6BE9F092BA374C4000B0BB9C /* Config.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0FD98C995BFADDF0F0CA51F /* Config.swift */; };
 		82359E2E367706F647311892 /* Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA1AEBB76FBA40832EE43238 /* Theme.swift */; };
 		868B8CF8ED3383F706926E4C /* FixturesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5546523E3B0407C97967560F /* FixturesView.swift */; };
@@ -29,6 +30,7 @@
 		C6A30613192F778546EA4ECD /* PredictionDecodingTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3049C850410F8D301ACE08CA /* PredictionDecodingTests.swift */; };
 		CBE45FDE3A9A157DE5FFE0D4 /* sample-predictions.json in Resources */ = {isa = PBXBuildFile; fileRef = CCFD8F74505FFB4361E9A7D3 /* sample-predictions.json */; };
 		E268AC7FD83016CB67F748EB /* FavoriteStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F81B53C2611FDCD06DEA778 /* FavoriteStore.swift */; };
+		EC5B428970E36B62848C3757 /* ConsentManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E9A9E1540434D69A37E0308 /* ConsentManager.swift */; };
 		FA58E6A3DE8EBC24A5A28323 /* MatchRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00B1AE5E2315A37C1C74D6D8 /* MatchRow.swift */; };
 /* End PBXBuildFile section */
 
@@ -52,6 +54,7 @@
 		5546523E3B0407C97967560F /* FixturesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FixturesView.swift; sourceTree = "<group>"; };
 		5642033C0A828278F124C07E /* Prediction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Prediction.swift; sourceTree = "<group>"; };
 		732DC682E91C33A304118BA6 /* PredictionsServiceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PredictionsServiceTests.swift; sourceTree = "<group>"; };
+		7E9A9E1540434D69A37E0308 /* ConsentManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConsentManager.swift; sourceTree = "<group>"; };
 		8AED1460D908C0CB365BB93F /* SoccerOdds2026.app */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.application; path = SoccerOdds2026.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9F81B53C2611FDCD06DEA778 /* FavoriteStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteStore.swift; sourceTree = "<group>"; };
 		A0FD98C995BFADDF0F0CA51F /* Config.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Config.swift; sourceTree = "<group>"; };
@@ -75,6 +78,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A7EB5AFAA09A544ABCC18F66 /* GoogleMobileAds in Frameworks */,
+				6B690F3A5F6C4529F84BA8DD /* GoogleUserMessagingPlatform in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -130,6 +134,7 @@
 				1DC5B743FF911CE172AFAD19 /* Assets.xcassets */,
 				A0FD98C995BFADDF0F0CA51F /* Config.swift */,
 				A17D004D0F32027AE5F2CA90 /* Info.plist */,
+				D2712550E869B7748B67863B /* Ads */,
 				5BE421196620D49CF4498DD8 /* Models */,
 				0CCBBB0D77CDC34099DFA8F1 /* Resources */,
 				CD9F01E9E306899AA923B4E8 /* Services */,
@@ -183,6 +188,14 @@
 			path = Services;
 			sourceTree = "<group>";
 		};
+		D2712550E869B7748B67863B /* Ads */ = {
+			isa = PBXGroup;
+			children = (
+				7E9A9E1540434D69A37E0308 /* ConsentManager.swift */,
+			);
+			path = Ads;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -220,6 +233,7 @@
 			name = SoccerOdds2026;
 			packageProductDependencies = (
 				FF3AE00D5D50568169F57A87 /* GoogleMobileAds */,
+				2C98D03613CDC9354BC078E6 /* GoogleUserMessagingPlatform */,
 			);
 			productName = SoccerOdds2026;
 			productReference = 8AED1460D908C0CB365BB93F /* SoccerOdds2026.app */;
@@ -247,6 +261,7 @@
 			minimizedProjectReferenceProxies = 1;
 			packageReferences = (
 				2865C426F4904245F09D2FE2 /* XCRemoteSwiftPackageReference "swift-package-manager-google-mobile-ads" */,
+				F65FC88EBD107E985E2EB2B9 /* XCRemoteSwiftPackageReference "swift-package-manager-google-user-messaging-platform" */,
 			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = 8AB7C2424D17A89238C3C96D /* Products */;
@@ -289,6 +304,7 @@
 				357CD803B590AED9C270DED8 /* AdBannerView.swift in Sources */,
 				9EA61099F270EDEFB111803E /* App.swift in Sources */,
 				6BE9F092BA374C4000B0BB9C /* Config.swift in Sources */,
+				EC5B428970E36B62848C3757 /* ConsentManager.swift in Sources */,
 				E268AC7FD83016CB67F748EB /* FavoriteStore.swift in Sources */,
 				868B8CF8ED3383F706926E4C /* FixturesView.swift in Sources */,
 				992015AA5357FB73AD8CDACD /* FlagView.swift in Sources */,
@@ -409,7 +425,7 @@
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				CODE_SIGNING_ALLOWED = NO;
 				COPY_PHASE_STRIP = NO;
-				CURRENT_PROJECT_VERSION = 2;
+				CURRENT_PROJECT_VERSION = 3;
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
@@ -428,7 +444,7 @@
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
-				MARKETING_VERSION = 1.0;
+				MARKETING_VERSION = 1.0.1;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -494,7 +510,7 @@
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
-				CURRENT_PROJECT_VERSION = 2;
+				CURRENT_PROJECT_VERSION = 3;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
@@ -507,7 +523,7 @@
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
-				MARKETING_VERSION = 1.0;
+				MARKETING_VERSION = 1.0.1;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -556,12 +572,25 @@
 			repositoryURL = "https://github.com/googleads/swift-package-manager-google-mobile-ads.git";
 			requirement = {
 				kind = upToNextMajorVersion;
-				minimumVersion = 11.0.0;
+				minimumVersion = 13.0.0;
+			};
+		};
+		F65FC88EBD107E985E2EB2B9 /* XCRemoteSwiftPackageReference "swift-package-manager-google-user-messaging-platform" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/googleads/swift-package-manager-google-user-messaging-platform.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 3.0.0;
 			};
 		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		2C98D03613CDC9354BC078E6 /* GoogleUserMessagingPlatform */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F65FC88EBD107E985E2EB2B9 /* XCRemoteSwiftPackageReference "swift-package-manager-google-user-messaging-platform" */;
+			productName = GoogleUserMessagingPlatform;
+		};
 		FF3AE00D5D50568169F57A87 /* GoogleMobileAds */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = 2865C426F4904245F09D2FE2 /* XCRemoteSwiftPackageReference "swift-package-manager-google-mobile-ads" */;

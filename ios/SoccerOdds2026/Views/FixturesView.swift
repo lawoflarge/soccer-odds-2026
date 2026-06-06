@@ -3,6 +3,7 @@ import SwiftUI
 struct FixturesView: View {
     @EnvironmentObject var service: PredictionsService
     @EnvironmentObject var favorites: FavoriteStore
+    @Environment(ConsentManager.self) private var consent
     @State private var filter: Filter = .all
     @State private var path: [Match] = []
 
@@ -68,7 +69,11 @@ struct FixturesView: View {
             }
             .navigationDestination(for: Match.self) { MatchDetailView(match: $0) }
             .refreshable { await service.refresh() }
-            .safeAreaInset(edge: .bottom) { AdBannerView().frame(height: 50) }
+            .safeAreaInset(edge: .bottom) {
+                if consent.canRequestAds {
+                    AdBannerView().frame(height: 50)
+                }
+            }
         }
         .task {
             await service.refresh()

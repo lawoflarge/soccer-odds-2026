@@ -7,12 +7,15 @@ options:
 packages:
   GoogleMobileAds:
     url: https://github.com/googleads/swift-package-manager-google-mobile-ads.git
-    from: "11.0.0"
+    from: "13.0.0"
+  GoogleUserMessagingPlatform:
+    url: https://github.com/googleads/swift-package-manager-google-user-messaging-platform.git
+    from: "3.0.0"
 settings:
   base:
     SWIFT_VERSION: "5.0"
-    MARKETING_VERSION: "1.0"
-    CURRENT_PROJECT_VERSION: "2"
+    MARKETING_VERSION: "1.0.1"
+    CURRENT_PROJECT_VERSION: "3"
   configs:
     Debug:
       CODE_SIGNING_ALLOWED: "NO"
@@ -26,6 +29,8 @@ targets:
       path: SoccerOdds2026/Info.plist
       properties:
         CFBundleDisplayName: Soccer Odds 2026
+        CFBundleShortVersionString: $(MARKETING_VERSION)
+        CFBundleVersion: $(CURRENT_PROJECT_VERSION)
         UILaunchScreen: {}
         UISupportedInterfaceOrientations:
           - UIInterfaceOrientationPortrait
@@ -50,6 +55,8 @@ targets:
     dependencies:
       - package: GoogleMobileAds
         product: GoogleMobileAds
+      - package: GoogleUserMessagingPlatform
+        product: GoogleUserMessagingPlatform
   SoccerOdds2026Tests:
     type: bundle.unit-test
     platform: iOS

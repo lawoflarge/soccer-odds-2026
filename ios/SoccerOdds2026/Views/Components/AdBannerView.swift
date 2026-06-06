@@ -1,15 +1,24 @@
 import SwiftUI
 import GoogleMobileAds
+import UIKit
 
+/// Adaptive AdMob banner. Test unit in Debug; the real release unit comes from Config.
 struct AdBannerView: UIViewRepresentable {
-    func makeUIView(context: Context) -> GADBannerView {
-        let banner = GADBannerView(adSize: GADAdSizeBanner)
-        banner.adUnitID = Config.bannerAdUnitID
-        banner.rootViewController = UIApplication.shared.connectedScenes
-            .compactMap { ($0 as? UIWindowScene)?.keyWindow?.rootViewController }
-            .first
-        banner.load(GADRequest())
+    static let testBannerUnit = "ca-app-pub-3940256099942544/2934735716"
+
+    func makeUIView(context: Context) -> BannerView {
+        #if DEBUG
+        let unit = Self.testBannerUnit
+        #else
+        let unit = Config.bannerAdUnitID
+        #endif
+        let width = UIScreen.main.bounds.width
+        let banner = BannerView(adSize: currentOrientationAnchoredAdaptiveBanner(width: width))
+        banner.adUnitID = unit
+        banner.rootViewController = ConsentManager.topViewController()
+        banner.load(Request())
         return banner
     }
-    func updateUIView(_ uiView: GADBannerView, context: Context) {}
+
+    func updateUIView(_ uiView: BannerView, context: Context) {}
 }
