@@ -1,10 +1,12 @@
 import Foundation
+import Observation
 
 @MainActor
-final class TrackRecordService: ObservableObject {
-    @Published private(set) var trackRecord: TrackRecord?
-    @Published private(set) var isLoading = false
-    @Published private(set) var loadError: String?
+@Observable
+final class TrackRecordService {
+    private(set) var trackRecord: TrackRecord?
+    private(set) var isLoading = false
+    private(set) var loadError: String?
 
     private let url: URL
     private let session: URLSession

@@ -1,10 +1,12 @@
 import Foundation
+import Observation
 
 @MainActor
-final class OddsHistoryService: ObservableObject {
-    @Published private(set) var history: OddsHistory = [:]
-    @Published private(set) var isLoading = false
-    @Published private(set) var loadError: String?
+@Observable
+final class OddsHistoryService {
+    private(set) var history: OddsHistory = [:]
+    private(set) var isLoading = false
+    private(set) var loadError: String?
 
     private let url: URL
     private let session: URLSession

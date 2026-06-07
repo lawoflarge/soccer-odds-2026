@@ -18,7 +18,7 @@ struct Match: Codable, Identifiable, Hashable {
     let group: String?
     let xg: XG?
     let marketsExt: MarketsExt?
-    let edge: Edge?
+    let edge: MatchEdge?
 
     enum CodingKeys: String, CodingKey {
         case id, teams, kickoff
@@ -77,7 +77,7 @@ struct MarketsExt: Codable, Hashable {
     }
 }
 
-struct Edge: Codable, Hashable {
+struct MatchEdge: Codable, Hashable {
     let side: String
     let valuePct: Double
 
