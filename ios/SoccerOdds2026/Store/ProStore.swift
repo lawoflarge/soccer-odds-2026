@@ -102,7 +102,8 @@ final class ProStore {
                 guard let self else { break }
                 if case .verified(let tx) = result, tx.productID == Self.productID {
                     await tx.finish()
-                    await MainActor.run { self.isPro = true }
+                    let active = tx.revocationDate == nil
+                    await MainActor.run { self.isPro = active }
                 }
             }
         }
