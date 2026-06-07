@@ -12,6 +12,7 @@
 		24130C58D7ABAFD8A96509E3 /* MatchDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE9695D6877BBF66681F3C51 /* MatchDetailView.swift */; };
 		2922A3100621AD99FCA4CED6 /* AboutView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 076B507B2BADAFB8B916C90F /* AboutView.swift */; };
 		323C8ED3645C9894B904415F /* RootView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A578C72BB9008E339AAC2A59 /* RootView.swift */; };
+		34864D6DF27859AA6560B9ED /* SoccerOdds2026.storekit in Resources */ = {isa = PBXBuildFile; fileRef = 3E24BBFC1728095F50CEDA5B /* SoccerOdds2026.storekit */; };
 		357CD803B590AED9C270DED8 /* AdBannerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE04F9ECA29C2EF425FCDF24 /* AdBannerView.swift */; };
 		3945E7455A4EC04A41009653 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1DC5B743FF911CE172AFAD19 /* Assets.xcassets */; };
 		41E8BA9A6D9062901CB99FB5 /* PredictionsServiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 732DC682E91C33A304118BA6 /* PredictionsServiceTests.swift */; };
@@ -51,6 +52,7 @@
 		252D33F14C15CB697C1B30D2 /* teams.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = teams.json; sourceTree = "<group>"; };
 		2BEC38261F1A140D6770CA9A /* PredictionsService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PredictionsService.swift; sourceTree = "<group>"; };
 		3049C850410F8D301ACE08CA /* PredictionDecodingTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PredictionDecodingTests.swift; sourceTree = "<group>"; };
+		3E24BBFC1728095F50CEDA5B /* SoccerOdds2026.storekit */ = {isa = PBXFileReference; path = SoccerOdds2026.storekit; sourceTree = "<group>"; };
 		5546523E3B0407C97967560F /* FixturesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FixturesView.swift; sourceTree = "<group>"; };
 		5642033C0A828278F124C07E /* Prediction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Prediction.swift; sourceTree = "<group>"; };
 		732DC682E91C33A304118BA6 /* PredictionsServiceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PredictionsServiceTests.swift; sourceTree = "<group>"; };
@@ -134,6 +136,7 @@
 				1DC5B743FF911CE172AFAD19 /* Assets.xcassets */,
 				A0FD98C995BFADDF0F0CA51F /* Config.swift */,
 				A17D004D0F32027AE5F2CA90 /* Info.plist */,
+				3E24BBFC1728095F50CEDA5B /* SoccerOdds2026.storekit */,
 				D2712550E869B7748B67863B /* Ads */,
 				5BE421196620D49CF4498DD8 /* Models */,
 				0CCBBB0D77CDC34099DFA8F1 /* Resources */,
@@ -280,6 +283,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				3945E7455A4EC04A41009653 /* Assets.xcassets in Resources */,
+				34864D6DF27859AA6560B9ED /* SoccerOdds2026.storekit in Resources */,
 				CBE45FDE3A9A157DE5FFE0D4 /* sample-predictions.json in Resources */,
 				A8F580A7C4B5C5083AA559E9 /* teams.json in Resources */,
 			);
