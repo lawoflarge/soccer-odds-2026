@@ -112,3 +112,16 @@ export function topScores(grid, n = 5) {
     pct: Math.round(s.p * 1000) / 10,
   }));
 }
+
+// P(total goals > 1.5) and P(total goals > 3.5) from a score grid.
+export function extraGoalMarkets(grid) {
+  let over15 = 0, over35 = 0;
+  const maxGoals = grid.length - 1;
+  for (let x = 0; x <= maxGoals; x++)
+    for (let y = 0; y <= maxGoals; y++) {
+      const p = grid[x][y];
+      if (x + y >= 2) over15 += p;
+      if (x + y >= 4) over35 += p;
+    }
+  return { over_1_5: over15, over_3_5: over35 };
+}
