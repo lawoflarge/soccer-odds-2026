@@ -37,6 +37,13 @@ final class OddsHistoryService {
     }
 
     func refresh() async {
+        #if DEBUG
+        if ProcessInfo.processInfo.arguments.contains("-screenshotData") {
+            if let u = Bundle.main.url(forResource: "sample-odds-history", withExtension: "json"),
+               let d = try? Data(contentsOf: u) { try? apply(d) }
+            return
+        }
+        #endif
         isLoading = true
         loadError = nil
         defer { isLoading = false }

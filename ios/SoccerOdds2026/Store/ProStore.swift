@@ -26,6 +26,9 @@ final class ProStore {
 
     init() {
         updatesTask = observeTransactions()
+        #if DEBUG
+        if ProcessInfo.processInfo.arguments.contains("-proUnlocked") { isPro = true }
+        #endif
     }
 
     deinit {
