@@ -4,6 +4,7 @@ struct FixturesView: View {
     @EnvironmentObject var service: PredictionsService
     @EnvironmentObject var favorites: FavoriteStore
     @Environment(ConsentManager.self) private var consent
+    @Environment(ProStore.self) private var store
     @State private var filter: Filter = .all
     @State private var path: [Match] = []
 
@@ -70,7 +71,7 @@ struct FixturesView: View {
             .navigationDestination(for: Match.self) { MatchDetailView(match: $0) }
             .refreshable { await service.refresh() }
             .safeAreaInset(edge: .bottom) {
-                if consent.canRequestAds {
+                if !store.isPro && consent.canRequestAds {
                     AdBannerView().frame(height: 50)
                 }
             }
