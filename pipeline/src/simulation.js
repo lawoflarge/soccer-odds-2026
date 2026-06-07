@@ -122,3 +122,168 @@ export function simulateGroup(teams, ratings, rng) {
 
   return rankGroup(table, rng);
 }
+
+// ---------------------------------------------------------------------------
+// 4. Best-8 third-place selection (FIFA WC 2026 rule)
+// ---------------------------------------------------------------------------
+
+// thirds: array of { team, pts, gd, gf } (one per group, length 12)
+// Returns the 8 best by: pts desc, gd desc, gf desc.
+export function selectBestThirds(thirds) {
+  return [...thirds]
+    .sort((a, b) => {
+      if (b.pts !== a.pts) return b.pts - a.pts;
+      if (b.gd  !== a.gd)  return b.gd  - a.gd;
+      if (b.gf  !== a.gf)  return b.gf  - a.gf;
+      return 0;
+    })
+    .slice(0, 8);
+}
+
+// ---------------------------------------------------------------------------
+// 5. Knockout-stage simulation (single-elimination, coin flip on draw)
+// ---------------------------------------------------------------------------
+
+// bracket: array of [teamA, teamB] pairings for this round.
+// Returns the array of winners.
+function simulateRound(bracket, ratings, rng) {
+  const winners = [];
+  for (const [a, b] of bracket) {
+    const { homeGoals, awayGoals } = simulateMatch(ratings[a] ?? 1.0, ratings[b] ?? 1.0, rng);
+    if (homeGoals > awayGoals) {
+      winners.push(a);
+    } else if (awayGoals > homeGoals) {
+      winners.push(b);
+    } else {
+      winners.push(rng() < 0.5 ? a : b); // coin flip on draw
+    }
+  }
+  return winners;
+}
+
+// Pair adjacent winners: [0,1], [2,3], [4,5], ...
+function makePairs(teams) {
+  const pairs = [];
+  for (let i = 0; i < teams.length; i += 2) pairs.push([teams[i], teams[i + 1]]);
+  return pairs;
+}
+
+// ---------------------------------------------------------------------------
+// 6. Full tournament simulation
+// ---------------------------------------------------------------------------
+
+// groups: { [letter]: [team1, team2, team3, team4] } — team order = pot order (not rank)
+// ratings: { [teamName]: number }
+// opts: { seed?, iterations?, bracketOrder? }
+// Returns: {
+//   teams: { [teamName]: { win, reach: { r32, r16, qf, sf, final, title } } },
+//   groups: { [letter]: [ { team, advance, win_group }, ... ] }
+// }
+export function simulateTournament(groups, ratings, opts = {}) {
+  const { seed = 0, iterations = 10000 } = opts;
+  const rng = makePrng(seed);
+
+  const groupLetters = Object.keys(groups).sort();
+  const allTeams = groupLetters.flatMap((g) => groups[g]);
+
+  // Accumulators
+  const reachCount = {};
+  const groupAdvanceCount = {}; // [groupLetter][team] -> count advanced (top 2 or best 3rd)
+  const groupWinCount = {};     // [groupLetter][team] -> count won group (rank 1)
+
+  for (const t of allTeams) {
+    reachCount[t] = { r32: 0, r16: 0, qf: 0, sf: 0, final: 0, title: 0 };
+  }
+  for (const g of groupLetters) {
+    groupAdvanceCount[g] = {};
+    groupWinCount[g] = {};
+    for (const t of groups[g]) {
+      groupAdvanceCount[g][t] = 0;
+      groupWinCount[g][t] = 0;
+    }
+  }
+
+  for (let iter = 0; iter < iterations; iter++) {
+    // --- Group stage ---
+    const groupResults = {};   // letter -> ranked array [{team, pts, gd, gf, rank}]
+    const allThirds = [];
+
+    for (const letter of groupLetters) {
+      const ranked = simulateGroup(groups[letter], ratings, rng);
+      groupResults[letter] = ranked;
+      allThirds.push({ ...ranked[2], groupLetter: letter });
+    }
+
+    // Determine best 8 third-placed teams
+    const best8Thirds = selectBestThirds(allThirds);
+    const best8Set = new Set(best8Thirds.map((t) => t.team));
+
+    // Mark advancement
+    for (const letter of groupLetters) {
+      const ranked = groupResults[letter];
+      // Rank 1 and 2 always advance
+      groupAdvanceCount[letter][ranked[0].team]++;
+      groupAdvanceCount[letter][ranked[1].team]++;
+      groupWinCount[letter][ranked[0].team]++;
+      // Rank 3 advances only if in best-8
+      if (best8Set.has(ranked[2].team)) {
+        groupAdvanceCount[letter][ranked[2].team]++;
+      }
+    }
+
+    // Build R32 participant list (32 teams):
+    // 12 group winners + 12 runners-up + 8 best thirds = 32
+    const r32Teams = [];
+    for (const letter of groupLetters) {
+      r32Teams.push(groupResults[letter][0].team); // winner
+    }
+    for (const letter of groupLetters) {
+      r32Teams.push(groupResults[letter][1].team); // runner-up
+    }
+    for (const t of best8Thirds) r32Teams.push(t.team);
+
+    // Mark r32 reached
+    for (const t of r32Teams) reachCount[t].r32++;
+
+    // K.o. rounds: R32 (32→16), R16 (16→8), QF (8→4), SF (4→2), Final (2→1)
+    const roundKeys = ["r16", "qf", "sf", "final", "title"];
+    let current = r32Teams; // 32 teams
+
+    for (let round = 0; round < roundKeys.length; round++) {
+      const pairs = makePairs(current);
+      const winners = simulateRound(pairs, ratings, rng);
+      const key = roundKeys[round];
+      for (const t of winners) reachCount[t][key]++;
+      current = winners;
+    }
+    // current[0] is the champion — already counted in title above
+  }
+
+  // Aggregate to percentages
+  const teamsOut = {};
+  for (const t of allTeams) {
+    const r = reachCount[t];
+    teamsOut[t] = {
+      win: Math.round((r.title / iterations) * 1000) / 10,
+      reach: {
+        r32:   Math.round((r.r32   / iterations) * 1000) / 10,
+        r16:   Math.round((r.r16   / iterations) * 1000) / 10,
+        qf:    Math.round((r.qf    / iterations) * 1000) / 10,
+        sf:    Math.round((r.sf    / iterations) * 1000) / 10,
+        final: Math.round((r.final / iterations) * 1000) / 10,
+        title: Math.round((r.title / iterations) * 1000) / 10,
+      },
+    };
+  }
+
+  const groupsOut = {};
+  for (const letter of groupLetters) {
+    groupsOut[letter] = groups[letter].map((team) => ({
+      team,
+      advance:   Math.round((groupAdvanceCount[letter][team] / iterations) * 1000) / 10,
+      win_group: Math.round((groupWinCount[letter][team]     / iterations) * 1000) / 10,
+    }));
+  }
+
+  return { teams: teamsOut, groups: groupsOut };
+}

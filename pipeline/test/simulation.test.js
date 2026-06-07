@@ -97,3 +97,63 @@ test("simulateGroup: Rang 1 hat mindestens so viele Punkte wie Rang 2", () => {
     assert.ok(byRank[0].pts >= byRank[1].pts, `seed=${seed}: Rang 1 Pts < Rang 2 Pts`);
   }
 });
+
+import { selectBestThirds, simulateTournament } from "../src/simulation.js";
+
+test("selectBestThirds wählt die 8 stärksten Drittplatzierten aus 12", () => {
+  // 12 Drittplatzierte mit verschiedenen Punkten + Tordifferenz
+  const thirds = Array.from({ length: 12 }, (_, i) => ({
+    team: `T${i}`,
+    pts: i < 8 ? 4 : 1,  // T0..T7 haben 4 Punkte, T8..T11 haben 1 Punkt
+    gd: 0,
+    gf: 0,
+  }));
+  const best8 = selectBestThirds(thirds);
+  assert.equal(best8.length, 8);
+  // Alle Best-8 müssen 4 Punkte haben
+  for (const t of best8) assert.equal(t.pts, 4);
+});
+
+test("simulateTournament gibt für alle 48 Teams einen Eintrag zurück", () => {
+  // Minimales Fixture: 12 Gruppen à 4 Teams
+  const GROUPS_FIXTURE = {};
+  const ALL_TEAMS = [];
+  for (let g = 0; g < 12; g++) {
+    const letter = String.fromCharCode(65 + g); // A..L
+    const teams = [`T${g}_1`, `T${g}_2`, `T${g}_3`, `T${g}_4`];
+    GROUPS_FIXTURE[letter] = teams;
+    ALL_TEAMS.push(...teams);
+  }
+  const ratings = Object.fromEntries(ALL_TEAMS.map((t) => [t, 1.0]));
+  const result = simulateTournament(GROUPS_FIXTURE, ratings, { seed: 1 });
+  assert.equal(Object.keys(result.teams).length, 48);
+});
+
+test("simulateTournament: Sieg-%-Summe liegt nahe 100 %", () => {
+  const GROUPS_FIXTURE = {};
+  const ALL_TEAMS = [];
+  for (let g = 0; g < 12; g++) {
+    const letter = String.fromCharCode(65 + g);
+    const teams = [`T${g}_1`, `T${g}_2`, `T${g}_3`, `T${g}_4`];
+    GROUPS_FIXTURE[letter] = teams;
+    ALL_TEAMS.push(...teams);
+  }
+  const ratings = Object.fromEntries(ALL_TEAMS.map((t) => [t, 1.0]));
+  const result = simulateTournament(GROUPS_FIXTURE, ratings, { seed: 2, iterations: 1000 });
+  const totalWin = Object.values(result.teams).reduce((s, t) => s + t.win, 0);
+  assert.ok(Math.abs(totalWin - 100) < 1.0, `Sieg-%-Summe=${totalWin.toFixed(2)} erwartet ~100`);
+});
+
+test("simulateTournament ist deterministisch bei gleichem Seed", () => {
+  const GROUPS_FIXTURE = {};
+  const ALL_TEAMS = [];
+  for (let g = 0; g < 12; g++) {
+    const letter = String.fromCharCode(65 + g);
+    GROUPS_FIXTURE[letter] = [`T${g}_1`, `T${g}_2`, `T${g}_3`, `T${g}_4`];
+    ALL_TEAMS.push(`T${g}_1`, `T${g}_2`, `T${g}_3`, `T${g}_4`);
+  }
+  const ratings = Object.fromEntries(ALL_TEAMS.map((t) => [t, 1.0]));
+  const r1 = simulateTournament(GROUPS_FIXTURE, ratings, { seed: 42, iterations: 200 });
+  const r2 = simulateTournament(GROUPS_FIXTURE, ratings, { seed: 42, iterations: 200 });
+  assert.deepEqual(r1, r2);
+});
