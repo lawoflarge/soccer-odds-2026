@@ -157,3 +157,47 @@ test("simulateTournament ist deterministisch bei gleichem Seed", () => {
   const r2 = simulateTournament(GROUPS_FIXTURE, ratings, { seed: 42, iterations: 200 });
   assert.deepEqual(r1, r2);
 });
+
+import { buildSimulationPayload } from "../src/buildSimulation.js";
+
+test("buildSimulationPayload produziert Spec-6.3-konformes Objekt", () => {
+  // Minimal synthetic predictions.json-ähnliche matches
+  const fakeMatches = [];
+  const FAKE_GROUPS = {};
+  for (let g = 0; g < 12; g++) {
+    const letter = String.fromCharCode(65 + g);
+    const teams = [`T${g}_1`, `T${g}_2`, `T${g}_3`, `T${g}_4`];
+    FAKE_GROUPS[letter] = teams;
+    for (let i = 0; i < teams.length; i++) {
+      for (let j = i + 1; j < teams.length; j++) {
+        fakeMatches.push({
+          phase: "group",
+          teams: { home: teams[i], away: teams[j] },
+          xg: { home: 1.2, away: 0.9 },
+        });
+      }
+    }
+  }
+
+  const payload = buildSimulationPayload(fakeMatches, FAKE_GROUPS, { seed: 5, iterations: 200 });
+
+  // Top-level fields
+  assert.ok(typeof payload.generated_at === "string");
+  assert.equal(payload.iterations, 200);
+  assert.ok(Array.isArray(payload.teams));
+  assert.ok(typeof payload.groups === "object");
+
+  // Each team entry has required shape
+  const t = payload.teams[0];
+  assert.ok(typeof t.team === "string");
+  assert.ok(typeof t.win === "number");
+  assert.ok(typeof t.reach.r32 === "number");
+  assert.ok(typeof t.reach.title === "number");
+
+  // Group entry shape
+  const groupKey = Object.keys(payload.groups)[0];
+  const gEntry = payload.groups[groupKey][0];
+  assert.ok(typeof gEntry.team === "string");
+  assert.ok(typeof gEntry.advance === "number");
+  assert.ok(typeof gEntry.win_group === "number");
+});
