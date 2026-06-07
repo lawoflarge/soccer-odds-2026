@@ -37,3 +37,31 @@ test("buildRatings fällt auf Mindestwert 0.5 zurück bei Team ohne Spiele", () 
   // "Ghana" hat keine Matches
   assert.equal(r["Ghana"] ?? 0.5, 0.5);
 });
+
+import { simulateMatch } from "../src/simulation.js";
+import { makePrng } from "../src/prng.js";
+
+test("simulateMatch gibt ganze nicht-negative Tore zurück", () => {
+  const rng = makePrng(7);
+  for (let i = 0; i < 200; i++) {
+    const { homeGoals, awayGoals } = simulateMatch(1.5, 1.0, rng);
+    assert.ok(Number.isInteger(homeGoals) && homeGoals >= 0, `homeGoals=${homeGoals}`);
+    assert.ok(Number.isInteger(awayGoals) && awayGoals >= 0, `awayGoals=${awayGoals}`);
+  }
+});
+
+test("simulateMatch: stärkeres Team gewinnt öfter in 10.000 Durchläufen", () => {
+  const rng = makePrng(13);
+  let homeWins = 0;
+  for (let i = 0; i < 10000; i++) {
+    const { homeGoals, awayGoals } = simulateMatch(2.5, 0.5, rng);
+    if (homeGoals > awayGoals) homeWins++;
+  }
+  assert.ok(homeWins > 7000, `HomeWins=${homeWins} erwartet > 7000 (sehr starkes Heimteam)`);
+});
+
+test("simulateMatch ist deterministisch bei gleichem Seed", () => {
+  const seq1 = Array.from({ length: 5 }, () => simulateMatch(1.2, 1.0, makePrng(42)));
+  const seq2 = Array.from({ length: 5 }, () => simulateMatch(1.2, 1.0, makePrng(42)));
+  assert.deepEqual(seq1, seq2);
+});
