@@ -64,6 +64,8 @@ targets:
       - path: SoccerOdds2026Tests
       - path: SoccerOdds2026/Resources/sample-predictions.json
         buildPhase: resources
+      - path: SoccerOdds2026/SoccerOdds2026.storekit
+        buildPhase: resources
     dependencies:
       - target: SoccerOdds2026
     settings:
