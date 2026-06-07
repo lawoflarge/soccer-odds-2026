@@ -64,6 +64,14 @@ targets:
       - path: SoccerOdds2026Tests
       - path: SoccerOdds2026/Resources/sample-predictions.json
         buildPhase: resources
+      - path: SoccerOdds2026/Resources/sample-predictions-ext.json
+        buildPhase: resources
+      - path: SoccerOdds2026/Resources/sample-simulation.json
+        buildPhase: resources
+      - path: SoccerOdds2026/Resources/sample-track-record.json
+        buildPhase: resources
+      - path: SoccerOdds2026/Resources/sample-odds-history.json
+        buildPhase: resources
       - path: SoccerOdds2026/SoccerOdds2026.storekit
         buildPhase: resources
     dependencies:
