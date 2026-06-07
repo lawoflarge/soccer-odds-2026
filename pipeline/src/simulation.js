@@ -74,3 +74,51 @@ export function simulateMatch(ratingHome, ratingAway, rng, muBase = MU_BASE) {
   const grid = scoreGrid(lambdaHome, lambdaAway);
   return sampleFromGrid(grid, rng());
 }
+
+// ---------------------------------------------------------------------------
+// 3. Group-stage simulation (4-team round-robin, 6 matches)
+// ---------------------------------------------------------------------------
+
+// Rank teams within a group by: pts desc, gd desc, gf desc, then coin flip.
+function rankGroup(table, rng) {
+  const arr = Object.entries(table).map(([team, s]) => ({ team, ...s }));
+  arr.sort((a, b) => {
+    if (b.pts !== a.pts) return b.pts - a.pts;
+    if (b.gd  !== a.gd)  return b.gd  - a.gd;
+    if (b.gf  !== a.gf)  return b.gf  - a.gf;
+    return rng() < 0.5 ? -1 : 1; // coin flip
+  });
+  return arr.map((r, i) => ({ ...r, rank: i + 1 }));
+}
+
+// teams: string[4], ratings: { [team]: number }, rng: () => [0,1)
+// Returns sorted array [{ team, pts, gd, gf, rank }, ...] length 4.
+export function simulateGroup(teams, ratings, rng) {
+  const table = {};
+  for (const t of teams) table[t] = { pts: 0, gd: 0, gf: 0 };
+
+  // All 6 pairings in a 4-team group
+  for (let i = 0; i < teams.length; i++) {
+    for (let j = i + 1; j < teams.length; j++) {
+      const home = teams[i];
+      const away = teams[j];
+      const { homeGoals, awayGoals } = simulateMatch(ratings[home] ?? 1.0, ratings[away] ?? 1.0, rng);
+
+      table[home].gf += homeGoals;
+      table[away].gf += awayGoals;
+      table[home].gd += homeGoals - awayGoals;
+      table[away].gd += awayGoals - homeGoals;
+
+      if (homeGoals > awayGoals) {
+        table[home].pts += 3;
+      } else if (homeGoals === awayGoals) {
+        table[home].pts += 1;
+        table[away].pts += 1;
+      } else {
+        table[away].pts += 3;
+      }
+    }
+  }
+
+  return rankGroup(table, rng);
+}

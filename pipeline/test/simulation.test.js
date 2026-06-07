@@ -65,3 +65,35 @@ test("simulateMatch ist deterministisch bei gleichem Seed", () => {
   const seq2 = Array.from({ length: 5 }, () => simulateMatch(1.2, 1.0, makePrng(42)));
   assert.deepEqual(seq1, seq2);
 });
+
+import { simulateGroup } from "../src/simulation.js";
+
+test("simulateGroup gibt 4 Teams mit Rang 1..4 zurück", () => {
+  const teams = ["Brazil", "Serbia", "Switzerland", "Cameroon"];
+  const ratings = { Brazil: 2.0, Serbia: 0.9, Switzerland: 1.2, Cameroon: 0.8 };
+  const result = simulateGroup(teams, ratings, makePrng(55));
+  assert.equal(result.length, 4);
+  const ranks = result.map((r) => r.rank).sort((a, b) => a - b);
+  assert.deepEqual(ranks, [1, 2, 3, 4]);
+});
+
+test("simulateGroup: Punkte, Tordifferenz, Tore sind konsistent", () => {
+  const teams = ["A", "B", "C", "D"];
+  const ratings = { A: 1.5, B: 1.2, C: 1.0, D: 0.8 };
+  const result = simulateGroup(teams, ratings, makePrng(77));
+  for (const r of result) {
+    assert.ok(r.pts >= 0 && r.pts <= 9, `pts ${r.pts} außerhalb [0,9]`);
+    assert.ok(typeof r.gf === "number" && r.gf >= 0);
+    assert.ok(typeof r.gd === "number");
+  }
+});
+
+test("simulateGroup: Rang 1 hat mindestens so viele Punkte wie Rang 2", () => {
+  const teams = ["A", "B", "C", "D"];
+  const ratings = { A: 1.5, B: 1.2, C: 1.0, D: 0.8 };
+  for (let seed = 0; seed < 50; seed++) {
+    const result = simulateGroup(teams, ratings, makePrng(seed));
+    const byRank = result.sort((a, b) => a.rank - b.rank);
+    assert.ok(byRank[0].pts >= byRank[1].pts, `seed=${seed}: Rang 1 Pts < Rang 2 Pts`);
+  }
+});
