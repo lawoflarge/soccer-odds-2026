@@ -33,6 +33,7 @@
 		C6A30613192F778546EA4ECD /* PredictionDecodingTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3049C850410F8D301ACE08CA /* PredictionDecodingTests.swift */; };
 		CBE45FDE3A9A157DE5FFE0D4 /* sample-predictions.json in Resources */ = {isa = PBXBuildFile; fileRef = CCFD8F74505FFB4361E9A7D3 /* sample-predictions.json */; };
 		E268AC7FD83016CB67F748EB /* FavoriteStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F81B53C2611FDCD06DEA778 /* FavoriteStore.swift */; };
+		E5C31811E3C8CED454A55FA0 /* PaywallView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0653042E386AA5E680A9E28 /* PaywallView.swift */; };
 		E75522F3E41A7B9FE9803E98 /* SoccerOdds2026.storekit in Resources */ = {isa = PBXBuildFile; fileRef = 3E24BBFC1728095F50CEDA5B /* SoccerOdds2026.storekit */; };
 		EC5B428970E36B62848C3757 /* ConsentManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E9A9E1540434D69A37E0308 /* ConsentManager.swift */; };
 		FA58E6A3DE8EBC24A5A28323 /* MatchRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00B1AE5E2315A37C1C74D6D8 /* MatchRow.swift */; };
@@ -63,6 +64,7 @@
 		7E9A9E1540434D69A37E0308 /* ConsentManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConsentManager.swift; sourceTree = "<group>"; };
 		8AED1460D908C0CB365BB93F /* SoccerOdds2026.app */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.application; path = SoccerOdds2026.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9F81B53C2611FDCD06DEA778 /* FavoriteStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteStore.swift; sourceTree = "<group>"; };
+		A0653042E386AA5E680A9E28 /* PaywallView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaywallView.swift; sourceTree = "<group>"; };
 		A0FD98C995BFADDF0F0CA51F /* Config.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Config.swift; sourceTree = "<group>"; };
 		A17D004D0F32027AE5F2CA90 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		A578C72BB9008E339AAC2A59 /* RootView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootView.swift; sourceTree = "<group>"; };
@@ -109,6 +111,7 @@
 				FE9695D6877BBF66681F3C51 /* MatchDetailView.swift */,
 				00B1AE5E2315A37C1C74D6D8 /* MatchRow.swift */,
 				F303D116E930E8C8D3E5E952 /* MyTeamView.swift */,
+				A0653042E386AA5E680A9E28 /* PaywallView.swift */,
 				A578C72BB9008E339AAC2A59 /* RootView.swift */,
 				41F6FA8A55A66C3880DA0075 /* Components */,
 			);
@@ -331,6 +334,7 @@
 				24130C58D7ABAFD8A96509E3 /* MatchDetailView.swift in Sources */,
 				FA58E6A3DE8EBC24A5A28323 /* MatchRow.swift in Sources */,
 				090A95D918912B6AE3FB9DE9 /* MyTeamView.swift in Sources */,
+				E5C31811E3C8CED454A55FA0 /* PaywallView.swift in Sources */,
 				678F53F055C5165A0D7F6138 /* Prediction.swift in Sources */,
 				96FD4DDF978C4D83BDA6E417 /* PredictionsService.swift in Sources */,
 				3D0E653E2CA44BE8E825BB9D /* ProStore.swift in Sources */,
