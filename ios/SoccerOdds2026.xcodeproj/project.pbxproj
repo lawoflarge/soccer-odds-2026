@@ -11,6 +11,7 @@
 		090A95D918912B6AE3FB9DE9 /* MyTeamView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F303D116E930E8C8D3E5E952 /* MyTeamView.swift */; };
 		15B1B0884BE21A73EA0BEB18 /* sample-track-record.json in Resources */ = {isa = PBXBuildFile; fileRef = 12D7B3ED1273FFE30E196894 /* sample-track-record.json */; };
 		16F0AA3FB1894F48069A28AC /* OddsHistoryDecodingTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBAF5F6BCEBBD46250A7817F /* OddsHistoryDecodingTests.swift */; };
+		2347C04B15EF1003A52563F7 /* TrackRecordService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A94D2B88E28179A76230552F /* TrackRecordService.swift */; };
 		24130C58D7ABAFD8A96509E3 /* MatchDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE9695D6877BBF66681F3C51 /* MatchDetailView.swift */; };
 		28BC0736215DD9819CA96C2A /* MatchExtensionDecodingTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15AB058CA65B59A54AEE9D8B /* MatchExtensionDecodingTests.swift */; };
 		2922A3100621AD99FCA4CED6 /* AboutView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 076B507B2BADAFB8B916C90F /* AboutView.swift */; };
@@ -22,7 +23,9 @@
 		3D0E653E2CA44BE8E825BB9D /* ProStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 086478C2762EB325299C708A /* ProStore.swift */; };
 		41E8BA9A6D9062901CB99FB5 /* PredictionsServiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 732DC682E91C33A304118BA6 /* PredictionsServiceTests.swift */; };
 		4A61E46D666B429EF7E5C2BD /* sample-simulation.json in Resources */ = {isa = PBXBuildFile; fileRef = 229E6986260396AC534B77E1 /* sample-simulation.json */; };
+		4CCDC3ADDB2F6A8C2C299F69 /* OddsHistoryService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3736306232036DEEA22F47E5 /* OddsHistoryService.swift */; };
 		4D9BAEAEF9930539861830B2 /* ProbabilityBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0036AD59A536B21C82BA73D /* ProbabilityBar.swift */; };
+		5707C49E8AB09124920F5C9B /* SimulationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42850BCE7E4C35CEA638B670 /* SimulationService.swift */; };
 		5EA9106FDC544BF9CF70DF48 /* sample-predictions-ext.json in Resources */ = {isa = PBXBuildFile; fileRef = B087A6EFDD303F331329D6A0 /* sample-predictions-ext.json */; };
 		678F53F055C5165A0D7F6138 /* Prediction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5642033C0A828278F124C07E /* Prediction.swift */; };
 		6B30B1D6AA7FA29526437567 /* sample-predictions.json in Resources */ = {isa = PBXBuildFile; fileRef = CCFD8F74505FFB4361E9A7D3 /* sample-predictions.json */; };
@@ -76,8 +79,10 @@
 		252D33F14C15CB697C1B30D2 /* teams.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = teams.json; sourceTree = "<group>"; };
 		2BEC38261F1A140D6770CA9A /* PredictionsService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PredictionsService.swift; sourceTree = "<group>"; };
 		3049C850410F8D301ACE08CA /* PredictionDecodingTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PredictionDecodingTests.swift; sourceTree = "<group>"; };
+		3736306232036DEEA22F47E5 /* OddsHistoryService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OddsHistoryService.swift; sourceTree = "<group>"; };
 		3CFB8EC9B2BC8534513F223A /* SimulationDecodingTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimulationDecodingTests.swift; sourceTree = "<group>"; };
 		3E24BBFC1728095F50CEDA5B /* SoccerOdds2026.storekit */ = {isa = PBXFileReference; path = SoccerOdds2026.storekit; sourceTree = "<group>"; };
+		42850BCE7E4C35CEA638B670 /* SimulationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimulationService.swift; sourceTree = "<group>"; };
 		53D7E97093C87B6A0DE27A89 /* TrackRecord.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrackRecord.swift; sourceTree = "<group>"; };
 		5546523E3B0407C97967560F /* FixturesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FixturesView.swift; sourceTree = "<group>"; };
 		5642033C0A828278F124C07E /* Prediction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Prediction.swift; sourceTree = "<group>"; };
@@ -91,6 +96,7 @@
 		A0FD98C995BFADDF0F0CA51F /* Config.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Config.swift; sourceTree = "<group>"; };
 		A17D004D0F32027AE5F2CA90 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		A578C72BB9008E339AAC2A59 /* RootView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootView.swift; sourceTree = "<group>"; };
+		A94D2B88E28179A76230552F /* TrackRecordService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrackRecordService.swift; sourceTree = "<group>"; };
 		B087A6EFDD303F331329D6A0 /* sample-predictions-ext.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = "sample-predictions-ext.json"; sourceTree = "<group>"; };
 		C6D35CF564830EF601C901A4 /* sample-odds-history.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = "sample-odds-history.json"; sourceTree = "<group>"; };
 		CCFD8F74505FFB4361E9A7D3 /* sample-predictions.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = "sample-predictions.json"; sourceTree = "<group>"; };
@@ -241,7 +247,10 @@
 			isa = PBXGroup;
 			children = (
 				9F81B53C2611FDCD06DEA778 /* FavoriteStore.swift */,
+				3736306232036DEEA22F47E5 /* OddsHistoryService.swift */,
 				2BEC38261F1A140D6770CA9A /* PredictionsService.swift */,
+				42850BCE7E4C35CEA638B670 /* SimulationService.swift */,
+				A94D2B88E28179A76230552F /* TrackRecordService.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -380,6 +389,7 @@
 				FA58E6A3DE8EBC24A5A28323 /* MatchRow.swift in Sources */,
 				090A95D918912B6AE3FB9DE9 /* MyTeamView.swift in Sources */,
 				B7B79B34C0C3DA93CF9A11E6 /* OddsHistory.swift in Sources */,
+				4CCDC3ADDB2F6A8C2C299F69 /* OddsHistoryService.swift in Sources */,
 				E5C31811E3C8CED454A55FA0 /* PaywallView.swift in Sources */,
 				678F53F055C5165A0D7F6138 /* Prediction.swift in Sources */,
 				96FD4DDF978C4D83BDA6E417 /* PredictionsService.swift in Sources */,
@@ -387,8 +397,10 @@
 				4D9BAEAEF9930539861830B2 /* ProbabilityBar.swift in Sources */,
 				323C8ED3645C9894B904415F /* RootView.swift in Sources */,
 				930F9A747E6C0A12FD41A258 /* Simulation.swift in Sources */,
+				5707C49E8AB09124920F5C9B /* SimulationService.swift in Sources */,
 				82359E2E367706F647311892 /* Theme.swift in Sources */,
 				F8F3E60216A1055DF3038BA9 /* TrackRecord.swift in Sources */,
+				2347C04B15EF1003A52563F7 /* TrackRecordService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
