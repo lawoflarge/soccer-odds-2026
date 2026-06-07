@@ -39,9 +39,11 @@
 		82359E2E367706F647311892 /* Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA1AEBB76FBA40832EE43238 /* Theme.swift */; };
 		868B8CF8ED3383F706926E4C /* FixturesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5546523E3B0407C97967560F /* FixturesView.swift */; };
 		8715BB6C4D8E06A9C04D4965 /* TrackRecordDecodingTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9475D6670EED40596FB09EE3 /* TrackRecordDecodingTests.swift */; };
+		8D574201BD2B4391A6154F03 /* MoreView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE53B59882912F11AC84229D /* MoreView.swift */; };
 		930F9A747E6C0A12FD41A258 /* Simulation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CD5AFA880F2859822611994 /* Simulation.swift */; };
 		96FD4DDF978C4D83BDA6E417 /* PredictionsService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BEC38261F1A140D6770CA9A /* PredictionsService.swift */; };
 		992015AA5357FB73AD8CDACD /* FlagView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE4400CCE38784F43D157F41 /* FlagView.swift */; };
+		9DB9D20E8ADA93FB2D70D55A /* TournamentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85FB48B105DD84A3BA9E65FA /* TournamentView.swift */; };
 		9EA61099F270EDEFB111803E /* App.swift in Sources */ = {isa = PBXBuildFile; fileRef = D73678F4151D7408E2E6EE42 /* App.swift */; };
 		A3719D881F66E26BA9BF9E9F /* sample-odds-history.json in Resources */ = {isa = PBXBuildFile; fileRef = C6D35CF564830EF601C901A4 /* sample-odds-history.json */; };
 		A7EB5AFAA09A544ABCC18F66 /* GoogleMobileAds in Frameworks */ = {isa = PBXBuildFile; productRef = FF3AE00D5D50568169F57A87 /* GoogleMobileAds */; };
@@ -51,6 +53,7 @@
 		B29D8E125DCF1DEACF1B4F5F /* sample-track-record.json in Resources */ = {isa = PBXBuildFile; fileRef = 12D7B3ED1273FFE30E196894 /* sample-track-record.json */; };
 		B7B79B34C0C3DA93CF9A11E6 /* OddsHistory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6228208D90F0EFD359EAB075 /* OddsHistory.swift */; };
 		C6A30613192F778546EA4ECD /* PredictionDecodingTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3049C850410F8D301ACE08CA /* PredictionDecodingTests.swift */; };
+		C7FF5EC17D4D7895A2886F19 /* TrackRecordView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0C91D3013CB05AFCE0FF669 /* TrackRecordView.swift */; };
 		C8169413026FF1599C86C722 /* NumberTicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C29F6A9F189A62ABEC36B32 /* NumberTicker.swift */; };
 		CA8BD13DE66E803826586B06 /* PhaseTag.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85B238DE0475BED0059F9831 /* PhaseTag.swift */; };
 		CBE45FDE3A9A157DE5FFE0D4 /* sample-predictions.json in Resources */ = {isa = PBXBuildFile; fileRef = CCFD8F74505FFB4361E9A7D3 /* sample-predictions.json */; };
@@ -104,6 +107,7 @@
 		732DC682E91C33A304118BA6 /* PredictionsServiceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PredictionsServiceTests.swift; sourceTree = "<group>"; };
 		7E9A9E1540434D69A37E0308 /* ConsentManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConsentManager.swift; sourceTree = "<group>"; };
 		85B238DE0475BED0059F9831 /* PhaseTag.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhaseTag.swift; sourceTree = "<group>"; };
+		85FB48B105DD84A3BA9E65FA /* TournamentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TournamentView.swift; sourceTree = "<group>"; };
 		8AED1460D908C0CB365BB93F /* SoccerOdds2026.app */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.application; path = SoccerOdds2026.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		90DFF36D3AB0A6F87F430A0D /* AnimatedProbBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimatedProbBar.swift; sourceTree = "<group>"; };
 		9475D6670EED40596FB09EE3 /* TrackRecordDecodingTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrackRecordDecodingTests.swift; sourceTree = "<group>"; };
@@ -119,8 +123,10 @@
 		C6D35CF564830EF601C901A4 /* sample-odds-history.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = "sample-odds-history.json"; sourceTree = "<group>"; };
 		CC5D0CD9EF1129039D06D9D7 /* EdgeBadge.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EdgeBadge.swift; sourceTree = "<group>"; };
 		CCFD8F74505FFB4361E9A7D3 /* sample-predictions.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = "sample-predictions.json"; sourceTree = "<group>"; };
+		CE53B59882912F11AC84229D /* MoreView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoreView.swift; sourceTree = "<group>"; };
 		D0036AD59A536B21C82BA73D /* ProbabilityBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProbabilityBar.swift; sourceTree = "<group>"; };
 		D0AE4CB57A48AF32BC29010E /* ProStoreTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProStoreTests.swift; sourceTree = "<group>"; };
+		D0C91D3013CB05AFCE0FF669 /* TrackRecordView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrackRecordView.swift; sourceTree = "<group>"; };
 		D2CB77F6452F1B52A2275C7A /* FavoriteStoreTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteStoreTests.swift; sourceTree = "<group>"; };
 		D73678F4151D7408E2E6EE42 /* App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = App.swift; sourceTree = "<group>"; };
 		DE04F9ECA29C2EF425FCDF24 /* AdBannerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdBannerView.swift; sourceTree = "<group>"; };
@@ -166,9 +172,12 @@
 				5546523E3B0407C97967560F /* FixturesView.swift */,
 				FE9695D6877BBF66681F3C51 /* MatchDetailView.swift */,
 				00B1AE5E2315A37C1C74D6D8 /* MatchRow.swift */,
+				CE53B59882912F11AC84229D /* MoreView.swift */,
 				F303D116E930E8C8D3E5E952 /* MyTeamView.swift */,
 				A0653042E386AA5E680A9E28 /* PaywallView.swift */,
 				A578C72BB9008E339AAC2A59 /* RootView.swift */,
+				85FB48B105DD84A3BA9E65FA /* TournamentView.swift */,
+				D0C91D3013CB05AFCE0FF669 /* TrackRecordView.swift */,
 				41F6FA8A55A66C3880DA0075 /* Components */,
 			);
 			path = Views;
@@ -420,6 +429,7 @@
 				992015AA5357FB73AD8CDACD /* FlagView.swift in Sources */,
 				24130C58D7ABAFD8A96509E3 /* MatchDetailView.swift in Sources */,
 				FA58E6A3DE8EBC24A5A28323 /* MatchRow.swift in Sources */,
+				8D574201BD2B4391A6154F03 /* MoreView.swift in Sources */,
 				090A95D918912B6AE3FB9DE9 /* MyTeamView.swift in Sources */,
 				C8169413026FF1599C86C722 /* NumberTicker.swift in Sources */,
 				B7B79B34C0C3DA93CF9A11E6 /* OddsHistory.swift in Sources */,
@@ -438,8 +448,10 @@
 				5707C49E8AB09124920F5C9B /* SimulationService.swift in Sources */,
 				02AF3920FBD0EDB7E8D232A4 /* SkeletonShimmer.swift in Sources */,
 				82359E2E367706F647311892 /* Theme.swift in Sources */,
+				9DB9D20E8ADA93FB2D70D55A /* TournamentView.swift in Sources */,
 				F8F3E60216A1055DF3038BA9 /* TrackRecord.swift in Sources */,
 				2347C04B15EF1003A52563F7 /* TrackRecordService.swift in Sources */,
+				C7FF5EC17D4D7895A2886F19 /* TrackRecordView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
