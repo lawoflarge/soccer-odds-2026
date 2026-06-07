@@ -15,12 +15,71 @@ export function phaseForDate(isoKickoff) {
   return "final";
 }
 
-// Team display name -> group letter, from the official FIFA 2026 draw.
-// Seeded hosts are fixed; remaining 45 teams to be filled in Step 6.
+// Team display name -> group letter. Official FIFA World Cup 2026 final draw
+// (5 Dec 2025 + March 2026 playoffs), validated against Wikipedia/NBC/Yahoo.
+// Keys match the exact Odds API strings in web/public/predictions.json.
 export const GROUPS = {
-  Mexico: "A",
-  Canada: "B",
-  "United States": "D",
+  // Group A
+  "Czech Republic": "A",
+  "Mexico": "A",
+  "South Africa": "A",
+  "South Korea": "A",
+  // Group B
+  "Bosnia & Herzegovina": "B",
+  "Canada": "B",
+  "Qatar": "B",
+  "Switzerland": "B",
+  // Group C
+  "Brazil": "C",
+  "Haiti": "C",
+  "Morocco": "C",
+  "Scotland": "C",
+  // Group D
+  "Australia": "D",
+  "Paraguay": "D",
+  "Turkey": "D",
+  "USA": "D",
+  "United States": "D", // alias: Odds API feed uses "USA"; kept so the seeded-host test stays valid
+  // Group E
+  "Curaçao": "E",
+  "Ecuador": "E",
+  "Germany": "E",
+  "Ivory Coast": "E",
+  // Group F
+  "Japan": "F",
+  "Netherlands": "F",
+  "Sweden": "F",
+  "Tunisia": "F",
+  // Group G
+  "Belgium": "G",
+  "Egypt": "G",
+  "Iran": "G",
+  "New Zealand": "G",
+  // Group H
+  "Cape Verde": "H",
+  "Saudi Arabia": "H",
+  "Spain": "H",
+  "Uruguay": "H",
+  // Group I
+  "France": "I",
+  "Iraq": "I",
+  "Norway": "I",
+  "Senegal": "I",
+  // Group J
+  "Algeria": "J",
+  "Argentina": "J",
+  "Austria": "J",
+  "Jordan": "J",
+  // Group K
+  "Colombia": "K",
+  "DR Congo": "K",
+  "Portugal": "K",
+  "Uzbekistan": "K",
+  // Group L
+  "Croatia": "L",
+  "England": "L",
+  "Ghana": "L",
+  "Panama": "L",
 };
 
 export function groupForTeam(team) {
