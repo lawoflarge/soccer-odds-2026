@@ -201,3 +201,25 @@ test("buildSimulationPayload produziert Spec-6.3-konformes Objekt", () => {
   assert.ok(typeof gEntry.advance === "number");
   assert.ok(typeof gEntry.win_group === "number");
 });
+
+test("buildSimulationPayload akzeptiert die echte team->letter GROUPS-Map (+ ignoriert Alias ohne Match)", () => {
+  // Real shape: tournament.js GROUPS is { teamName: letter }; matches reference those teams.
+  const TEAM_GROUPS = {};
+  const matches = [];
+  for (let g = 0; g < 12; g++) {
+    const letter = String.fromCharCode(65 + g);
+    const teams = [`G${g}a`, `G${g}b`, `G${g}c`, `G${g}d`];
+    for (const t of teams) TEAM_GROUPS[t] = letter;
+    for (let i = 0; i < teams.length; i++)
+      for (let j = i + 1; j < teams.length; j++)
+        matches.push({ phase: "group", teams: { home: teams[i], away: teams[j] }, xg: { home: 1.2, away: 0.9 } });
+  }
+  // Alias like "United States"->"D" with no match must NOT inflate its group nor appear.
+  TEAM_GROUPS["AliasNoMatch"] = "D";
+
+  const payload = buildSimulationPayload(matches, TEAM_GROUPS, { seed: 9, iterations: 100 });
+  assert.equal(payload.teams.length, 48, "48 echte Teams (Alias ohne Match ignoriert)");
+  assert.ok(payload.teams.every((t) => typeof t.win === "number" && typeof t.team === "string"));
+  const winSum = payload.teams.reduce((s, t) => s + t.win, 0);
+  assert.ok(Math.abs(winSum - 100) < 2, `winSum=${winSum}`);
+});
