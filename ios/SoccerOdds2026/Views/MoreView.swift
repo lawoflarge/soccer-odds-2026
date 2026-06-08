@@ -70,7 +70,7 @@ struct MoreView: View {
                     if let price = store.products.first?.displayPrice {
                         Text("\(price) · one-time purchase").font(.caption).foregroundStyle(.secondary)
                     } else {
-                        Text("4.99 EUR · one-time purchase").font(.caption).foregroundStyle(.secondary)
+                        Text("One-time purchase · no subscription").font(.caption).foregroundStyle(.secondary)
                     }
                 }
                 Spacer()

@@ -224,7 +224,7 @@ struct PaywallView: View {
     // MARK: - Helpers
 
     private var priceLabel: String {
-        store.products.first(where: { $0.id == ProStore.productID })?.displayPrice ?? "Get Pro — 4.99 €"
+        store.products.first(where: { $0.id == ProStore.productID })?.displayPrice ?? "Get Pro"
     }
 
     // MARK: - Actions
