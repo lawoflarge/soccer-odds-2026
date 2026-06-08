@@ -24,10 +24,10 @@ jobs:
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          if ! git diff --quiet -- web/public/predictions.json; then
-            git add web/public/predictions.json
-            git commit -m "data: refresh predictions [skip ci]"
+          git add web/public/*.json
+          if ! git diff --cached --quiet; then
+            git commit -m "data: refresh predictions + simulation + odds history [skip ci]"
             git push
           else
-            echo "No change in predictions.json"
+            echo "No data changes"
           fi
