@@ -36,3 +36,18 @@ test("transformMatch returns null when commence_time is missing", () => {
   const noKickoff = { ...sample, commence_time: undefined };
   assert.equal(transformMatch(noKickoff), null);
 });
+
+test("transformMatch liefert die erweiterten Pro-Felder", () => {
+  const m = transformMatch(sample);
+  // xG
+  assert.ok(m.xg.home > 0 && m.xg.away > 0, "xG vorhanden");
+  // erweiterte Märkte
+  assert.ok(m.markets_ext.over_1_5 >= m.goal_markets.over_under_2_5, "over1.5 >= over2.5");
+  assert.ok(m.markets_ext.over_3_5 <= m.goal_markets.over_under_2_5, "over3.5 <= over2.5");
+  assert.equal(m.markets_ext.correct_score.length, 10);
+  // Turnierkontext (sample kickoff 2026-06-11, Mexico)
+  assert.equal(m.phase, "group");
+  assert.equal(m.group, "A");
+  // edge ist null oder {side, value_pct}
+  assert.ok(m.edge === null || (typeof m.edge.side === "string" && typeof m.edge.value_pct === "number"));
+});

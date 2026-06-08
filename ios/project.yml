@@ -14,8 +14,8 @@ packages:
 settings:
   base:
     SWIFT_VERSION: "5.0"
-    MARKETING_VERSION: "1.0.1"
-    CURRENT_PROJECT_VERSION: "3"
+    MARKETING_VERSION: "2.0.0"
+    CURRENT_PROJECT_VERSION: "4"
   configs:
     Debug:
       CODE_SIGNING_ALLOWED: "NO"
@@ -63,6 +63,16 @@ targets:
     sources:
       - path: SoccerOdds2026Tests
       - path: SoccerOdds2026/Resources/sample-predictions.json
+        buildPhase: resources
+      - path: SoccerOdds2026/Resources/sample-predictions-ext.json
+        buildPhase: resources
+      - path: SoccerOdds2026/Resources/sample-simulation.json
+        buildPhase: resources
+      - path: SoccerOdds2026/Resources/sample-track-record.json
+        buildPhase: resources
+      - path: SoccerOdds2026/Resources/sample-odds-history.json
+        buildPhase: resources
+      - path: SoccerOdds2026/SoccerOdds2026.storekit
         buildPhase: resources
     dependencies:
       - target: SoccerOdds2026

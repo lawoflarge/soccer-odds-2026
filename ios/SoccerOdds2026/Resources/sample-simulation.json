@@ -1,0 +1,22 @@
+{
+  "generated_at": "2026-06-15T06:00:00Z",
+  "iterations": 10000,
+  "teams": [
+    {
+      "team": "Brazil",
+      "win": 18.4,
+      "reach": { "r32": 100.0, "r16": 99.1, "qf": 82.3, "sf": 54.1, "final": 30.8, "title": 18.4 }
+    },
+    {
+      "team": "Germany",
+      "win": 12.1,
+      "reach": { "r32": 98.5, "r16": 87.2, "qf": 61.0, "sf": 33.4, "final": 18.7, "title": 12.1 }
+    }
+  ],
+  "groups": {
+    "C": [
+      { "team": "Brazil", "advance": 94.0, "win_group": 61.0 },
+      { "team": "Mexico", "advance": 72.3, "win_group": 28.1 }
+    ]
+  }
+}

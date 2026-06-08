@@ -15,7 +15,7 @@ test("poissonTail gives P(N>=threshold)", () => {
   assert.ok(close(poissonTail(2.5, 3), 0.45619), `${poissonTail(2.5, 3)}`);
 });
 
-import { scoreGrid, marketsFromGrid } from "../src/poisson.js";
+import { scoreGrid, marketsFromGrid, extraGoalMarkets } from "../src/poisson.js";
 
 test("scoreGrid is a normalized probability distribution", () => {
   const grid = scoreGrid(1.6, 1.1);
@@ -52,4 +52,13 @@ test("topScores returns N most likely scorelines, descending", () => {
   for (let i = 1; i < top.length; i++)
     assert.ok(top[i - 1].pct >= top[i].pct, "must be sorted descending");
   assert.match(top[0].score, /^\d+:\d+$/, "score formatted as H:A");
+});
+
+test("extraGoalMarkets: over-Schwellen sind absteigend geordnet", () => {
+  const grid = scoreGrid(1.5, 1.2);
+  const e = extraGoalMarkets(grid);
+  const m = marketsFromGrid(grid);
+  assert.ok(e.over_1_5 > m.over, "over 1.5 > over 2.5");
+  assert.ok(m.over > e.over_3_5, "over 2.5 > over 3.5");
+  assert.ok(e.over_1_5 <= 1 && e.over_3_5 >= 0, "Wahrscheinlichkeiten in [0,1]");
 });

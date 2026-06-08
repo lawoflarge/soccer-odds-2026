@@ -12,6 +12,16 @@ final class ConsentManager {
     private(set) var canRequestAds = false
     private var started = false
 
+
+    #if DEBUG
+    /// Screenshot harness: fully inert. We must NOT touch UMP and must keep canRequestAds
+    /// false so AdBannerView never renders. A rendered banner calls banner.load(), which
+    /// starts the Mobile Ads SDK and auto-presents the EEA consent form, blocking the UI.
+    func bootstrapForScreenshots() {
+        // intentionally empty: no ads, no consent, no SDK start during screenshots
+    }
+    #endif
+
     func bootstrap() async {
         let params = RequestParameters()
         await withCheckedContinuation { (cont: CheckedContinuation<Void, Never>) in

@@ -40,6 +40,13 @@ final class PredictionsService: ObservableObject {
 
     /// Fetch the live feed; on failure keep cached data and surface a message.
     func refresh() async {
+        #if DEBUG
+        if ProcessInfo.processInfo.arguments.contains("-screenshotData") {
+            if let u = Bundle.main.url(forResource: "sample-predictions-ext", withExtension: "json"),
+               let d = try? Data(contentsOf: u) { try? apply(d) }
+            return
+        }
+        #endif
         isLoading = true
         loadError = nil
         defer { isLoading = false }

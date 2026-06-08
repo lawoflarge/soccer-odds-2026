@@ -1,0 +1,34 @@
+{
+  "identifier" : "SoccerOdds2026",
+  "nonConsumableProducts" : [
+    {
+      "displayPrice" : "4.99",
+      "familyShareable" : false,
+      "internalID" : "pro_unlock",
+      "localizations" : [
+        {
+          "description" : "Unlock all Pro features: Edge detection, Line Movement, Monte-Carlo simulation, xG markets, Track Record and ad-free experience.",
+          "displayName" : "Soccer Odds Pro",
+          "locale" : "en_US"
+        },
+        {
+          "description" : "Alle Pro-Features freischalten: Edge-Erkennung, Quotenbewegung, Monte-Carlo-Simulation, xG-Märkte, Treffsicherheit und werbefreies Erlebnis.",
+          "displayName" : "Soccer Odds Pro",
+          "locale" : "de_DE"
+        }
+      ],
+      "productID" : "pro_unlock",
+      "referenceName" : "Pro Unlock",
+      "type" : "NonConsumable"
+    }
+  ],
+  "settings" : {
+    "_failTransactionsEnabled" : false,
+    "_storefront" : "DEU",
+    "_storeKitVersion" : "2"
+  },
+  "version" : {
+    "major" : 2,
+    "minor" : 0
+  }
+}

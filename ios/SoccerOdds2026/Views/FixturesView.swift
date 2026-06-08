@@ -4,10 +4,19 @@ struct FixturesView: View {
     @EnvironmentObject var service: PredictionsService
     @EnvironmentObject var favorites: FavoriteStore
     @Environment(ConsentManager.self) private var consent
+    @Environment(ProStore.self) private var store
     @State private var filter: Filter = .all
     @State private var path: [Match] = []
 
     enum Filter: String, CaseIterable { case all = "All", today = "Today", myTeam = "My Team" }
+
+    private static var isScreenshotMode: Bool {
+        #if DEBUG
+        return ProcessInfo.processInfo.arguments.contains("-screenshotData")
+        #else
+        return false
+        #endif
+    }
 
     private var filtered: [Match] {
         service.matches.filter { m in
@@ -70,7 +79,7 @@ struct FixturesView: View {
             .navigationDestination(for: Match.self) { MatchDetailView(match: $0) }
             .refreshable { await service.refresh() }
             .safeAreaInset(edge: .bottom) {
-                if consent.canRequestAds {
+                if !store.isPro && consent.canRequestAds && !Self.isScreenshotMode {
                     AdBannerView().frame(height: 50)
                 }
             }
