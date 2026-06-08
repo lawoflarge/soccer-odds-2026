@@ -20,7 +20,15 @@ struct SoccerOdds2026App: App {
                 .environment(simService)
                 .environment(trackService)
                 .environment(oddsHistory)
-                .task { await consent.bootstrap() }
+                .task {
+                    #if DEBUG
+                    if ProcessInfo.processInfo.arguments.contains("-screenshotData") {
+                        consent.bootstrapForScreenshots()
+                        return
+                    }
+                    #endif
+                    await consent.bootstrap()
+                }
                 .task { await proStore.refreshEntitlements() }
                 .task { await simService.refresh() }
                 .task { await trackService.refresh() }

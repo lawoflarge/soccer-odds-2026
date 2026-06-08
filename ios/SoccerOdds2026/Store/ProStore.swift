@@ -86,6 +86,9 @@ final class ProStore {
 
     /// Iterates currentEntitlements to derive isPro. Safe to call on cold start.
     func refreshEntitlements() async {
+        #if DEBUG
+        if ProcessInfo.processInfo.arguments.contains("-proUnlocked") { isPro = true; return }
+        #endif
         var hasPro = false
         for await result in Transaction.currentEntitlements {
             if case .verified(let tx) = result, tx.productID == Self.productID {
