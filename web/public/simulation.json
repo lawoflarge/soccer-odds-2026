@@ -1,316 +1,304 @@
 {
-  "generated_at": "2026-06-21T19:27:44.531Z",
+  "generated_at": "2026-06-22T04:04:24.240Z",
   "iterations": 10000,
   "teams": [
     {
       "team": "Netherlands",
-      "win": 9.4,
+      "win": 9.5,
       "reach": {
-        "r32": 96.6,
-        "r16": 58.9,
-        "qf": 39.4,
-        "sf": 24,
-        "final": 15.4,
-        "title": 9.4
+        "r32": 96.7,
+        "r16": 59,
+        "qf": 39,
+        "sf": 24.3,
+        "final": 15.6,
+        "title": 9.5
       }
     },
     {
       "team": "Ivory Coast",
       "win": 9.2,
       "reach": {
-        "r32": 96.9,
-        "r16": 57.9,
-        "qf": 38.5,
-        "sf": 24.1,
-        "final": 15.1,
+        "r32": 96.3,
+        "r16": 57.8,
+        "qf": 37.6,
+        "sf": 23.6,
+        "final": 15.2,
         "title": 9.2
       }
     },
     {
       "team": "Morocco",
-      "win": 9,
+      "win": 8.8,
       "reach": {
-        "r32": 96.9,
-        "r16": 68.1,
-        "qf": 44.4,
-        "sf": 26,
-        "final": 15.3,
-        "title": 9
+        "r32": 97.1,
+        "r16": 67,
+        "qf": 44.1,
+        "sf": 24.9,
+        "final": 14.5,
+        "title": 8.8
       }
     },
     {
       "team": "England",
-      "win": 7.4,
+      "win": 7.1,
       "reach": {
-        "r32": 96,
-        "r16": 62.5,
-        "qf": 37.5,
-        "sf": 22.9,
-        "final": 13.1,
-        "title": 7.4
-      }
-    },
-    {
-      "team": "France",
-      "win": 7.2,
-      "reach": {
-        "r32": 95.4,
-        "r16": 59.6,
-        "qf": 35.7,
-        "sf": 21.8,
-        "final": 12.6,
-        "title": 7.2
-      }
-    },
-    {
-      "team": "Bosnia & Herzegovina",
-      "win": 5.3,
-      "reach": {
-        "r32": 91.4,
-        "r16": 58.6,
-        "qf": 33.7,
-        "sf": 17.8,
-        "final": 9.6,
-        "title": 5.3
-      }
-    },
-    {
-      "team": "Brazil",
-      "win": 5.2,
-      "reach": {
-        "r32": 93.3,
-        "r16": 59.8,
-        "qf": 36.1,
-        "sf": 18.8,
-        "final": 9.7,
-        "title": 5.2
+        "r32": 95.8,
+        "r16": 62.2,
+        "qf": 37.2,
+        "sf": 22.4,
+        "final": 12.4,
+        "title": 7.1
       }
     },
     {
       "team": "Belgium",
-      "win": 4.5,
+      "win": 7,
       "reach": {
-        "r32": 92.7,
-        "r16": 57.2,
-        "qf": 29.1,
-        "sf": 15.8,
-        "final": 8.5,
-        "title": 4.5
+        "r32": 96.5,
+        "r16": 62.2,
+        "qf": 33.3,
+        "sf": 19.7,
+        "final": 12.1,
+        "title": 7
       }
     },
     {
-      "team": "Portugal",
-      "win": 3.6,
+      "team": "France",
+      "win": 7,
       "reach": {
-        "r32": 91.3,
-        "r16": 49.2,
-        "qf": 26.4,
-        "sf": 14.8,
+        "r32": 95.3,
+        "r16": 59.1,
+        "qf": 35.5,
+        "sf": 21.8,
+        "final": 12.7,
+        "title": 7
+      }
+    },
+    {
+      "team": "Bosnia & Herzegovina",
+      "win": 4.9,
+      "reach": {
+        "r32": 91.6,
+        "r16": 58.3,
+        "qf": 33,
+        "sf": 17.3,
+        "final": 9.1,
+        "title": 4.9
+      }
+    },
+    {
+      "team": "Brazil",
+      "win": 4.8,
+      "reach": {
+        "r32": 93.7,
+        "r16": 59.4,
+        "qf": 35.6,
+        "sf": 18.3,
+        "final": 9.4,
+        "title": 4.8
+      }
+    },
+    {
+      "team": "Spain",
+      "win": 3.8,
+      "reach": {
+        "r32": 88.8,
+        "r16": 51.2,
+        "qf": 25.6,
+        "sf": 14.3,
+        "final": 7.8,
+        "title": 3.8
+      }
+    },
+    {
+      "team": "Argentina",
+      "win": 3.7,
+      "reach": {
+        "r32": 90.5,
+        "r16": 49.4,
+        "qf": 26.7,
+        "sf": 14.5,
         "final": 7.3,
-        "title": 3.6
+        "title": 3.7
+      }
+    },
+    {
+      "team": "Algeria",
+      "win": 3.4,
+      "reach": {
+        "r32": 89,
+        "r16": 48.3,
+        "qf": 26.4,
+        "sf": 14.1,
+        "final": 7,
+        "title": 3.4
       }
     },
     {
       "team": "Croatia",
       "win": 3.4,
       "reach": {
-        "r32": 89.7,
-        "r16": 52.9,
-        "qf": 27.8,
-        "sf": 15.2,
-        "final": 7.6,
+        "r32": 89.6,
+        "r16": 52.5,
+        "qf": 27.5,
+        "sf": 14.5,
+        "final": 7.1,
         "title": 3.4
       }
     },
     {
-      "team": "Argentina",
-      "win": 3.2,
+      "team": "Portugal",
+      "win": 3.3,
       "reach": {
-        "r32": 89.5,
-        "r16": 48.2,
-        "qf": 25.6,
-        "sf": 13.5,
-        "final": 6.6,
-        "title": 3.2
-      }
-    },
-    {
-      "team": "Algeria",
-      "win": 3.2,
-      "reach": {
-        "r32": 89.4,
-        "r16": 46.5,
-        "qf": 24.6,
-        "sf": 13.3,
-        "final": 7,
-        "title": 3.2
-      }
-    },
-    {
-      "team": "Spain",
-      "win": 3.1,
-      "reach": {
-        "r32": 88.5,
-        "r16": 50.2,
-        "qf": 24.7,
-        "sf": 12.4,
-        "final": 6.2,
-        "title": 3.1
+        "r32": 91.2,
+        "r16": 48.5,
+        "qf": 25.2,
+        "sf": 13.8,
+        "final": 6.8,
+        "title": 3.3
       }
     },
     {
       "team": "Japan",
-      "win": 3,
+      "win": 2.5,
       "reach": {
-        "r32": 85.2,
-        "r16": 43.9,
-        "qf": 24.4,
-        "sf": 12.3,
-        "final": 6.3,
-        "title": 3
-      }
-    },
-    {
-      "team": "South Korea",
-      "win": 2.7,
-      "reach": {
-        "r32": 86.7,
-        "r16": 47.2,
-        "qf": 24.4,
-        "sf": 11.6,
-        "final": 5.5,
-        "title": 2.7
-      }
-    },
-    {
-      "team": "Germany",
-      "win": 2.4,
-      "reach": {
-        "r32": 85.4,
-        "r16": 42.8,
-        "qf": 22.7,
-        "sf": 11.2,
-        "final": 5.3,
-        "title": 2.4
+        "r32": 85.6,
+        "r16": 44.1,
+        "qf": 24.1,
+        "sf": 12.4,
+        "final": 6.5,
+        "title": 2.5
       }
     },
     {
       "team": "Senegal",
       "win": 2.4,
       "reach": {
-        "r32": 85.9,
-        "r16": 46.5,
-        "qf": 23.7,
-        "sf": 11.9,
-        "final": 5.7,
+        "r32": 86.4,
+        "r16": 45.1,
+        "qf": 23.1,
+        "sf": 11.7,
+        "final": 5.5,
         "title": 2.4
       }
     },
     {
-      "team": "Egypt",
-      "win": 2,
+      "team": "Germany",
+      "win": 2.3,
       "reach": {
-        "r32": 84.7,
-        "r16": 45.6,
-        "qf": 20.7,
-        "sf": 9.7,
-        "final": 4.8,
-        "title": 2
+        "r32": 83.8,
+        "r16": 42,
+        "qf": 22.6,
+        "sf": 11,
+        "final": 5.2,
+        "title": 2.3
+      }
+    },
+    {
+      "team": "South Korea",
+      "win": 2.2,
+      "reach": {
+        "r32": 86.8,
+        "r16": 47.7,
+        "qf": 23.7,
+        "sf": 10.7,
+        "final": 4.9,
+        "title": 2.2
       }
     },
     {
       "team": "USA",
       "win": 1.9,
       "reach": {
-        "r32": 84.1,
-        "r16": 39,
-        "qf": 20.4,
-        "sf": 9.6,
-        "final": 4.2,
+        "r32": 84.6,
+        "r16": 39.8,
+        "qf": 21.7,
+        "sf": 10,
+        "final": 4.5,
         "title": 1.9
       }
     },
     {
       "team": "Mexico",
-      "win": 1.4,
+      "win": 1.8,
       "reach": {
-        "r32": 79.6,
-        "r16": 39.5,
-        "qf": 18.2,
-        "sf": 8.2,
-        "final": 3.3,
-        "title": 1.4
+        "r32": 80.4,
+        "r16": 40.9,
+        "qf": 18.8,
+        "sf": 8.1,
+        "final": 3.5,
+        "title": 1.8
       }
     },
     {
       "team": "Colombia",
       "win": 1.4,
       "reach": {
-        "r32": 78.5,
-        "r16": 35.6,
-        "qf": 16.2,
-        "sf": 7.9,
-        "final": 3.6,
+        "r32": 77.6,
+        "r16": 35.5,
+        "qf": 16.1,
+        "sf": 7.5,
+        "final": 3.2,
         "title": 1.4
       }
     },
     {
-      "team": "Switzerland",
-      "win": 1.1,
+      "team": "Cape Verde",
+      "win": 1.3,
       "reach": {
-        "r32": 71.5,
-        "r16": 36.5,
-        "qf": 15.9,
-        "sf": 6.6,
-        "final": 2.6,
-        "title": 1.1
+        "r32": 74.6,
+        "r16": 37.5,
+        "qf": 16,
+        "sf": 7.4,
+        "final": 3.2,
+        "title": 1.3
       }
     },
     {
       "team": "Norway",
       "win": 1,
       "reach": {
-        "r32": 72.4,
-        "r16": 34.7,
-        "qf": 15.6,
+        "r32": 74.3,
+        "r16": 35.4,
+        "qf": 16.3,
         "sf": 7.2,
-        "final": 3,
+        "final": 2.9,
         "title": 1
       }
     },
     {
+      "team": "Switzerland",
+      "win": 0.9,
+      "reach": {
+        "r32": 70.7,
+        "r16": 35.7,
+        "qf": 15.3,
+        "sf": 6.3,
+        "final": 2.2,
+        "title": 0.9
+      }
+    },
+    {
       "team": "Turkey",
-      "win": 0.8,
+      "win": 0.9,
       "reach": {
-        "r32": 73.2,
-        "r16": 30.1,
-        "qf": 14.3,
-        "sf": 5.9,
-        "final": 2.4,
-        "title": 0.8
-      }
-    },
-    {
-      "team": "Uruguay",
-      "win": 0.8,
-      "reach": {
-        "r32": 69.3,
-        "r16": 32.8,
-        "qf": 13.2,
+        "r32": 71.5,
+        "r16": 29.7,
+        "qf": 13.8,
         "sf": 5.6,
-        "final": 2.3,
-        "title": 0.8
+        "final": 2.1,
+        "title": 0.9
       }
     },
     {
-      "team": "Ecuador",
+      "team": "Egypt",
       "win": 0.7,
       "reach": {
-        "r32": 67.6,
-        "r16": 28.3,
-        "qf": 13.1,
-        "sf": 5.1,
-        "final": 1.9,
+        "r32": 72.5,
+        "r16": 32.7,
+        "qf": 12.8,
+        "sf": 5.3,
+        "final": 2.1,
         "title": 0.7
       }
     },
@@ -318,10 +306,10 @@
       "team": "Saudi Arabia",
       "win": 0.7,
       "reach": {
-        "r32": 69.4,
-        "r16": 32.5,
-        "qf": 13.3,
-        "sf": 5.6,
+        "r32": 64.9,
+        "r16": 30.7,
+        "qf": 12.5,
+        "sf": 5.4,
         "final": 2.1,
         "title": 0.7
       }
@@ -330,35 +318,35 @@
       "team": "Canada",
       "win": 0.6,
       "reach": {
-        "r32": 64.8,
-        "r16": 31.5,
-        "qf": 13.3,
-        "sf": 5.2,
-        "final": 1.8,
+        "r32": 64.3,
+        "r16": 30.6,
+        "qf": 12.7,
+        "sf": 5.1,
+        "final": 1.7,
+        "title": 0.6
+      }
+    },
+    {
+      "team": "Ecuador",
+      "win": 0.6,
+      "reach": {
+        "r32": 67,
+        "r16": 28.8,
+        "qf": 12.7,
+        "sf": 5.4,
+        "final": 2,
         "title": 0.6
       }
     },
     {
       "team": "Sweden",
-      "win": 0.6,
-      "reach": {
-        "r32": 65.2,
-        "r16": 28.4,
-        "qf": 13,
-        "sf": 5.3,
-        "final": 1.9,
-        "title": 0.6
-      }
-    },
-    {
-      "team": "DR Congo",
       "win": 0.5,
       "reach": {
-        "r32": 58.4,
-        "r16": 22.7,
-        "qf": 8.5,
-        "sf": 3.1,
-        "final": 1.2,
+        "r32": 66.2,
+        "r16": 28.3,
+        "qf": 12.8,
+        "sf": 5.5,
+        "final": 2,
         "title": 0.5
       }
     },
@@ -366,11 +354,11 @@
       "team": "Czech Republic",
       "win": 0.4,
       "reach": {
-        "r32": 60,
-        "r16": 25.6,
-        "qf": 9.6,
-        "sf": 3.3,
-        "final": 1,
+        "r32": 60.1,
+        "r16": 25,
+        "qf": 9.9,
+        "sf": 3.6,
+        "final": 1.2,
         "title": 0.4
       }
     },
@@ -378,11 +366,11 @@
       "team": "Paraguay",
       "win": 0.3,
       "reach": {
-        "r32": 56.7,
-        "r16": 20.7,
-        "qf": 8.2,
-        "sf": 3,
-        "final": 0.8,
+        "r32": 57.5,
+        "r16": 21.2,
+        "qf": 8.6,
+        "sf": 3.1,
+        "final": 1,
         "title": 0.3
       }
     },
@@ -390,11 +378,35 @@
       "team": "Australia",
       "win": 0.3,
       "reach": {
-        "r32": 58.1,
-        "r16": 21.2,
-        "qf": 8.5,
-        "sf": 2.9,
-        "final": 1,
+        "r32": 58.6,
+        "r16": 21.4,
+        "qf": 9.1,
+        "sf": 3.4,
+        "final": 1.1,
+        "title": 0.3
+      }
+    },
+    {
+      "team": "Iran",
+      "win": 0.3,
+      "reach": {
+        "r32": 62,
+        "r16": 25.8,
+        "qf": 9.3,
+        "sf": 3.1,
+        "final": 1.1,
+        "title": 0.3
+      }
+    },
+    {
+      "team": "DR Congo",
+      "win": 0.3,
+      "reach": {
+        "r32": 58.7,
+        "r16": 22.7,
+        "qf": 8.8,
+        "sf": 3.3,
+        "final": 1.1,
         "title": 0.3
       }
     },
@@ -402,35 +414,23 @@
       "team": "Qatar",
       "win": 0.2,
       "reach": {
-        "r32": 41.4,
-        "r16": 16.1,
-        "qf": 5.2,
-        "sf": 1.8,
-        "final": 0.5,
-        "title": 0.2
-      }
-    },
-    {
-      "team": "Iran",
-      "win": 0.2,
-      "reach": {
-        "r32": 49.8,
-        "r16": 19.5,
-        "qf": 6.6,
-        "sf": 2,
-        "final": 0.7,
-        "title": 0.2
-      }
-    },
-    {
-      "team": "Cape Verde",
-      "win": 0.2,
-      "reach": {
-        "r32": 43.2,
-        "r16": 16.7,
+        "r32": 42.8,
+        "r16": 16.4,
         "qf": 5.7,
+        "sf": 1.7,
+        "final": 0.6,
+        "title": 0.2
+      }
+    },
+    {
+      "team": "Jordan",
+      "win": 0.2,
+      "reach": {
+        "r32": 47.8,
+        "r16": 16.5,
+        "qf": 6.1,
         "sf": 2,
-        "final": 0.7,
+        "final": 0.6,
         "title": 0.2
       }
     },
@@ -438,11 +438,11 @@
       "team": "South Africa",
       "win": 0.1,
       "reach": {
-        "r32": 44.7,
-        "r16": 16.2,
-        "qf": 5.7,
-        "sf": 1.7,
-        "final": 0.5,
+        "r32": 43.6,
+        "r16": 15.8,
+        "qf": 5.4,
+        "sf": 1.5,
+        "final": 0.3,
         "title": 0.1
       }
     },
@@ -450,23 +450,23 @@
       "team": "Scotland",
       "win": 0.1,
       "reach": {
-        "r32": 44.3,
-        "r16": 16,
-        "qf": 5.6,
-        "sf": 1.6,
+        "r32": 45.3,
+        "r16": 16.9,
+        "qf": 5.8,
+        "sf": 1.7,
         "final": 0.4,
         "title": 0.1
       }
     },
     {
-      "team": "New Zealand",
+      "team": "Uruguay",
       "win": 0.1,
       "reach": {
-        "r32": 38.8,
-        "r16": 13.3,
-        "qf": 3.9,
-        "sf": 1.1,
-        "final": 0.3,
+        "r32": 41.4,
+        "r16": 16.4,
+        "qf": 5.3,
+        "sf": 1.7,
+        "final": 0.5,
         "title": 0.1
       }
     },
@@ -474,23 +474,11 @@
       "team": "Austria",
       "win": 0.1,
       "reach": {
-        "r32": 40.5,
-        "r16": 13.8,
-        "qf": 4.7,
-        "sf": 1.6,
-        "final": 0.4,
-        "title": 0.1
-      }
-    },
-    {
-      "team": "Jordan",
-      "win": 0.1,
-      "reach": {
-        "r32": 45.4,
-        "r16": 16.1,
-        "qf": 5.7,
-        "sf": 1.7,
-        "final": 0.5,
+        "r32": 39.1,
+        "r16": 13.3,
+        "qf": 4.3,
+        "sf": 1.2,
+        "final": 0.3,
         "title": 0.1
       }
     },
@@ -498,11 +486,11 @@
       "team": "Uzbekistan",
       "win": 0.1,
       "reach": {
-        "r32": 39.4,
-        "r16": 12.4,
-        "qf": 3.7,
+        "r32": 39.9,
+        "r16": 13.1,
+        "qf": 4.1,
         "sf": 1.3,
-        "final": 0.4,
+        "final": 0.3,
         "title": 0.1
       }
     },
@@ -510,10 +498,10 @@
       "team": "Panama",
       "win": 0.1,
       "reach": {
-        "r32": 39.5,
-        "r16": 14,
-        "qf": 4.3,
-        "sf": 1.5,
+        "r32": 40.1,
+        "r16": 14.6,
+        "qf": 4.7,
+        "sf": 1.6,
         "final": 0.4,
         "title": 0.1
       }
@@ -522,11 +510,11 @@
       "team": "Haiti",
       "win": 0,
       "reach": {
-        "r32": 22.7,
-        "r16": 6.9,
+        "r32": 21.5,
+        "r16": 6.3,
         "qf": 1.6,
-        "sf": 0.5,
-        "final": 0.2,
+        "sf": 0.4,
+        "final": 0,
         "title": 0
       }
     },
@@ -534,9 +522,9 @@
       "team": "Curaçao",
       "win": 0,
       "reach": {
-        "r32": 17.4,
-        "r16": 4.6,
-        "qf": 1.3,
+        "r32": 19.1,
+        "r16": 5.1,
+        "qf": 1.4,
         "sf": 0.3,
         "final": 0.1,
         "title": 0
@@ -546,11 +534,23 @@
       "team": "Tunisia",
       "win": 0,
       "reach": {
-        "r32": 18.4,
-        "r16": 4.9,
-        "qf": 1.5,
-        "sf": 0.4,
-        "final": 0.1,
+        "r32": 18.3,
+        "r16": 4.8,
+        "qf": 1.3,
+        "sf": 0.3,
+        "final": 0,
+        "title": 0
+      }
+    },
+    {
+      "team": "New Zealand",
+      "win": 0,
+      "reach": {
+        "r32": 33.9,
+        "r16": 10.5,
+        "qf": 2.7,
+        "sf": 0.8,
+        "final": 0.2,
         "title": 0
       }
     },
@@ -558,11 +558,11 @@
       "team": "Iraq",
       "win": 0,
       "reach": {
-        "r32": 16.9,
-        "r16": 4.6,
+        "r32": 14.9,
+        "r16": 3.9,
         "qf": 1,
-        "sf": 0.2,
-        "final": 0,
+        "sf": 0.3,
+        "final": 0.1,
         "title": 0
       }
     },
@@ -570,10 +570,10 @@
       "team": "Ghana",
       "win": 0,
       "reach": {
-        "r32": 33.6,
-        "r16": 10.5,
-        "qf": 3.1,
-        "sf": 0.8,
+        "r32": 32.4,
+        "r16": 10.9,
+        "qf": 3.5,
+        "sf": 1,
         "final": 0.2,
         "title": 0
       }
@@ -583,265 +583,265 @@
     "A": [
       {
         "team": "Czech Republic",
-        "advance": 60,
-        "win_group": 15.4
+        "advance": 60.1,
+        "win_group": 15.2
       },
       {
         "team": "Mexico",
-        "advance": 79.6,
+        "advance": 80.4,
         "win_group": 32.2
       },
       {
         "team": "South Africa",
-        "advance": 44.7,
-        "win_group": 9.1
+        "advance": 43.6,
+        "win_group": 8.7
       },
       {
         "team": "South Korea",
-        "advance": 86.7,
-        "win_group": 43.3
+        "advance": 86.8,
+        "win_group": 43.9
       }
     ],
     "B": [
       {
         "team": "Bosnia & Herzegovina",
-        "advance": 91.4,
-        "win_group": 54.5
+        "advance": 91.6,
+        "win_group": 54.3
       },
       {
         "team": "Qatar",
-        "advance": 41.4,
-        "win_group": 7.5
+        "advance": 42.8,
+        "win_group": 8.3
       },
       {
         "team": "Switzerland",
-        "advance": 71.5,
-        "win_group": 21
+        "advance": 70.7,
+        "win_group": 21.1
       },
       {
         "team": "Canada",
-        "advance": 64.8,
-        "win_group": 17
+        "advance": 64.3,
+        "win_group": 16.3
       }
     ],
     "C": [
       {
         "team": "Scotland",
-        "advance": 44.3,
-        "win_group": 3.9
+        "advance": 45.3,
+        "win_group": 4
       },
       {
         "team": "Brazil",
-        "advance": 93.3,
-        "win_group": 37.1
+        "advance": 93.7,
+        "win_group": 38
       },
       {
         "team": "Morocco",
-        "advance": 96.9,
-        "win_group": 57.8
+        "advance": 97.1,
+        "win_group": 56.7
       },
       {
         "team": "Haiti",
-        "advance": 22.7,
+        "advance": 21.5,
         "win_group": 1.3
       }
     ],
     "D": [
       {
         "team": "Paraguay",
-        "advance": 56.7,
-        "win_group": 15.5
+        "advance": 57.5,
+        "win_group": 16
       },
       {
         "team": "Australia",
-        "advance": 58.1,
-        "win_group": 15.6
+        "advance": 58.6,
+        "win_group": 16.6
       },
       {
         "team": "Turkey",
-        "advance": 73.2,
-        "win_group": 26.7
+        "advance": 71.5,
+        "win_group": 24.9
       },
       {
         "team": "USA",
-        "advance": 84.1,
-        "win_group": 42.2
+        "advance": 84.6,
+        "win_group": 42.6
       }
     ],
     "E": [
       {
         "team": "Curaçao",
-        "advance": 17.4,
-        "win_group": 1.2
+        "advance": 19.1,
+        "win_group": 1.6
       },
       {
         "team": "Ivory Coast",
-        "advance": 96.9,
-        "win_group": 61.1
+        "advance": 96.3,
+        "win_group": 63.3
       },
       {
         "team": "Ecuador",
-        "advance": 67.6,
-        "win_group": 12
+        "advance": 67,
+        "win_group": 11.8
       },
       {
         "team": "Germany",
-        "advance": 85.4,
-        "win_group": 25.7
+        "advance": 83.8,
+        "win_group": 23.4
       }
     ],
     "F": [
       {
         "team": "Japan",
-        "advance": 85.2,
-        "win_group": 25
+        "advance": 85.6,
+        "win_group": 25.6
       },
       {
         "team": "Sweden",
-        "advance": 65.2,
-        "win_group": 10.8
+        "advance": 66.2,
+        "win_group": 10.5
       },
       {
         "team": "Tunisia",
-        "advance": 18.4,
-        "win_group": 1.3
+        "advance": 18.3,
+        "win_group": 1.4
       },
       {
         "team": "Netherlands",
-        "advance": 96.6,
-        "win_group": 62.9
+        "advance": 96.7,
+        "win_group": 62.6
       }
     ],
     "G": [
       {
-        "team": "Belgium",
-        "advance": 92.7,
-        "win_group": 53.1
-      },
-      {
-        "team": "Iran",
-        "advance": 49.8,
-        "win_group": 8.6
-      },
-      {
         "team": "New Zealand",
-        "advance": 38.8,
-        "win_group": 5.7
+        "advance": 33.9,
+        "win_group": 3.9
+      },
+      {
+        "team": "Belgium",
+        "advance": 96.5,
+        "win_group": 68.3
       },
       {
         "team": "Egypt",
-        "advance": 84.7,
-        "win_group": 32.6
+        "advance": 72.5,
+        "win_group": 17.2
+      },
+      {
+        "team": "Iran",
+        "advance": 62,
+        "win_group": 10.7
       }
     ],
     "H": [
       {
-        "team": "Uruguay",
-        "advance": 69.3,
-        "win_group": 22.3
-      },
-      {
         "team": "Cape Verde",
-        "advance": 43.2,
-        "win_group": 8.4
+        "advance": 74.6,
+        "win_group": 25.5
       },
       {
         "team": "Saudi Arabia",
-        "advance": 69.4,
-        "win_group": 21
+        "advance": 64.9,
+        "win_group": 17.8
+      },
+      {
+        "team": "Uruguay",
+        "advance": 41.4,
+        "win_group": 8.2
       },
       {
         "team": "Spain",
-        "advance": 88.5,
-        "win_group": 48.3
+        "advance": 88.8,
+        "win_group": 48.6
       }
     ],
     "I": [
       {
         "team": "France",
-        "advance": 95.4,
-        "win_group": 55
+        "advance": 95.3,
+        "win_group": 54.6
       },
       {
         "team": "Iraq",
-        "advance": 16.9,
-        "win_group": 1.5
+        "advance": 14.9,
+        "win_group": 1.2
       },
       {
         "team": "Norway",
-        "advance": 72.4,
-        "win_group": 15.2
+        "advance": 74.3,
+        "win_group": 16
       },
       {
         "team": "Senegal",
-        "advance": 85.9,
-        "win_group": 28.3
+        "advance": 86.4,
+        "win_group": 28.2
       }
     ],
     "J": [
       {
         "team": "Argentina",
-        "advance": 89.5,
-        "win_group": 43.5
+        "advance": 90.5,
+        "win_group": 45.6
       },
       {
         "team": "Austria",
-        "advance": 40.5,
-        "win_group": 6
+        "advance": 39.1,
+        "win_group": 5.6
       },
       {
         "team": "Jordan",
-        "advance": 45.4,
-        "win_group": 7.7
+        "advance": 47.8,
+        "win_group": 7.4
       },
       {
         "team": "Algeria",
-        "advance": 89.4,
-        "win_group": 42.7
+        "advance": 89,
+        "win_group": 41.4
       }
     ],
     "K": [
       {
         "team": "Portugal",
-        "advance": 91.3,
-        "win_group": 51.5
+        "advance": 91.2,
+        "win_group": 52.5
       },
       {
         "team": "Uzbekistan",
-        "advance": 39.4,
-        "win_group": 7.1
+        "advance": 39.9,
+        "win_group": 6.8
       },
       {
         "team": "Colombia",
-        "advance": 78.5,
-        "win_group": 28
+        "advance": 77.6,
+        "win_group": 27.2
       },
       {
         "team": "DR Congo",
-        "advance": 58.4,
+        "advance": 58.7,
         "win_group": 13.4
       }
     ],
     "L": [
       {
         "team": "England",
-        "advance": 96,
-        "win_group": 57.5
+        "advance": 95.8,
+        "win_group": 57.9
       },
       {
         "team": "Ghana",
-        "advance": 33.6,
-        "win_group": 3.2
+        "advance": 32.4,
+        "win_group": 3.4
       },
       {
         "team": "Panama",
-        "advance": 39.5,
-        "win_group": 4.6
+        "advance": 40.1,
+        "win_group": 4.7
       },
       {
         "team": "Croatia",
-        "advance": 89.7,
-        "win_group": 34.7
+        "advance": 89.6,
+        "win_group": 34.1
       }
     ]
   }
