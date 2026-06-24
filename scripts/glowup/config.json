@@ -1,0 +1,86 @@
+{
+  "soccer-odds": {
+    "name": "Soccer Odds 2026",
+    "wordmark": "Soccer Odds 2026",
+    "appId": "6775278722",
+    "size": { "w": 1290, "h": 2796 },
+    "grassImage": "assets/grass-day.jpg",
+    "grassNight": "assets/grass-night.jpg",
+    "palette": {
+      "depthBase": "#0F1419",
+      "depthSurface": "#1D2B1F",
+      "ink": "#070B09",
+      "bezel": "#04060B",
+      "gold": "#FFD24A",
+      "goldDeep": "#E0A21E",
+      "green": "#3AD17F",
+      "white": "#FFFFFF",
+      "slate": "#D7E0D6",
+      "slateDim": "#8FA08C"
+    },
+    "frames": [
+      {
+        "id": "01-fixtures",
+        "layout": "hero",
+        "screen": "01-fixtures.png",
+        "grass": "day",
+        "eyebrow": "WORLD FOOTBALL · 2026",
+        "headline": "The market's pick for every match",
+        "accent": "market's pick",
+        "subline": "Win odds, exact scores & goals — all tournament long."
+      },
+      {
+        "id": "02-detail",
+        "layout": "hero",
+        "screen": "02-detail.png",
+        "grass": "day",
+        "eyebrow": "MATCH BREAKDOWN",
+        "headline": "Odds for every outcome",
+        "accent": "every outcome",
+        "subline": "1X2, most-likely scores, Over/Under & BTTS.",
+        "callout": { "cropFrac": [0.05, 0.352, 0.88, 0.026], "caption": "1X2 result odds" }
+      },
+      {
+        "id": "03-trophy",
+        "layout": "hero",
+        "screen": "03-tournament.png",
+        "grass": "day",
+        "eyebrow": "10,000 SIMULATIONS",
+        "headline": "Who lifts the trophy?",
+        "accent": "trophy?",
+        "subline": "Title odds for all 48 teams, simulated."
+      },
+      {
+        "id": "04-edge",
+        "layout": "hero",
+        "screen": "01-fixtures.png",
+        "grass": "day",
+        "eyebrow": "PRO · MODEL vs MARKET",
+        "headline": "See where the model sees value",
+        "accent": "sees value",
+        "subline": "Spot where the model and the market disagree.",
+        "callout": { "cropFrac": [0.50, 0.283, 0.46, 0.026], "caption": "+4.2% away value" }
+      },
+      {
+        "id": "05-myteam",
+        "layout": "hero",
+        "screen": "05-myteam.png",
+        "grass": "day",
+        "eyebrow": "YOUR TEAM",
+        "headline": "Follow your nation",
+        "accent": "your nation",
+        "subline": "Pin your team — every fixture, every odd."
+      },
+      {
+        "id": "06-cta",
+        "layout": "hero",
+        "screen": "02-detail.png",
+        "grass": "night",
+        "eyebrow": "FREE · NO BETTING",
+        "headline": "Read the market, not the noise",
+        "accent": "not the noise",
+        "subline": "Bookmaker consensus + a statistical model. Free."
+      }
+    ]
+  }
+}

@@ -2,21 +2,30 @@
   "generated_at": "2026-06-15T06:00:00Z",
   "iterations": 10000,
   "teams": [
-    {
-      "team": "Brazil",
-      "win": 18.4,
-      "reach": { "r32": 100.0, "r16": 99.1, "qf": 82.3, "sf": 54.1, "final": 30.8, "title": 18.4 }
-    },
-    {
-      "team": "Germany",
-      "win": 12.1,
-      "reach": { "r32": 98.5, "r16": 87.2, "qf": 61.0, "sf": 33.4, "final": 18.7, "title": 12.1 }
-    }
+    { "team": "Brazil", "win": 18.4, "reach": { "r32": 100.0, "r16": 99.1, "qf": 82.3, "sf": 54.1, "final": 30.8, "title": 18.4 } },
+    { "team": "Argentina", "win": 14.2, "reach": { "r32": 100.0, "r16": 97.0, "qf": 76.5, "sf": 47.2, "final": 25.1, "title": 14.2 } },
+    { "team": "France", "win": 12.8, "reach": { "r32": 99.5, "r16": 95.2, "qf": 72.0, "sf": 44.0, "final": 23.0, "title": 12.8 } },
+    { "team": "Spain", "win": 11.5, "reach": { "r32": 99.0, "r16": 93.0, "qf": 68.5, "sf": 40.5, "final": 20.8, "title": 11.5 } },
+    { "team": "England", "win": 10.1, "reach": { "r32": 98.8, "r16": 90.5, "qf": 64.0, "sf": 36.2, "final": 18.0, "title": 10.1 } },
+    { "team": "Germany", "win": 9.3, "reach": { "r32": 98.5, "r16": 87.2, "qf": 61.0, "sf": 33.4, "final": 16.5, "title": 9.3 } },
+    { "team": "Portugal", "win": 7.4, "reach": { "r32": 97.5, "r16": 84.0, "qf": 55.0, "sf": 28.0, "final": 13.2, "title": 7.4 } },
+    { "team": "Netherlands", "win": 6.1, "reach": { "r32": 96.8, "r16": 80.5, "qf": 50.2, "sf": 24.5, "final": 11.0, "title": 6.1 } },
+    { "team": "Belgium", "win": 4.8, "reach": { "r32": 95.0, "r16": 75.0, "qf": 44.0, "sf": 20.1, "final": 8.6, "title": 4.8 } },
+    { "team": "Croatia", "win": 2.9, "reach": { "r32": 92.0, "r16": 68.0, "qf": 36.0, "sf": 14.8, "final": 5.4, "title": 2.9 } },
+    { "team": "Morocco", "win": 1.7, "reach": { "r32": 88.0, "r16": 60.0, "qf": 28.5, "sf": 10.2, "final": 3.3, "title": 1.7 } }
   ],
   "groups": {
     "C": [
       { "team": "Brazil", "advance": 94.0, "win_group": 61.0 },
       { "team": "Mexico", "advance": 72.3, "win_group": 28.1 }
+    ],
+    "D": [
+      { "team": "Argentina", "advance": 96.0, "win_group": 70.0 },
+      { "team": "Croatia", "advance": 64.0, "win_group": 22.0 }
+    ],
+    "B": [
+      { "team": "England", "advance": 92.0, "win_group": 58.0 },
+      { "team": "USA", "advance": 55.0, "win_group": 19.0 }
     ]
   }
 }

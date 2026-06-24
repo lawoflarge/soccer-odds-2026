@@ -20,7 +20,7 @@ struct NumberTicker: View {
     }
 
     private func formatted(_ v: Double) -> String {
-        String(format: "%.\(decimals)f\(suffix)", v)
+        String(format: "%.\(decimals)f", v) + suffix
     }
 
     private func animate(to target: Double) {
