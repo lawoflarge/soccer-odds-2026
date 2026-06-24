@@ -1,0 +1,4 @@
+out/
+.framed/
+.tmp/
+node_modules/
