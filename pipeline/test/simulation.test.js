@@ -159,6 +159,7 @@ test("simulateTournament ist deterministisch bei gleichem Seed", () => {
 });
 
 import { buildSimulationPayload } from "../src/buildSimulation.js";
+import { GROUPS } from "../src/tournament.js";
 
 test("buildSimulationPayload produziert Spec-6.3-konformes Objekt", () => {
   // Minimal synthetic predictions.json-ähnliche matches
@@ -220,6 +221,36 @@ test("buildSimulationPayload akzeptiert die echte team->letter GROUPS-Map (+ ign
   const payload = buildSimulationPayload(matches, TEAM_GROUPS, { seed: 9, iterations: 100 });
   assert.equal(payload.teams.length, 48, "48 echte Teams (Alias ohne Match ignoriert)");
   assert.ok(payload.teams.every((t) => typeof t.win === "number" && typeof t.team === "string"));
+  const winSum = payload.teams.reduce((s, t) => s + t.win, 0);
+  assert.ok(Math.abs(winSum - 100) < 2, `winSum=${winSum}`);
+});
+
+// Regression: once the tournament is underway the Odds API only returns upcoming
+// fixtures, so played group matches drop off the feed. Group membership must still
+// come from the full static draw — otherwise a depleted group shrinks below its 4
+// teams and crashes the group-stage simulation (the production "Update predictions"
+// failure: TypeError reading 'team'/'qf' at simulateTournament).
+test("buildSimulationPayload bleibt vollständig, wenn gespielte Gruppenspiele aus dem Feed gefallen sind", () => {
+  const byLetter = {};
+  for (const [team, letter] of Object.entries(GROUPS)) (byLetter[letter] ??= []).push(team);
+
+  // Worst case: group A has a single team left in the feed (1 R32-style match for it),
+  // group B has none at all, every other group keeps its fixtures.
+  const matches = [];
+  for (const [letter, teams] of Object.entries(byLetter)) {
+    const active = letter === "A" ? teams.slice(0, 1) : letter === "B" ? [] : teams.slice(0, 4);
+    for (let i = 0; i < active.length; i++)
+      for (let j = i + 1; j < active.length; j++)
+        matches.push({ phase: "group", teams: { home: active[i], away: active[j] }, xg: { home: 1.3, away: 1.0 } });
+  }
+  // Give group A's lone team an actual fixture so it appears in the feed (vs a real opponent).
+  matches.push({ phase: "round_of_32", teams: { home: byLetter.A[0], away: byLetter.C[0] }, xg: { home: 1.2, away: 1.1 } });
+
+  const payload = buildSimulationPayload(matches, GROUPS, { seed: 3, iterations: 100 });
+  assert.equal(payload.teams.length, 48, "alle 48 Teams trotz lückenhaftem Feed");
+  assert.equal(Object.keys(payload.groups).length, 12, "alle 12 Gruppen vorhanden");
+  for (const letter of Object.keys(payload.groups))
+    assert.equal(payload.groups[letter].length, 4, `Gruppe ${letter} hat 4 Teams`);
   const winSum = payload.teams.reduce((s, t) => s + t.win, 0);
   assert.ok(Math.abs(winSum - 100) < 2, `winSum=${winSum}`);
 });
