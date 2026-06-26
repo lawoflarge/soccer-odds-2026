@@ -2,10 +2,17 @@
 """Register bundle ID + create/install an App Store provisioning profile for Soccer Odds 2026."""
 import jwt as pyjwt, time, json, sys, base64, pathlib, urllib.request, urllib.error, urllib.parse
 
-KEY_ID="REDACTED_ASC_KEY_ID"; ISSUER_ID="REDACTED_ASC_ISSUER_ID"
-KEY_PATH=pathlib.Path.home()/".appstoreconnect/private_keys/AuthKey_REDACTED_ASC_KEY_ID.p8"
+import os
+_ef = pathlib.Path(__file__).parent / ".asc.env"
+if _ef.exists():
+    for _ln in _ef.read_text().splitlines():
+        if "=" in _ln and not _ln.lstrip().startswith("#"):
+            _k, _v = _ln.split("=", 1); os.environ.setdefault(_k.strip(), _v.strip())
+KEY_ID = os.environ.get("ASC_KEY_ID", "")
+ISSUER_ID = os.environ.get("ASC_ISSUER_ID", "")
+KEY_PATH = pathlib.Path(os.environ.get("ASC_KEY_PATH", str(pathlib.Path.home() / ".appstoreconnect/private_keys" / f"AuthKey_{KEY_ID}.p8")))
 TEAM_ID="R95M36AU2X"; BUNDLE_ID="com.lawoflarge.worldcup2026odds"; BUNDLE_NAME="SoccerOdds2026"
-CERT_SHA="REDACTED_ASC_CERT_SHA"
+CERT_SHA = os.environ.get("ASC_CERT_SHA", "")
 PROFILES_DIR=pathlib.Path.home()/"Library/MobileDevice/Provisioning Profiles"
 TS=int(time.time())
 

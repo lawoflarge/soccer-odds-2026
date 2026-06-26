@@ -7,3 +7,4 @@ build/
 ios/build/
 .vercel
 .superpowers/
+scripts/.asc.env

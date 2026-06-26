@@ -1,7 +1,14 @@
 #!/usr/bin/env python3
 import jwt as pyjwt, time, json, sys, pathlib, hashlib, urllib.request, urllib.error
-KEY_ID="REDACTED_ASC_KEY_ID"; ISSUER_ID="REDACTED_ASC_ISSUER_ID"
-KEY_PATH=pathlib.Path.home()/".appstoreconnect/private_keys/AuthKey_REDACTED_ASC_KEY_ID.p8"
+import os
+_ef = pathlib.Path(__file__).parent / ".asc.env"
+if _ef.exists():
+    for _ln in _ef.read_text().splitlines():
+        if "=" in _ln and not _ln.lstrip().startswith("#"):
+            _k, _v = _ln.split("=", 1); os.environ.setdefault(_k.strip(), _v.strip())
+KEY_ID = os.environ.get("ASC_KEY_ID", "")
+ISSUER_ID = os.environ.get("ASC_ISSUER_ID", "")
+KEY_PATH = pathlib.Path(os.environ.get("ASC_KEY_PATH", str(pathlib.Path.home() / ".appstoreconnect/private_keys" / f"AuthKey_{KEY_ID}.p8")))
 APP_ID="6775278722"; DISPLAY_TYPE="APP_IPHONE_67"
 SHOTS=sorted((pathlib.Path(__file__).parent.parent/"store/screenshots").glob("*.png"))
 def jwtok():

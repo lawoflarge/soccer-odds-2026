@@ -11,10 +11,12 @@
 import crypto from "node:crypto";
 import fs from "node:fs";
 import path from "node:path";
+const _ef = new URL(".asc.env", import.meta.url);
+if (fs.existsSync(_ef)) for (const l of fs.readFileSync(_ef, "utf8").split("\n")) { const i = l.indexOf("="); if (i > 0 && !l.trimStart().startsWith("#")) { const k = l.slice(0, i).trim(); if (!process.env[k]) process.env[k] = l.slice(i + 1).trim(); } }
 
 const APP = "6775278722"; // Soccer Odds 2026
-const KEY_ID = process.env.ASC_KEY_ID || "REDACTED_ASC_KEY_ID";
-const ISSUER_ID = process.env.ASC_ISSUER_ID || "REDACTED_ASC_ISSUER_ID";
+const KEY_ID = process.env.ASC_KEY_ID || "";
+const ISSUER_ID = process.env.ASC_ISSUER_ID || "";
 const KEY_PATH = process.env.ASC_KEY_PATH ||
   path.join(process.env.HOME, ".appstoreconnect/private_keys", `AuthKey_${KEY_ID}.p8`);
 
