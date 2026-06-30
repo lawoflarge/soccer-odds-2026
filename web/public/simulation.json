@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-29T19:55:10.008Z",
+  "generated_at": "2026-06-30T03:31:10.406Z",
   "iterations": 10000,
   "teams": [
     {
@@ -243,7 +243,7 @@
       }
     },
     {
-      "team": "Paraguay",
+      "team": "USA",
       "win": 2.1,
       "reach": {
         "r32": 67.8,
@@ -255,7 +255,7 @@
       }
     },
     {
-      "team": "USA",
+      "team": "Paraguay",
       "win": 2.1,
       "reach": {
         "r32": 66.8,
@@ -653,12 +653,12 @@
         "win_group": 25.3
       },
       {
-        "team": "Paraguay",
+        "team": "USA",
         "advance": 67.8,
         "win_group": 25
       },
       {
-        "team": "USA",
+        "team": "Paraguay",
         "advance": 66.8,
         "win_group": 25.7
       },
