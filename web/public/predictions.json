@@ -1,195 +1,100 @@
 {
-  "updated": "2026-06-30T19:53:54.201Z",
+  "updated": "2026-07-01T03:39:59.286Z",
   "count": 13,
   "matches": [
-    {
-      "id": "0b5491529142c9bcc3f88bf45ccb0a7b",
-      "teams": {
-        "home": "France",
-        "away": "Sweden"
-      },
-      "kickoff": "2026-06-30T21:00:00Z",
-      "phase": "round_of_32",
-      "group": null,
-      "probs_1x2": {
-        "home": 75.2,
-        "draw": 15.9,
-        "away": 8.9
-      },
-      "top_scores": [
-        {
-          "score": "2:0",
-          "pct": 10.9
-        },
-        {
-          "score": "3:0",
-          "pct": 9.5
-        },
-        {
-          "score": "2:1",
-          "pct": 9
-        },
-        {
-          "score": "3:1",
-          "pct": 7.9
-        },
-        {
-          "score": "1:0",
-          "pct": 7.7
-        }
-      ],
-      "goal_markets": {
-        "over_under_2_5": 67.1,
-        "btts": 52.9
-      },
-      "xg": {
-        "home": 2.63,
-        "away": 0.83
-      },
-      "markets_ext": {
-        "over_1_5": 86.5,
-        "over_3_5": 45.4,
-        "correct_score": [
-          {
-            "score": "2:0",
-            "pct": 10.9
-          },
-          {
-            "score": "3:0",
-            "pct": 9.5
-          },
-          {
-            "score": "2:1",
-            "pct": 9
-          },
-          {
-            "score": "3:1",
-            "pct": 7.9
-          },
-          {
-            "score": "1:0",
-            "pct": 7.7
-          },
-          {
-            "score": "1:1",
-            "pct": 7.4
-          },
-          {
-            "score": "4:0",
-            "pct": 6.3
-          },
-          {
-            "score": "4:1",
-            "pct": 5.2
-          },
-          {
-            "score": "2:2",
-            "pct": 3.8
-          },
-          {
-            "score": "0:0",
-            "pct": 3.7
-          }
-        ]
-      },
-      "edge": {
-        "side": "away",
-        "value_pct": 21.3
-      }
-    },
     {
       "id": "f58c55a9da96af562c31b7c5cca40187",
       "teams": {
         "home": "Mexico",
         "away": "Ecuador"
       },
-      "kickoff": "2026-07-01T01:00:00Z",
+      "kickoff": "2026-07-01T02:00:00Z",
       "phase": "round_of_32",
       "group": null,
       "probs_1x2": {
-        "home": 43.2,
-        "draw": 32.2,
-        "away": 24.6
+        "home": 91.5,
+        "draw": 8.3,
+        "away": 0.2
       },
       "top_scores": [
         {
+          "score": "2:0",
+          "pct": 24.9
+        },
+        {
+          "score": "3:0",
+          "pct": 21
+        },
+        {
           "score": "1:0",
-          "pct": 14.8
+          "pct": 19.5
+        },
+        {
+          "score": "4:0",
+          "pct": 13.3
         },
         {
           "score": "0:0",
-          "pct": 14.5
-        },
-        {
-          "score": "1:1",
-          "pct": 14.2
-        },
-        {
-          "score": "0:1",
-          "pct": 10
-        },
-        {
-          "score": "2:0",
-          "pct": 9.4
+          "pct": 7.8
         }
       ],
       "goal_markets": {
-        "over_under_2_5": 32.6,
-        "btts": 40
+        "over_under_2_5": 47.2,
+        "btts": 2.3
       },
       "xg": {
-        "home": 1.18,
-        "away": 0.83
+        "home": 2.54,
+        "away": 0.02
       },
       "markets_ext": {
-        "over_1_5": 60.7,
-        "over_3_5": 14.4,
+        "over_1_5": 72.5,
+        "over_3_5": 25.5,
         "correct_score": [
           {
-            "score": "1:0",
-            "pct": 14.8
-          },
-          {
-            "score": "0:0",
-            "pct": 14.5
-          },
-          {
-            "score": "1:1",
-            "pct": 14.2
-          },
-          {
-            "score": "0:1",
-            "pct": 10
-          },
-          {
             "score": "2:0",
-            "pct": 9.4
-          },
-          {
-            "score": "2:1",
-            "pct": 7.8
-          },
-          {
-            "score": "1:2",
-            "pct": 5.4
-          },
-          {
-            "score": "0:2",
-            "pct": 4.6
+            "pct": 24.9
           },
           {
             "score": "3:0",
-            "pct": 3.7
+            "pct": 21
           },
           {
-            "score": "2:2",
-            "pct": 3.2
+            "score": "1:0",
+            "pct": 19.5
+          },
+          {
+            "score": "4:0",
+            "pct": 13.3
+          },
+          {
+            "score": "0:0",
+            "pct": 7.8
+          },
+          {
+            "score": "5:0",
+            "pct": 6.8
+          },
+          {
+            "score": "6:0",
+            "pct": 2.9
+          },
+          {
+            "score": "7:0",
+            "pct": 1
+          },
+          {
+            "score": "2:1",
+            "pct": 0.6
+          },
+          {
+            "score": "1:1",
+            "pct": 0.5
           }
         ]
       },
       "edge": {
         "side": "away",
-        "value_pct": 3
+        "value_pct": 201.2
       }
     },
     {
@@ -202,8 +107,8 @@
       "phase": "round_of_32",
       "group": null,
       "probs_1x2": {
-        "home": 75,
-        "draw": 18.4,
+        "home": 74.8,
+        "draw": 18.6,
         "away": 6.6
       },
       "top_scores": [
@@ -213,7 +118,7 @@
         },
         {
           "score": "1:0",
-          "pct": 15.2
+          "pct": 15.3
         },
         {
           "score": "3:0",
@@ -221,24 +126,24 @@
         },
         {
           "score": "1:1",
-          "pct": 8.2
+          "pct": 8.3
         },
         {
           "score": "0:0",
-          "pct": 8.1
+          "pct": 8.2
         }
       ],
       "goal_markets": {
-        "over_under_2_5": 48.1,
-        "btts": 34.2
+        "over_under_2_5": 47.6,
+        "btts": 34
       },
       "xg": {
-        "home": 2.11,
+        "home": 2.1,
         "away": 0.48
       },
       "markets_ext": {
-        "over_1_5": 73.8,
-        "over_3_5": 26.3,
+        "over_1_5": 73.4,
+        "over_3_5": 25.9,
         "correct_score": [
           {
             "score": "2:0",
@@ -246,7 +151,7 @@
           },
           {
             "score": "1:0",
-            "pct": 15.2
+            "pct": 15.3
           },
           {
             "score": "3:0",
@@ -254,11 +159,11 @@
           },
           {
             "score": "1:1",
-            "pct": 8.2
+            "pct": 8.3
           },
           {
             "score": "0:0",
-            "pct": 8.1
+            "pct": 8.2
           },
           {
             "score": "2:1",
@@ -266,25 +171,25 @@
           },
           {
             "score": "4:0",
-            "pct": 6.2
+            "pct": 6.1
           },
           {
             "score": "3:1",
-            "pct": 5.7
-          },
-          {
-            "score": "4:1",
-            "pct": 3
+            "pct": 5.6
           },
           {
             "score": "0:1",
             "pct": 3
+          },
+          {
+            "score": "4:1",
+            "pct": 2.9
           }
         ]
       },
       "edge": {
         "side": "away",
-        "value_pct": 16.4
+        "value_pct": 22.6
       }
     },
     {
@@ -297,26 +202,26 @@
       "phase": "round_of_32",
       "group": null,
       "probs_1x2": {
-        "home": 43.5,
-        "draw": 28.5,
-        "away": 28
+        "home": 44.4,
+        "draw": 27.9,
+        "away": 27.6
       },
       "top_scores": [
         {
           "score": "1:1",
-          "pct": 13.6
+          "pct": 13.3
         },
         {
           "score": "1:0",
-          "pct": 10.6
-        },
-        {
-          "score": "0:0",
-          "pct": 9.2
+          "pct": 10.1
         },
         {
           "score": "2:1",
-          "pct": 8.9
+          "pct": 9.1
+        },
+        {
+          "score": "0:0",
+          "pct": 8.5
         },
         {
           "score": "2:0",
@@ -324,32 +229,32 @@
         }
       ],
       "goal_markets": {
-        "over_under_2_5": 45.8,
-        "btts": 51.3
+        "over_under_2_5": 47.8,
+        "btts": 52.7
       },
       "xg": {
-        "home": 1.42,
-        "away": 1.09
+        "home": 1.47,
+        "away": 1.11
       },
       "markets_ext": {
-        "over_1_5": 72.4,
-        "over_3_5": 24.4,
+        "over_1_5": 74,
+        "over_3_5": 26.1,
         "correct_score": [
           {
             "score": "1:1",
-            "pct": 13.6
+            "pct": 13.3
           },
           {
             "score": "1:0",
-            "pct": 10.6
-          },
-          {
-            "score": "0:0",
-            "pct": 9.2
+            "pct": 10.1
           },
           {
             "score": "2:1",
-            "pct": 8.9
+            "pct": 9.1
+          },
+          {
+            "score": "0:0",
+            "pct": 8.5
           },
           {
             "score": "2:0",
@@ -357,7 +262,7 @@
           },
           {
             "score": "0:1",
-            "pct": 7.9
+            "pct": 7.4
           },
           {
             "score": "1:2",
@@ -365,21 +270,21 @@
           },
           {
             "score": "2:2",
-            "pct": 4.9
+            "pct": 5.1
           },
           {
             "score": "0:2",
-            "pct": 4.8
+            "pct": 4.7
           },
           {
             "score": "3:1",
-            "pct": 4.2
+            "pct": 4.5
           }
         ]
       },
       "edge": {
-        "side": "away",
-        "value_pct": 4
+        "side": "draw",
+        "value_pct": 2.7
       }
     },
     {
@@ -392,26 +297,26 @@
       "phase": "round_of_32",
       "group": null,
       "probs_1x2": {
-        "home": 69.4,
-        "draw": 20.3,
-        "away": 10.3
+        "home": 69.6,
+        "draw": 20,
+        "away": 10.4
       },
       "top_scores": [
         {
           "score": "2:0",
-          "pct": 13.5
+          "pct": 13.3
         },
         {
           "score": "1:0",
-          "pct": 12.2
+          "pct": 11.7
         },
         {
           "score": "1:1",
-          "pct": 9.6
+          "pct": 9.5
         },
         {
           "score": "3:0",
-          "pct": 9.5
+          "pct": 9.4
         },
         {
           "score": "2:1",
@@ -419,43 +324,43 @@
         }
       ],
       "goal_markets": {
-        "over_under_2_5": 52.8,
-        "btts": 44.5
+        "over_under_2_5": 54.2,
+        "btts": 45.6
       },
       "xg": {
-        "home": 2.1,
-        "away": 0.69
+        "home": 2.14,
+        "away": 0.71
       },
       "markets_ext": {
-        "over_1_5": 77.4,
-        "over_3_5": 30.6,
+        "over_1_5": 78.4,
+        "over_3_5": 31.9,
         "correct_score": [
           {
             "score": "2:0",
-            "pct": 13.5
+            "pct": 13.3
           },
           {
             "score": "1:0",
-            "pct": 12.2
+            "pct": 11.7
           },
           {
             "score": "1:1",
-            "pct": 9.6
+            "pct": 9.5
           },
           {
             "score": "3:0",
-            "pct": 9.5
+            "pct": 9.4
           },
           {
             "score": "2:1",
             "pct": 9.4
           },
           {
-            "score": "0:0",
-            "pct": 6.9
+            "score": "3:1",
+            "pct": 6.7
           },
           {
-            "score": "3:1",
+            "score": "0:0",
             "pct": 6.5
           },
           {
@@ -463,18 +368,18 @@
             "pct": 5
           },
           {
-            "score": "0:1",
-            "pct": 3.5
+            "score": "4:1",
+            "pct": 3.6
           },
           {
-            "score": "4:1",
+            "score": "0:1",
             "pct": 3.4
           }
         ]
       },
       "edge": {
         "side": "away",
-        "value_pct": 10.4
+        "value_pct": 7.6
       }
     },
     {
@@ -488,7 +393,7 @@
       "group": null,
       "probs_1x2": {
         "home": 72.2,
-        "draw": 19.2,
+        "draw": 19.1,
         "away": 8.7
       },
       "top_scores": [
@@ -514,16 +419,16 @@
         }
       ],
       "goal_markets": {
-        "over_under_2_5": 52.3,
-        "btts": 41.4
+        "over_under_2_5": 52.4,
+        "btts": 41.5
       },
       "xg": {
         "home": 2.15,
         "away": 0.62
       },
       "markets_ext": {
-        "over_1_5": 77,
-        "over_3_5": 30.1,
+        "over_1_5": 77.1,
+        "over_3_5": 30.2,
         "correct_score": [
           {
             "score": "2:0",
@@ -569,7 +474,7 @@
       },
       "edge": {
         "side": "away",
-        "value_pct": 15.5
+        "value_pct": 10.2
       }
     },
     {
@@ -582,9 +487,9 @@
       "phase": "round_of_32",
       "group": null,
       "probs_1x2": {
-        "home": 53.9,
-        "draw": 26.7,
-        "away": 19.4
+        "home": 53.6,
+        "draw": 26.8,
+        "away": 19.6
       },
       "top_scores": [
         {
@@ -597,7 +502,7 @@
         },
         {
           "score": "2:0",
-          "pct": 10.8
+          "pct": 10.7
         },
         {
           "score": "2:1",
@@ -610,10 +515,10 @@
       ],
       "goal_markets": {
         "over_under_2_5": 45.4,
-        "btts": 47.7
+        "btts": 47.8
       },
       "xg": {
-        "home": 1.62,
+        "home": 1.61,
         "away": 0.88
       },
       "markets_ext": {
@@ -630,7 +535,7 @@
           },
           {
             "score": "2:0",
-            "pct": 10.8
+            "pct": 10.7
           },
           {
             "score": "2:1",
@@ -642,7 +547,7 @@
           },
           {
             "score": "0:1",
-            "pct": 6.3
+            "pct": 6.4
           },
           {
             "score": "3:0",
@@ -650,7 +555,7 @@
           },
           {
             "score": "1:2",
-            "pct": 5.1
+            "pct": 5.2
           },
           {
             "score": "3:1",
@@ -658,13 +563,13 @@
           },
           {
             "score": "2:2",
-            "pct": 4.1
+            "pct": 4.2
           }
         ]
       },
       "edge": {
         "side": "away",
-        "value_pct": 4.8
+        "value_pct": 5.9
       }
     },
     {
@@ -677,9 +582,9 @@
       "phase": "round_of_32",
       "group": null,
       "probs_1x2": {
-        "home": 46.2,
+        "home": 46.7,
         "draw": 28.5,
-        "away": 25.3
+        "away": 24.8
       },
       "top_scores": [
         {
@@ -688,32 +593,32 @@
         },
         {
           "score": "1:0",
-          "pct": 11.4
+          "pct": 11.6
         },
         {
           "score": "0:0",
-          "pct": 9.6
+          "pct": 9.7
+        },
+        {
+          "score": "2:0",
+          "pct": 9.1
         },
         {
           "score": "2:1",
           "pct": 9.1
-        },
-        {
-          "score": "2:0",
-          "pct": 9
         }
       ],
       "goal_markets": {
-        "over_under_2_5": 44.4,
-        "btts": 49.5
+        "over_under_2_5": 44.2,
+        "btts": 49.2
       },
       "xg": {
         "home": 1.45,
-        "away": 1.01
+        "away": 0.99
       },
       "markets_ext": {
-        "over_1_5": 71.3,
-        "over_3_5": 23.3,
+        "over_1_5": 71.1,
+        "over_3_5": 23,
         "correct_score": [
           {
             "score": "1:1",
@@ -721,34 +626,34 @@
           },
           {
             "score": "1:0",
-            "pct": 11.4
+            "pct": 11.6
           },
           {
             "score": "0:0",
-            "pct": 9.6
+            "pct": 9.7
+          },
+          {
+            "score": "2:0",
+            "pct": 9.1
           },
           {
             "score": "2:1",
             "pct": 9.1
           },
           {
-            "score": "2:0",
-            "pct": 9
-          },
-          {
             "score": "0:1",
-            "pct": 7.7
+            "pct": 7.6
           },
           {
             "score": "1:2",
-            "pct": 6.3
+            "pct": 6.2
           },
           {
             "score": "2:2",
-            "pct": 4.6
+            "pct": 4.5
           },
           {
-            "score": "0:2",
+            "score": "3:0",
             "pct": 4.4
           },
           {
@@ -757,7 +662,10 @@
           }
         ]
       },
-      "edge": null
+      "edge": {
+        "side": "away",
+        "value_pct": 2.5
+      }
     },
     {
       "id": "fb270a3dac2b682c861bd674a5ff4a04",
@@ -788,7 +696,7 @@
         },
         {
           "score": "1:0",
-          "pct": 10.7
+          "pct": 10.6
         },
         {
           "score": "0:2",
@@ -821,7 +729,7 @@
           },
           {
             "score": "1:0",
-            "pct": 10.7
+            "pct": 10.6
           },
           {
             "score": "0:2",
@@ -849,10 +757,7 @@
           }
         ]
       },
-      "edge": {
-        "side": "draw",
-        "value_pct": 2.1
-      }
+      "edge": null
     },
     {
       "id": "3e161b2448ed76d6b0c0f5bda6fd5bf2",
@@ -864,14 +769,14 @@
       "phase": "round_of_32",
       "group": null,
       "probs_1x2": {
-        "home": 82.2,
-        "draw": 13.7,
+        "home": 82.1,
+        "draw": 13.8,
         "away": 4.1
       },
       "top_scores": [
         {
           "score": "2:0",
-          "pct": 16.6
+          "pct": 16.7
         },
         {
           "score": "3:0",
@@ -879,7 +784,7 @@
         },
         {
           "score": "1:0",
-          "pct": 12.8
+          "pct": 12.9
         },
         {
           "score": "4:0",
@@ -891,20 +796,20 @@
         }
       ],
       "goal_markets": {
-        "over_under_2_5": 56.4,
-        "btts": 32.7
+        "over_under_2_5": 55.9,
+        "btts": 32.5
       },
       "xg": {
-        "home": 2.51,
+        "home": 2.49,
         "away": 0.43
       },
       "markets_ext": {
-        "over_1_5": 79.7,
-        "over_3_5": 33.9,
+        "over_1_5": 79.4,
+        "over_3_5": 33.5,
         "correct_score": [
           {
             "score": "2:0",
-            "pct": 16.6
+            "pct": 16.7
           },
           {
             "score": "3:0",
@@ -912,7 +817,7 @@
           },
           {
             "score": "1:0",
-            "pct": 12.8
+            "pct": 12.9
           },
           {
             "score": "4:0",
@@ -932,21 +837,21 @@
           },
           {
             "score": "0:0",
-            "pct": 5.7
+            "pct": 5.8
           },
           {
             "score": "5:0",
-            "pct": 4.4
+            "pct": 4.3
           },
           {
             "score": "4:1",
-            "pct": 3.8
+            "pct": 3.7
           }
         ]
       },
       "edge": {
         "side": "away",
-        "value_pct": 20.8
+        "value_pct": 20.9
       }
     },
     {
@@ -959,9 +864,9 @@
       "phase": "round_of_16",
       "group": null,
       "probs_1x2": {
-        "home": 62.9,
+        "home": 62.8,
         "draw": 24.5,
-        "away": 12.6
+        "away": 12.7
       },
       "top_scores": [
         {
@@ -982,19 +887,19 @@
         },
         {
           "score": "2:1",
-          "pct": 9
+          "pct": 9.1
         }
       ],
       "goal_markets": {
         "over_under_2_5": 43,
-        "btts": 40.4
+        "btts": 40.5
       },
       "xg": {
         "home": 1.74,
-        "away": 0.65
+        "away": 0.66
       },
       "markets_ext": {
-        "over_1_5": 69.9,
+        "over_1_5": 70,
         "over_3_5": 22.1,
         "correct_score": [
           {
@@ -1015,7 +920,7 @@
           },
           {
             "score": "2:1",
-            "pct": 9
+            "pct": 9.1
           },
           {
             "score": "3:0",
@@ -1041,7 +946,7 @@
       },
       "edge": {
         "side": "away",
-        "value_pct": 8.2
+        "value_pct": 7.9
       }
     },
     {
@@ -1054,79 +959,79 @@
       "phase": "round_of_16",
       "group": null,
       "probs_1x2": {
-        "home": 18.9,
-        "draw": 27.3,
-        "away": 53.8
+        "home": 19.8,
+        "draw": 27.7,
+        "away": 52.4
       },
       "top_scores": [
         {
           "score": "0:1",
-          "pct": 13.3
+          "pct": 13.2
         },
         {
           "score": "1:1",
-          "pct": 12.8
+          "pct": 13
         },
         {
           "score": "0:2",
-          "pct": 11.2
+          "pct": 10.9
         },
         {
           "score": "0:0",
-          "pct": 10
+          "pct": 10.2
         },
         {
           "score": "1:2",
-          "pct": 9.3
+          "pct": 9.2
         }
       ],
       "goal_markets": {
-        "over_under_2_5": 43,
-        "btts": 45.6
+        "over_under_2_5": 42.5,
+        "btts": 45.8
       },
       "xg": {
-        "home": 0.83,
-        "away": 1.57
+        "home": 0.85,
+        "away": 1.53
       },
       "markets_ext": {
-        "over_1_5": 70,
-        "over_3_5": 22.1,
+        "over_1_5": 69.7,
+        "over_3_5": 21.7,
         "correct_score": [
           {
             "score": "0:1",
-            "pct": 13.3
+            "pct": 13.2
           },
           {
             "score": "1:1",
-            "pct": 12.8
+            "pct": 13
           },
           {
             "score": "0:2",
-            "pct": 11.2
+            "pct": 10.9
           },
           {
             "score": "0:0",
-            "pct": 10
+            "pct": 10.2
           },
           {
             "score": "1:2",
-            "pct": 9.3
+            "pct": 9.2
           },
           {
             "score": "1:0",
-            "pct": 6.6
+            "pct": 6.9
           },
           {
             "score": "0:3",
-            "pct": 5.8
+            "pct": 5.5
           },
           {
             "score": "2:1",
-            "pct": 4.9
+            "pct": 5.1
           },
           {
             "score": "1:3",
-            "pct": 4.8
+            "pct": 4.7
           },
           {
             "score": "2:2",
@@ -1134,9 +1039,101 @@
           }
         ]
       },
+      "edge": null
+    },
+    {
+      "id": "c798a1ffdeda28e82d930e7145a8ff10",
+      "teams": {
+        "home": "Paraguay",
+        "away": "France"
+      },
+      "kickoff": "2026-07-04T21:00:00Z",
+      "phase": "round_of_16",
+      "group": null,
+      "probs_1x2": {
+        "home": 6,
+        "draw": 15,
+        "away": 79.1
+      },
+      "top_scores": [
+        {
+          "score": "0:2",
+          "pct": 14.3
+        },
+        {
+          "score": "0:3",
+          "pct": 12
+        },
+        {
+          "score": "0:1",
+          "pct": 10.8
+        },
+        {
+          "score": "1:2",
+          "pct": 8.3
+        },
+        {
+          "score": "0:4",
+          "pct": 7.6
+        }
+      ],
+      "goal_markets": {
+        "over_under_2_5": 59.9,
+        "btts": 41
+      },
+      "xg": {
+        "home": 0.58,
+        "away": 2.52
+      },
+      "markets_ext": {
+        "over_1_5": 82.1,
+        "over_3_5": 37.5,
+        "correct_score": [
+          {
+            "score": "0:2",
+            "pct": 14.3
+          },
+          {
+            "score": "0:3",
+            "pct": 12
+          },
+          {
+            "score": "0:1",
+            "pct": 10.8
+          },
+          {
+            "score": "1:2",
+            "pct": 8.3
+          },
+          {
+            "score": "0:4",
+            "pct": 7.6
+          },
+          {
+            "score": "1:1",
+            "pct": 7.1
+          },
+          {
+            "score": "1:3",
+            "pct": 7
+          },
+          {
+            "score": "0:0",
+            "pct": 5
+          },
+          {
+            "score": "1:4",
+            "pct": 4.4
+          },
+          {
+            "score": "0:5",
+            "pct": 3.8
+          }
+        ]
+      },
       "edge": {
         "side": "home",
-        "value_pct": 6.1
+        "value_pct": 19
       }
     },
     {
@@ -1149,83 +1146,83 @@
       "phase": "round_of_16",
       "group": null,
       "probs_1x2": {
-        "home": 50.9,
-        "draw": 26.9,
-        "away": 22.2
+        "home": 50.5,
+        "draw": 26.7,
+        "away": 22.9
       },
       "top_scores": [
         {
           "score": "1:1",
-          "pct": 12.8
+          "pct": 12.7
         },
         {
           "score": "1:0",
-          "pct": 11.1
-        },
-        {
-          "score": "2:0",
-          "pct": 9.7
+          "pct": 10.6
         },
         {
           "score": "2:1",
-          "pct": 9.5
+          "pct": 9.6
+        },
+        {
+          "score": "2:0",
+          "pct": 9.4
         },
         {
           "score": "0:0",
-          "pct": 8.5
+          "pct": 8.1
         }
       ],
       "goal_markets": {
-        "over_under_2_5": 47.9,
-        "btts": 51
+        "over_under_2_5": 49.2,
+        "btts": 52.2
       },
       "xg": {
-        "home": 1.61,
-        "away": 0.98
+        "home": 1.62,
+        "away": 1.02
       },
       "markets_ext": {
-        "over_1_5": 74,
-        "over_3_5": 26.1,
+        "over_1_5": 75,
+        "over_3_5": 27.3,
         "correct_score": [
           {
             "score": "1:1",
-            "pct": 12.8
+            "pct": 12.7
           },
           {
             "score": "1:0",
-            "pct": 11.1
-          },
-          {
-            "score": "2:0",
-            "pct": 9.7
+            "pct": 10.6
           },
           {
             "score": "2:1",
-            "pct": 9.5
+            "pct": 9.6
+          },
+          {
+            "score": "2:0",
+            "pct": 9.4
           },
           {
             "score": "0:0",
-            "pct": 8.5
+            "pct": 8.1
           },
           {
             "score": "0:1",
-            "pct": 6.4
+            "pct": 6.3
           },
           {
             "score": "1:2",
-            "pct": 5.8
-          },
-          {
-            "score": "3:0",
-            "pct": 5.2
+            "pct": 6
           },
           {
             "score": "3:1",
+            "pct": 5.2
+          },
+          {
+            "score": "3:0",
             "pct": 5.1
           },
           {
             "score": "2:2",
-            "pct": 4.7
+            "pct": 4.9
           }
         ]
       },
