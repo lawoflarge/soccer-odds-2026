@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-06T19:53:31.035Z",
+  "generated_at": "2026-07-07T02:55:17.948Z",
   "iterations": 10000,
   "teams": [
     {
@@ -39,7 +39,7 @@
       }
     },
     {
-      "team": "Turkey",
+      "team": "USA",
       "win": 2.3,
       "reach": {
         "r32": 66.7,
@@ -243,7 +243,7 @@
       }
     },
     {
-      "team": "Australia",
+      "team": "Paraguay",
       "win": 2.1,
       "reach": {
         "r32": 67.8,
@@ -255,7 +255,7 @@
       }
     },
     {
-      "team": "Paraguay",
+      "team": "Turkey",
       "win": 2.1,
       "reach": {
         "r32": 66.8,
@@ -351,7 +351,7 @@
       }
     },
     {
-      "team": "USA",
+      "team": "Australia",
       "win": 2,
       "reach": {
         "r32": 66.6,
@@ -648,22 +648,22 @@
     ],
     "D": [
       {
-        "team": "USA",
+        "team": "Australia",
         "advance": 66.6,
         "win_group": 25.3
       },
       {
-        "team": "Australia",
+        "team": "Paraguay",
         "advance": 67.8,
         "win_group": 25
       },
       {
-        "team": "Paraguay",
+        "team": "Turkey",
         "advance": 66.8,
         "win_group": 25.7
       },
       {
-        "team": "Turkey",
+        "team": "USA",
         "advance": 66.7,
         "win_group": 24
       }
