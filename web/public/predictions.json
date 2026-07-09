@@ -1,5 +1,5 @@
 {
-  "updated": "2026-07-09T09:45:39.934Z",
+  "updated": "2026-07-09T14:54:40.350Z",
   "count": 4,
   "matches": [
     {
@@ -12,9 +12,9 @@
       "phase": "qf",
       "group": null,
       "probs_1x2": {
-        "home": 61,
-        "draw": 24.1,
-        "away": 14.9
+        "home": 60.6,
+        "draw": 24.3,
+        "away": 15.1
       },
       "top_scores": [
         {
@@ -27,7 +27,7 @@
         },
         {
           "score": "1:1",
-          "pct": 11.4
+          "pct": 11.5
         },
         {
           "score": "2:1",
@@ -35,20 +35,20 @@
         },
         {
           "score": "0:0",
-          "pct": 8.3
+          "pct": 8.4
         }
       ],
       "goal_markets": {
-        "over_under_2_5": 48.1,
-        "btts": 46.3
+        "over_under_2_5": 47.9,
+        "btts": 46.4
       },
       "xg": {
-        "home": 1.81,
-        "away": 0.78
+        "home": 1.8,
+        "away": 0.79
       },
       "markets_ext": {
-        "over_1_5": 74.1,
-        "over_3_5": 26.4,
+        "over_1_5": 73.9,
+        "over_3_5": 26.1,
         "correct_score": [
           {
             "score": "1:0",
@@ -60,7 +60,7 @@
           },
           {
             "score": "1:1",
-            "pct": 11.4
+            "pct": 11.5
           },
           {
             "score": "2:1",
@@ -68,11 +68,11 @@
           },
           {
             "score": "0:0",
-            "pct": 8.3
+            "pct": 8.4
           },
           {
             "score": "3:0",
-            "pct": 7.4
+            "pct": 7.3
           },
           {
             "score": "3:1",
@@ -80,7 +80,7 @@
           },
           {
             "score": "0:1",
-            "pct": 5
+            "pct": 5.1
           },
           {
             "score": "1:2",
@@ -94,7 +94,7 @@
       },
       "edge": {
         "side": "away",
-        "value_pct": 5.1
+        "value_pct": 3.6
       }
     },
     {
@@ -107,9 +107,9 @@
       "phase": "qf",
       "group": null,
       "probs_1x2": {
-        "home": 58.5,
-        "draw": 23.9,
-        "away": 17.6
+        "home": 58.4,
+        "draw": 24,
+        "away": 17.7
       },
       "top_scores": [
         {
@@ -122,7 +122,7 @@
         },
         {
           "score": "1:0",
-          "pct": 10.5
+          "pct": 10.4
         },
         {
           "score": "2:1",
@@ -135,11 +135,11 @@
       ],
       "goal_markets": {
         "over_under_2_5": 53.2,
-        "btts": 52.2
+        "btts": 52.3
       },
       "xg": {
         "home": 1.87,
-        "away": 0.93
+        "away": 0.94
       },
       "markets_ext": {
         "over_1_5": 77.8,
@@ -155,7 +155,7 @@
           },
           {
             "score": "1:0",
-            "pct": 10.5
+            "pct": 10.4
           },
           {
             "score": "2:1",
@@ -175,7 +175,7 @@
           },
           {
             "score": "1:2",
-            "pct": 4.9
+            "pct": 5
           },
           {
             "score": "0:1",
@@ -189,7 +189,7 @@
       },
       "edge": {
         "side": "away",
-        "value_pct": 4
+        "value_pct": 2.9
       }
     },
     {
@@ -270,7 +270,7 @@
           },
           {
             "score": "1:0",
-            "pct": 5.5
+            "pct": 5.4
           },
           {
             "score": "2:2",
@@ -284,7 +284,7 @@
       },
       "edge": {
         "side": "home",
-        "value_pct": 3.1
+        "value_pct": 3
       }
     },
     {
@@ -324,16 +324,16 @@
         }
       ],
       "goal_markets": {
-        "over_under_2_5": 43.1,
-        "btts": 44.6
+        "over_under_2_5": 43,
+        "btts": 44.5
       },
       "xg": {
-        "home": 1.62,
+        "home": 1.61,
         "away": 0.79
       },
       "markets_ext": {
         "over_1_5": 70.1,
-        "over_3_5": 22.2,
+        "over_3_5": 22.1,
         "correct_score": [
           {
             "score": "1:0",
@@ -373,13 +373,13 @@
           },
           {
             "score": "2:2",
-            "pct": 3.7
+            "pct": 3.6
           }
         ]
       },
       "edge": {
         "side": "away",
-        "value_pct": 6
+        "value_pct": 5.8
       }
     }
   ]
