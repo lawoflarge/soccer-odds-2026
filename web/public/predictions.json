@@ -1,5 +1,5 @@
 {
-  "updated": "2026-07-13T19:20:54.661Z",
+  "updated": "2026-07-14T02:21:33.596Z",
   "count": 2,
   "matches": [
     {
@@ -12,9 +12,9 @@
       "phase": "sf",
       "group": null,
       "probs_1x2": {
-        "home": 40.6,
+        "home": 40.3,
         "draw": 27.7,
-        "away": 31.7
+        "away": 31.9
       },
       "top_scores": [
         {
@@ -35,11 +35,11 @@
         },
         {
           "score": "1:2",
-          "pct": 7.6
+          "pct": 7.7
         }
       ],
       "goal_markets": {
-        "over_under_2_5": 50.3,
+        "over_under_2_5": 50.4,
         "btts": 55.4
       },
       "xg": {
@@ -68,7 +68,7 @@
           },
           {
             "score": "1:2",
-            "pct": 7.6
+            "pct": 7.7
           },
           {
             "score": "0:1",
@@ -76,7 +76,7 @@
           },
           {
             "score": "2:0",
-            "pct": 7.1
+            "pct": 7
           },
           {
             "score": "2:2",
@@ -104,9 +104,9 @@
       "phase": "sf",
       "group": null,
       "probs_1x2": {
-        "home": 36.3,
+        "home": 36.1,
         "draw": 30.3,
-        "away": 33.5
+        "away": 33.6
       },
       "top_scores": [
         {
@@ -119,7 +119,7 @@
         },
         {
           "score": "1:0",
-          "pct": 10.6
+          "pct": 10.5
         },
         {
           "score": "0:1",
@@ -131,8 +131,8 @@
         }
       ],
       "goal_markets": {
-        "over_under_2_5": 41.1,
-        "btts": 48.3
+        "over_under_2_5": 41.2,
+        "btts": 48.4
       },
       "xg": {
         "home": 1.19,
@@ -140,7 +140,7 @@
       },
       "markets_ext": {
         "over_1_5": 68.6,
-        "over_3_5": 20.6,
+        "over_3_5": 20.7,
         "correct_score": [
           {
             "score": "1:1",
@@ -152,7 +152,7 @@
           },
           {
             "score": "1:0",
-            "pct": 10.6
+            "pct": 10.5
           },
           {
             "score": "0:1",
@@ -184,7 +184,10 @@
           }
         ]
       },
-      "edge": null
+      "edge": {
+        "side": "away",
+        "value_pct": 2.4
+      }
     }
   ]
 }
