@@ -1,5 +1,5 @@
 {
-  "updated": "2026-07-15T13:39:32.677Z",
+  "updated": "2026-07-15T19:07:35.573Z",
   "count": 1,
   "matches": [
     {
@@ -12,8 +12,8 @@
       "phase": "sf",
       "group": null,
       "probs_1x2": {
-        "home": 35.2,
-        "draw": 30.6,
+        "home": 35.3,
+        "draw": 30.5,
         "away": 34.2
       },
       "top_scores": [
@@ -39,16 +39,16 @@
         }
       ],
       "goal_markets": {
-        "over_under_2_5": 40.1,
-        "btts": 47.5
+        "over_under_2_5": 40.2,
+        "btts": 47.6
       },
       "xg": {
-        "home": 1.15,
-        "away": 1.13
+        "home": 1.16,
+        "away": 1.14
       },
       "markets_ext": {
-        "over_1_5": 67.7,
-        "over_3_5": 19.8,
+        "over_1_5": 67.8,
+        "over_3_5": 19.9,
         "correct_score": [
           {
             "score": "1:1",
@@ -84,15 +84,18 @@
           },
           {
             "score": "2:2",
-            "pct": 4.3
+            "pct": 4.4
           },
           {
             "score": "3:1",
-            "pct": 2.9
+            "pct": 3
           }
         ]
       },
-      "edge": null
+      "edge": {
+        "side": "draw",
+        "value_pct": 2.5
+      }
     }
   ]
 }
