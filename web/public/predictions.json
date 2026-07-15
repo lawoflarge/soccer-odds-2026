@@ -1,5 +1,5 @@
 {
-  "updated": "2026-07-15T08:06:02.220Z",
+  "updated": "2026-07-15T13:39:32.677Z",
   "count": 1,
   "matches": [
     {
@@ -12,63 +12,63 @@
       "phase": "sf",
       "group": null,
       "probs_1x2": {
-        "home": 35.3,
-        "draw": 30.7,
-        "away": 34
+        "home": 35.2,
+        "draw": 30.6,
+        "away": 34.2
       },
       "top_scores": [
         {
           "score": "1:1",
-          "pct": 14.4
+          "pct": 14.3
         },
         {
           "score": "0:0",
-          "pct": 11.4
+          "pct": 11.2
         },
         {
           "score": "1:0",
-          "pct": 10.8
+          "pct": 10.6
         },
         {
           "score": "0:1",
-          "pct": 10.5
+          "pct": 10.4
         },
         {
           "score": "2:1",
-          "pct": 7.6
+          "pct": 7.7
         }
       ],
       "goal_markets": {
-        "over_under_2_5": 39.7,
-        "btts": 47.2
+        "over_under_2_5": 40.1,
+        "btts": 47.5
       },
       "xg": {
         "home": 1.15,
-        "away": 1.12
+        "away": 1.13
       },
       "markets_ext": {
-        "over_1_5": 67.4,
-        "over_3_5": 19.5,
+        "over_1_5": 67.7,
+        "over_3_5": 19.8,
         "correct_score": [
           {
             "score": "1:1",
-            "pct": 14.4
+            "pct": 14.3
           },
           {
             "score": "0:0",
-            "pct": 11.4
+            "pct": 11.2
           },
           {
             "score": "1:0",
-            "pct": 10.8
+            "pct": 10.6
           },
           {
             "score": "0:1",
-            "pct": 10.5
+            "pct": 10.4
           },
           {
             "score": "2:1",
-            "pct": 7.6
+            "pct": 7.7
           },
           {
             "score": "1:2",
