@@ -1,5 +1,5 @@
 {
-  "updated": "2026-07-17T02:29:12.995Z",
+  "updated": "2026-07-17T08:07:04.201Z",
   "count": 2,
   "matches": [
     {
@@ -12,7 +12,7 @@
       "phase": "third",
       "group": null,
       "probs_1x2": {
-        "home": 50.5,
+        "home": 50.4,
         "draw": 23.4,
         "away": 26.1
       },
@@ -104,9 +104,9 @@
       "phase": "final",
       "group": null,
       "probs_1x2": {
-        "home": 41.9,
+        "home": 41.8,
         "draw": 29.6,
-        "away": 28.5
+        "away": 28.7
       },
       "top_scores": [
         {
@@ -119,7 +119,7 @@
         },
         {
           "score": "0:0",
-          "pct": 10.4
+          "pct": 10.3
         },
         {
           "score": "0:1",
@@ -131,16 +131,16 @@
         }
       ],
       "goal_markets": {
-        "over_under_2_5": 42.2,
-        "btts": 48.7
+        "over_under_2_5": 42.4,
+        "btts": 48.8
       },
       "xg": {
         "home": 1.32,
         "away": 1.05
       },
       "markets_ext": {
-        "over_1_5": 69.5,
-        "over_3_5": 21.5,
+        "over_1_5": 69.7,
+        "over_3_5": 21.6,
         "correct_score": [
           {
             "score": "1:1",
@@ -152,7 +152,7 @@
           },
           {
             "score": "0:0",
-            "pct": 10.4
+            "pct": 10.3
           },
           {
             "score": "0:1",
@@ -164,7 +164,7 @@
           },
           {
             "score": "2:0",
-            "pct": 8.2
+            "pct": 8.1
           },
           {
             "score": "1:2",
@@ -172,7 +172,7 @@
           },
           {
             "score": "0:2",
-            "pct": 5.1
+            "pct": 5.2
           },
           {
             "score": "2:2",
@@ -184,10 +184,7 @@
           }
         ]
       },
-      "edge": {
-        "side": "away",
-        "value_pct": 2.7
-      }
+      "edge": null
     }
   ]
 }
