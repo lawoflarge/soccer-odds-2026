@@ -1,5 +1,5 @@
 {
-  "updated": "2026-07-17T19:04:35.472Z",
+  "updated": "2026-07-18T02:20:09.087Z",
   "count": 2,
   "matches": [
     {
@@ -12,14 +12,14 @@
       "phase": "third",
       "group": null,
       "probs_1x2": {
-        "home": 50.4,
-        "draw": 23.4,
-        "away": 26.2
+        "home": 50.9,
+        "draw": 23.2,
+        "away": 25.9
       },
       "top_scores": [
         {
           "score": "1:1",
-          "pct": 10.3
+          "pct": 10.2
         },
         {
           "score": "2:1",
@@ -31,7 +31,7 @@
         },
         {
           "score": "1:2",
-          "pct": 6.6
+          "pct": 6.5
         },
         {
           "score": "2:2",
@@ -39,20 +39,20 @@
         }
       ],
       "goal_markets": {
-        "over_under_2_5": 65.3,
+        "over_under_2_5": 65.5,
         "btts": 65.4
       },
       "xg": {
-        "home": 1.97,
-        "away": 1.39
+        "home": 1.99,
+        "away": 1.38
       },
       "markets_ext": {
-        "over_1_5": 85.6,
-        "over_3_5": 43.3,
+        "over_1_5": 85.7,
+        "over_3_5": 43.5,
         "correct_score": [
           {
             "score": "1:1",
-            "pct": 10.3
+            "pct": 10.2
           },
           {
             "score": "2:1",
@@ -64,7 +64,7 @@
           },
           {
             "score": "1:2",
-            "pct": 6.6
+            "pct": 6.5
           },
           {
             "score": "2:2",
@@ -80,7 +80,7 @@
           },
           {
             "score": "3:0",
-            "pct": 4.4
+            "pct": 4.5
           },
           {
             "score": "3:2",
@@ -92,7 +92,10 @@
           }
         ]
       },
-      "edge": null
+      "edge": {
+        "side": "draw",
+        "value_pct": 2.3
+      }
     },
     {
       "id": "fb30113e43d113f1ace48b8563ba1ee9",
@@ -123,7 +126,7 @@
         },
         {
           "score": "0:1",
-          "pct": 8.8
+          "pct": 8.7
         },
         {
           "score": "2:1",
@@ -131,7 +134,7 @@
         }
       ],
       "goal_markets": {
-        "over_under_2_5": 42.4,
+        "over_under_2_5": 42.5,
         "btts": 48.9
       },
       "xg": {
@@ -156,7 +159,7 @@
           },
           {
             "score": "0:1",
-            "pct": 8.8
+            "pct": 8.7
           },
           {
             "score": "2:1",
@@ -184,7 +187,10 @@
           }
         ]
       },
-      "edge": null
+      "edge": {
+        "side": "away",
+        "value_pct": 2.3
+      }
     }
   ]
 }
