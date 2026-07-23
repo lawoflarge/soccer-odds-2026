@@ -1,0 +1,26 @@
+# Soccer Odds 2026
+
+> Soccer Odds 2026 is a free iPhone app that shows the betting-market consensus for every match of the 2026 tournament: win/draw/win probabilities, the most likely scoreline, and goal markets (over/under 2.5 goals, both teams to score), derived from aggregated bookmaker odds with the margin removed. It is independent, takes no bets, and is for entertainment and information only.
+
+## App
+- [Download on the App Store](https://apps.apple.com/us/app/soccer-odds-2026/id6775278722): Free, iOS, Sports.
+- [Pricing](https://soccer-odds-2026.vercel.app/pricing.md): Free, ad-supported. No subscription, no in-app purchases, no account.
+- [FAQ](https://soccer-odds-2026.vercel.app/#faq): What it is, where the predictions come from, whether it is gambling, and how accurate it is.
+
+## How it works
+- For every match it aggregates the odds from multiple bookmakers and removes the built-in bookmaker margin (devig).
+- The de-margined odds are converted into fair win/draw/win probabilities and a statistical goal model.
+- Each match shows the single most likely scoreline plus goal markets: over/under 2.5 total goals and both teams to score.
+- Pick a favorite team and follow its predicted path through the tournament.
+- The result is the market consensus — what the betting market, in aggregate, expects to happen.
+
+## Independence and disclaimer
+- Independent app; not affiliated with, endorsed by, or connected to any football organization or governing body.
+- No betting and no real-money gaming; the app accepts no bets.
+- Predictions reflect the market and are not guaranteed; all data is for entertainment and information only.
+
+## Privacy
+- No account and no sign-up. A selected favorite team is stored only on your device.
+- Shows ads via Google AdMob; see the privacy policy for details.
+- [Privacy Policy](https://soccer-odds-2026.vercel.app/privacy.html)
+- Contact: levin.schwab@gmx.de

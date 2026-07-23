@@ -1,0 +1,21 @@
+# Soccer Odds 2026 — all crawlers welcome, including AI assistants.
+User-agent: *
+Allow: /
+
+# AI answer engines are explicitly permitted.
+User-agent: GPTBot
+Allow: /
+User-agent: ChatGPT-User
+Allow: /
+User-agent: OAI-SearchBot
+Allow: /
+User-agent: ClaudeBot
+Allow: /
+User-agent: anthropic-ai
+Allow: /
+User-agent: PerplexityBot
+Allow: /
+User-agent: Google-Extended
+Allow: /
+
+Sitemap: https://soccer-odds-2026.vercel.app/sitemap.xml
