@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		02AF3920FBD0EDB7E8D232A4 /* SkeletonShimmer.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEC6F889E1E9E472A515C516 /* SkeletonShimmer.swift */; };
 		04716530A879F57B8FF2E07F /* FavoriteStoreTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2CB77F6452F1B52A2275C7A /* FavoriteStoreTests.swift */; };
+		06E84400ABC9DA6F19DDC46A /* InterstitialAdManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E006D440944091589BDEDF2 /* InterstitialAdManager.swift */; };
 		090A95D918912B6AE3FB9DE9 /* MyTeamView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F303D116E930E8C8D3E5E952 /* MyTeamView.swift */; };
 		1468B2D8F92CF23A6A952E12 /* DonutChart.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40295BA7D0A5994FF5D6324C /* DonutChart.swift */; };
 		15B1B0884BE21A73EA0BEB18 /* sample-track-record.json in Resources */ = {isa = PBXBuildFile; fileRef = 12D7B3ED1273FFE30E196894 /* sample-track-record.json */; };
@@ -28,6 +29,7 @@
 		4A61E46D666B429EF7E5C2BD /* sample-simulation.json in Resources */ = {isa = PBXBuildFile; fileRef = 229E6986260396AC534B77E1 /* sample-simulation.json */; };
 		4CCDC3ADDB2F6A8C2C299F69 /* OddsHistoryService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3736306232036DEEA22F47E5 /* OddsHistoryService.swift */; };
 		4D9BAEAEF9930539861830B2 /* ProbabilityBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0036AD59A536B21C82BA73D /* ProbabilityBar.swift */; };
+		51F1CE69DCFDF34AEAF1B187 /* AdGate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31E1868420636D17F4AEEE05 /* AdGate.swift */; };
 		5707C49E8AB09124920F5C9B /* SimulationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42850BCE7E4C35CEA638B670 /* SimulationService.swift */; };
 		5EA9106FDC544BF9CF70DF48 /* sample-predictions-ext.json in Resources */ = {isa = PBXBuildFile; fileRef = B087A6EFDD303F331329D6A0 /* sample-predictions-ext.json */; };
 		65734E0F028FD783FE2560A0 /* OddsSparkline.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A92FA2EF91B5D94692E6DF1 /* OddsSparkline.swift */; };
@@ -94,6 +96,7 @@
 		252D33F14C15CB697C1B30D2 /* teams.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = teams.json; sourceTree = "<group>"; };
 		2BEC38261F1A140D6770CA9A /* PredictionsService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PredictionsService.swift; sourceTree = "<group>"; };
 		3049C850410F8D301ACE08CA /* PredictionDecodingTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PredictionDecodingTests.swift; sourceTree = "<group>"; };
+		31E1868420636D17F4AEEE05 /* AdGate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdGate.swift; sourceTree = "<group>"; };
 		3736306232036DEEA22F47E5 /* OddsHistoryService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OddsHistoryService.swift; sourceTree = "<group>"; };
 		3C29F6A9F189A62ABEC36B32 /* NumberTicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NumberTicker.swift; sourceTree = "<group>"; };
 		3CFB8EC9B2BC8534513F223A /* SimulationDecodingTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimulationDecodingTests.swift; sourceTree = "<group>"; };
@@ -111,6 +114,7 @@
 		8AED1460D908C0CB365BB93F /* SoccerOdds2026.app */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.application; path = SoccerOdds2026.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		90DFF36D3AB0A6F87F430A0D /* AnimatedProbBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimatedProbBar.swift; sourceTree = "<group>"; };
 		9475D6670EED40596FB09EE3 /* TrackRecordDecodingTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrackRecordDecodingTests.swift; sourceTree = "<group>"; };
+		9E006D440944091589BDEDF2 /* InterstitialAdManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterstitialAdManager.swift; sourceTree = "<group>"; };
 		9F81B53C2611FDCD06DEA778 /* FavoriteStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteStore.swift; sourceTree = "<group>"; };
 		A0653042E386AA5E680A9E28 /* PaywallView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaywallView.swift; sourceTree = "<group>"; };
 		A0FD98C995BFADDF0F0CA51F /* Config.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Config.swift; sourceTree = "<group>"; };
@@ -297,7 +301,9 @@
 		D2712550E869B7748B67863B /* Ads */ = {
 			isa = PBXGroup;
 			children = (
+				31E1868420636D17F4AEEE05 /* AdGate.swift */,
 				7E9A9E1540434D69A37E0308 /* ConsentManager.swift */,
+				9E006D440944091589BDEDF2 /* InterstitialAdManager.swift */,
 			);
 			path = Ads;
 			sourceTree = "<group>";
@@ -418,6 +424,7 @@
 			files = (
 				2922A3100621AD99FCA4CED6 /* AboutView.swift in Sources */,
 				357CD803B590AED9C270DED8 /* AdBannerView.swift in Sources */,
+				51F1CE69DCFDF34AEAF1B187 /* AdGate.swift in Sources */,
 				FFBED57C8615DD21D63CF10A /* AnimatedProbBar.swift in Sources */,
 				9EA61099F270EDEFB111803E /* App.swift in Sources */,
 				6BE9F092BA374C4000B0BB9C /* Config.swift in Sources */,
@@ -427,6 +434,7 @@
 				E268AC7FD83016CB67F748EB /* FavoriteStore.swift in Sources */,
 				868B8CF8ED3383F706926E4C /* FixturesView.swift in Sources */,
 				992015AA5357FB73AD8CDACD /* FlagView.swift in Sources */,
+				06E84400ABC9DA6F19DDC46A /* InterstitialAdManager.swift in Sources */,
 				24130C58D7ABAFD8A96509E3 /* MatchDetailView.swift in Sources */,
 				FA58E6A3DE8EBC24A5A28323 /* MatchRow.swift in Sources */,
 				8D574201BD2B4391A6154F03 /* MoreView.swift in Sources */,

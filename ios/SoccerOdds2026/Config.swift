@@ -10,4 +10,5 @@ enum Config {
     /// AdMob unit IDs — real AdMob IDs (App "Soccer Odds 2026" / Fixtures Banner).
     static let adMobAppID = "ca-app-pub-6563643868702361~1733904595"
     static let bannerAdUnitID = "ca-app-pub-6563643868702361/1494761678"
+    static let interstitialAdUnitID = "ca-app-pub-6563643868702361/5735604027"
 }

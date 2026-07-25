@@ -5,6 +5,17 @@ struct MatchDetailView: View {
     let match: Match
     @Environment(ProStore.self) private var store
     @Environment(OddsHistoryService.self) private var historyService   // Plan-4-Typ
+    @Environment(ConsentManager.self) private var consent
+    @Environment(AdGate.self) private var gate
+    @Environment(InterstitialAdManager.self) private var interstitial
+
+    private static var isScreenshotMode: Bool {
+        #if DEBUG
+        return ProcessInfo.processInfo.arguments.contains("-screenshotData")
+        #else
+        return false
+        #endif
+    }
 
     private var snapshots: [OddsSnapshot] {
         historyService.snapshots(for: match.id)
@@ -28,6 +39,13 @@ struct MatchDetailView: View {
         .navigationTitle("\(match.teams.home) – \(match.teams.away)")
         .navigationBarTitleDisplayMode(.inline)
         .background(Theme.depthBase.ignoresSafeArea())
+        .onDisappear {
+            guard !Self.isScreenshotMode else { return }
+            if !store.isPro && consent.canRequestAds && gate.canShowInterstitial {
+                gate.recordInterstitial()
+                interstitial.present { }
+            }
+        }
     }
 
     // MARK: - Hero Card (Floating Score)

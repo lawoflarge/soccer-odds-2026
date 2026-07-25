@@ -5,6 +5,8 @@ struct SoccerOdds2026App: App {
     @StateObject private var service = PredictionsService()
     @StateObject private var favorites = FavoriteStore()
     @State private var consent = ConsentManager()
+    @State private var gate = AdGate()
+    @State private var interstitial = InterstitialAdManager()
     @State private var proStore = ProStore()
     @State private var simService = SimulationService()
     @State private var trackService = TrackRecordService()
@@ -16,6 +18,8 @@ struct SoccerOdds2026App: App {
                 .environmentObject(service)
                 .environmentObject(favorites)
                 .environment(consent)
+                .environment(gate)
+                .environment(interstitial)
                 .environment(proStore)
                 .environment(simService)
                 .environment(trackService)
@@ -28,6 +32,8 @@ struct SoccerOdds2026App: App {
                     }
                     #endif
                     await consent.bootstrap()
+                    AdGate.bumpSession()
+                    interstitial.preload()
                 }
                 .task { await proStore.refreshEntitlements() }
                 .task { await simService.refresh() }
