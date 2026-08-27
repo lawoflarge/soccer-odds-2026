@@ -45,6 +45,19 @@ final class ConsentManager {
         }
     }
 
+    /// Whether this user is entitled to reopen the consent choice. Outside the
+    /// EEA/UK there is no form, so the settings entry must stay hidden.
+    var privacyOptionsRequired: Bool {
+        ConsentInformation.shared.privacyOptionsRequirementStatus == .required
+    }
+
+    /// Reopen the consent form so a granted consent can be withdrawn as easily
+    /// as it was given.
+    func presentPrivacyOptions() {
+        guard let root = Self.topViewController() else { return }
+        ConsentForm.presentPrivacyOptionsForm(from: root) { _ in }
+    }
+
     func startAdsIfNeeded() {
         guard !started else { return }
         started = true

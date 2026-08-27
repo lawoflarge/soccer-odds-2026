@@ -3,6 +3,7 @@ import SwiftUI
 
 struct MoreView: View {
     @Environment(ProStore.self) private var store
+    @Environment(ConsentManager.self) private var consent
     @State private var showPaywall = false
 
     var body: some View {
@@ -27,6 +28,11 @@ struct MoreView: View {
                 Section("Support") {
                     Link(destination: URL(string: "https://soccer-odds-2026.vercel.app/privacy")!) {
                         Label("Privacy Policy", systemImage: "hand.raised.fill")
+                    }
+                    if consent.privacyOptionsRequired {
+                        Button { consent.presentPrivacyOptions() } label: {
+                            Label("Ad Privacy Options", systemImage: "hand.raised.circle.fill")
+                        }
                     }
                     Link(destination: URL(string: "https://www.begambleaware.org")!) {
                         Label("BeGambleAware.org", systemImage: "exclamationmark.shield.fill")

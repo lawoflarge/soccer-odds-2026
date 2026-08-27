@@ -33,7 +33,7 @@ struct SoccerOdds2026App: App {
                     #endif
                     await consent.bootstrap()
                     AdGate.bumpSession()
-                    interstitial.preload()
+                    if consent.canRequestAds && !proStore.isPro { interstitial.preload() }
                 }
                 .task { await proStore.refreshEntitlements() }
                 .task { await simService.refresh() }
