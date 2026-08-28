@@ -44,7 +44,7 @@ struct MoreView: View {
 
                 Section("About") {
                     Label("Soccer Odds 2026 v2.0", systemImage: "soccerball")
-                    Text("Powered by a Poisson goal model and consensus bookmaker odds. Independent app — not affiliated with FIFA or any governing body.")
+                    Text("Powered by a Poisson goal model and consensus bookmaker odds. Independent app, not affiliated with FIFA or any governing body.")
                         .font(.caption)
                         .foregroundStyle(.secondary)
                 }

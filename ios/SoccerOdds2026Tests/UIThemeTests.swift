@@ -38,3 +38,29 @@ final class UIThemeTests: XCTestCase {
         XCTAssertTrue(!isPro, "Wenn isPro=false muss locked true sein")
     }
 }
+
+/// predictions.json ist ungeprueft. Int(Double) bricht bei NaN und bei allem
+/// ausserhalb des Int-Bereichs ab, deshalb muss jeder Prozentwert vor der
+/// Umwandlung begrenzt werden.
+final class PctBoundsTests: XCTestCase {
+    func testIntSurvivesNaNAndOverflow() {
+        XCTAssertEqual(Pct.int(.nan), 0)
+        XCTAssertEqual(Pct.int(.infinity), 0)
+        XCTAssertEqual(Pct.int(-.infinity), 0)
+        XCTAssertEqual(Pct.int(1e30), 100)
+        XCTAssertEqual(Pct.int(-42), 0)
+    }
+
+    func testIntRoundsLikeBefore() {
+        XCTAssertEqual(Pct.int(0), 0)
+        XCTAssertEqual(Pct.int(42.4), 42)
+        XCTAssertEqual(Pct.int(42.5), 43)
+        XCTAssertEqual(Pct.int(100), 100)
+    }
+
+    func testClampedKeepsWidthsFinite() {
+        XCTAssertEqual(Pct.clamped(.nan), 0)
+        XCTAssertEqual(Pct.clamped(1e30), 100)
+        XCTAssertEqual(Pct.clamped(37.5), 37.5)
+    }
+}

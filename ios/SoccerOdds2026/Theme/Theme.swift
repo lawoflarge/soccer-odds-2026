@@ -86,3 +86,23 @@ extension View {
         modifier(LiquidCard(radius: radius))
     }
 }
+
+// MARK: - Prozentwerte aus dem Datenstrom
+
+/// Die Wahrscheinlichkeiten kommen ungeprueft aus predictions.json. Int(Double)
+/// bricht bei NaN und bei allem ausserhalb des Int-Bereichs ab, und ein einziger
+/// Ausreisser aus der Pipeline haette die Spielliste fuer alle zum Absturz
+/// gebracht. Fachliche Grenze: ein Prozentsatz liegt zwischen 0 und 100.
+enum Pct {
+    /// Auf 0...100 begrenzter, gerundeter Prozentwert.
+    static func int(_ value: Double) -> Int {
+        guard value.isFinite else { return 0 }
+        return Int(min(max(value, 0), 100).rounded())
+    }
+
+    /// Auf 0...100 begrenzter Rohwert fuer Breiten- und Winkelrechnungen.
+    static func clamped(_ value: Double) -> Double {
+        guard value.isFinite else { return 0 }
+        return min(max(value, 0), 100)
+    }
+}

@@ -56,7 +56,7 @@ final class SimulationService {
         } catch {
             loadError = simulation == nil
                 ? "Couldn't load simulation data. Check your connection and try again."
-                : "Showing last saved data — couldn't reach the server."
+                : "Showing last saved data, couldn't reach the server."
         }
     }
 }

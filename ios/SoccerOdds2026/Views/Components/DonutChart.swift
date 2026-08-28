@@ -24,7 +24,7 @@ struct DonutChart: View {
                     .animation(.spring(duration: 0.8, bounce: 0.1).delay(Double(idx) * 0.1), value: appeared)
             }
             VStack(spacing: 0) {
-                Text("\(Int(max(probs.home, probs.draw, probs.away).rounded()))%")
+                Text("\(Pct.int(max(probs.home, probs.draw, probs.away)))%")
                     .font(.system(.title3, design: .rounded).weight(.bold))
                     .monospacedDigit()
                 Text("top")

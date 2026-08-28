@@ -148,9 +148,9 @@ struct TournamentView: View {
                 HStack {
                     FlagView(team: gs.team)
                     Text(gs.team).font(.caption).frame(maxWidth: .infinity, alignment: .leading)
-                    Text("Adv \(Int(gs.advance.rounded()))%")
+                    Text("Adv \(Pct.int(gs.advance))%")
                         .font(.caption2).monospacedDigit().foregroundStyle(Theme.accent)
-                    Text("Win \(Int(gs.winGroup.rounded()))%")
+                    Text("Win \(Pct.int(gs.winGroup))%")
                         .font(.caption2).monospacedDigit().foregroundStyle(.secondary)
                 }
             }

@@ -56,7 +56,7 @@ final class TrackRecordService {
         } catch {
             loadError = trackRecord == nil
                 ? "Couldn't load track record. Check your connection and try again."
-                : "Showing last saved data — couldn't reach the server."
+                : "Showing last saved data, couldn't reach the server."
         }
     }
 }

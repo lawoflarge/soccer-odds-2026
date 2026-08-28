@@ -10,7 +10,7 @@ struct MatchRow: View {
         return d.formatted(date: .omitted, time: .shortened)
     }
     private var predictedScore: String { match.topScores.first?.score ?? "--" }
-    private var predictedPct: Int { Int((match.topScores.first?.pct ?? 0).rounded()) }
+    private var predictedPct: Int { Pct.int(match.topScores.first?.pct ?? 0) }
 
     @State private var pressed = false
 

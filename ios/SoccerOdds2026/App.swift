@@ -15,6 +15,11 @@ struct SoccerOdds2026App: App {
     var body: some Scene {
         WindowGroup {
             RootView()
+                // Die Palette ist fest dunkel (Theme.depthBase #0f1419), die
+                // Oberflaeche benutzt aber an 36 Stellen .primary und .secondary.
+                // Ohne dieses Pinning stehen sie im hellen Systemmodus fast
+                // schwarz auf fast schwarz.
+                .preferredColorScheme(.dark)
                 .environmentObject(service)
                 .environmentObject(favorites)
                 .environment(consent)

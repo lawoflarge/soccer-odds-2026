@@ -59,7 +59,7 @@ final class PredictionsService: ObservableObject {
         } catch {
             loadError = matches.isEmpty
                 ? "Couldn't load predictions. Check your connection and try again."
-                : "Showing last saved data — couldn't reach the server."
+                : "Showing last saved data, couldn't reach the server."
         }
     }
 }

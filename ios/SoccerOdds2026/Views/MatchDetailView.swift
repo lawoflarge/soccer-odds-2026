@@ -139,7 +139,7 @@ struct MatchDetailView: View {
         HStack(spacing: Theme.s2) {
             Circle().fill(color).frame(width: 8, height: 8)
             Text(label).font(.caption)
-            Text("\(Int(value.rounded()))%")
+            Text("\(Pct.int(value))%")
                 .font(.caption.bold())
                 .monospacedDigit()
                 .foregroundStyle(color)
@@ -261,7 +261,7 @@ struct MatchDetailView: View {
         HStack {
             Text(label).font(.subheadline)
             Spacer()
-            Text("\(Int(value.rounded()))%")
+            Text("\(Pct.int(value))%")
                 .font(.subheadline.bold())
                 .monospacedDigit()
         }

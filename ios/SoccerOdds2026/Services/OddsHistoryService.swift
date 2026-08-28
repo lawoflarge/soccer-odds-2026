@@ -56,7 +56,7 @@ final class OddsHistoryService {
         } catch {
             loadError = history.isEmpty
                 ? "Couldn't load odds history. Check your connection and try again."
-                : "Showing last saved data — couldn't reach the server."
+                : "Showing last saved data, couldn't reach the server."
         }
     }
 

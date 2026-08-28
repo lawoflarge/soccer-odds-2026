@@ -20,7 +20,7 @@ struct PaywallView: View {
         ("arrow.up.arrow.down",           "Line Movement",          "Track how odds shift before kick-off"),
         ("trophy.fill",                   "Tournament Simulation",  "10,000 Monte-Carlo runs per update"),
         ("bolt.fill",                     "xG + Extra Markets",     "Expected goals, Over 1.5/3.5, BTTS detail"),
-        ("checkmark.seal.fill",           "Track Record",           "Live Brier score — see the model earn trust"),
+        ("checkmark.seal.fill",           "Track Record",           "Live Brier score, see the model earn trust"),
         ("nosign",                        "Ad-free",                "No banners, ever"),
     ]
 
@@ -157,7 +157,7 @@ struct PaywallView: View {
         HStack(spacing: 10) {
             Image(systemName: "chart.bar.xaxis")
                 .foregroundStyle(Color(hex: "ffd24a"))
-            Text("Track Record grows live — every settled match sharpens the model score.")
+            Text("Track Record grows live, every settled match sharpens the model score.")
                 .font(.caption)
                 .foregroundStyle(.white.opacity(0.6))
                 .multilineTextAlignment(.leading)
