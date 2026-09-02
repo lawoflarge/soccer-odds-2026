@@ -4,7 +4,7 @@
 
 ## App
 - [Download on the App Store](https://apps.apple.com/us/app/soccer-odds-2026/id6775278722): Free, iOS, Sports.
-- [Pricing](https://soccer-odds-2026.vercel.app/pricing.md): Free, ad-supported. No subscription, no in-app purchases, no account.
+- [Pricing](https://soccer-odds-2026.vercel.app/pricing.md): Free download, ad-supported. No subscription and no account. One optional one-time in-app purchase, Pro Unlock, removes the ads and opens the deeper analysis screens.
 - [FAQ](https://soccer-odds-2026.vercel.app/#faq): What it is, where the predictions come from, whether it is gambling, and how accurate it is.
 
 ## How it works
@@ -12,7 +12,16 @@
 - The de-margined odds are converted into fair win/draw/win probabilities and a statistical goal model.
 - Each match shows the single most likely scoreline plus goal markets: over/under 2.5 total goals and both teams to score.
 - Pick a favorite team and follow its predicted path through the tournament.
-- The result is the market consensus — what the betting market, in aggregate, expects to happen.
+- The result is the market consensus, meaning what the betting market in aggregate expects to happen.
+
+## Reference pages
+- [World Cup 2026 groups](https://soccer-odds-2026.vercel.app/world-cup-2026-groups.html): The full draw, all 48 teams in 12 groups, and the market probability split for all 72 group matches.
+- [World Cup 2026 bracket](https://soccer-odds-2026.vercel.app/world-cup-2026-bracket.html): The knockout format and all 32 knockout matches from the round of 32 to the final on 19 July 2026.
+- [World Cup 2026 title probabilities](https://soccer-odds-2026.vercel.app/world-cup-2026-title-probabilities.html): Title and survival probabilities for all 48 teams from a 10,000 run simulation taken before the opening match.
+- [Turning odds into probability](https://soccer-odds-2026.vercel.app/odds-to-probability.html): Implied probability, the overround, and proportional devigging, with a worked example.
+- [The Poisson and Dixon-Coles model](https://soccer-odds-2026.vercel.app/poisson-football-model.html): How two market numbers become a full scoreline grid.
+- [Goal markets explained](https://soccer-odds-2026.vercel.app/goal-markets-explained.html): Over/under 2.5 goals, both teams to score, and what expected goals means here.
+- [Prediction pool guide](https://soccer-odds-2026.vercel.app/prediction-pool-guide.html): Using probabilities in an office pool or a Kicktipp round.
 
 ## Independence and disclaimer
 - Independent app; not affiliated with, endorsed by, or connected to any football organization or governing body.

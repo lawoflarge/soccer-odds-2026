@@ -1,0 +1,306 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>How to Fill In a World Cup Prediction Pool With Probabilities</title>
+<meta name="description" content="Kicktipp rounds and office pools reward tendency far more reliably than exact scores. What 104 World Cup 2026 matches show about picking scorelines, when to back a draw, and when to go against the field.">
+<link rel="stylesheet" href="/aso-tokens.css">
+<style>
+:root{
+  --bg:#faf9f4; --surface:#ffffff; --line:#dfe1d6; --line-2:#eceee4;
+  --fg:#14170f; --fg-2:#4c5247; --dark:#0a1206; --dark-fg:#eef1e9; --dark-fg-2:#a9b3a4;
+  --draw:#8d9488;
+}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--bg);color:var(--fg);overflow-wrap:break-word;
+  font:400 17px/1.62 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
+  font-variant-numeric:tabular-nums}
+img{max-width:100%;height:auto}
+a{color:var(--brand-ink);text-underline-offset:2px}
+a:hover{text-decoration:none}
+.wrap{max-width:64rem;margin:0 auto;padding:0 20px}
+.prose{max-width:40rem}
+.prose p,.prose li{color:var(--fg-2)}
+.prose h2+p,.prose h3+p{margin-top:.4em}
+h1,h2,h3{line-height:1.18;letter-spacing:-.018em;margin:0;color:var(--fg)}
+h1{font-size:clamp(1.75rem,5.2vw,2.55rem);font-weight:750}
+h2{font-size:clamp(1.28rem,3.4vw,1.65rem);font-weight:700;margin-top:2.6rem}
+h3{font-size:1.06rem;font-weight:700;margin-top:1.7rem}
+p,ul,ol{margin:.85em 0}
+ul,ol{padding-left:1.15rem}
+li{margin:.35em 0}
+section{padding:2.6rem 0}
+.rule{border:0;border-top:1px solid var(--line);margin:0}
+
+/* top bar */
+.site{background:var(--dark);color:var(--dark-fg)}
+.site .wrap{display:flex;flex-wrap:wrap;align-items:center;gap:.5rem 1.1rem;padding-top:.85rem;padding-bottom:.85rem}
+.site a{color:var(--dark-fg-2);text-decoration:none;font-size:14px}
+.site a:hover,.site a[aria-current=page]{color:var(--dark-fg)}
+.site a[aria-current=page]{box-shadow:inset 0 -2px 0 var(--brand-2)}
+.mark{color:var(--dark-fg);font-weight:700;font-size:15px;letter-spacing:-.01em;margin-right:.4rem}
+.mark span{color:var(--brand-2)}
+
+/* hero */
+.hero{padding:2.9rem 0 2.2rem}
+.eyebrow{font-size:12px;letter-spacing:.13em;text-transform:uppercase;font-weight:700;color:var(--brand-ink);margin:0 0 .8rem}
+.lede{font-size:clamp(1.02rem,2.4vw,1.16rem);color:var(--fg-2);max-width:38rem;margin:.9rem 0 0}
+.cta{margin:1.5rem 0 .5rem;display:flex;flex-wrap:wrap;align-items:center;gap:.75rem 1.1rem}
+.cta-note{font-size:14px;color:var(--fg-2);margin:0}
+.aso-badge:focus-visible{outline:2px solid var(--brand-ink);outline-offset:3px}
+
+/* disclaimer */
+.disclaim{border:1px solid var(--line);background:var(--surface);border-left:3px solid var(--brand);
+  padding:.9rem 1rem;font-size:14.5px;line-height:1.55;color:var(--fg-2);margin:1.6rem 0 0;max-width:44rem}
+.disclaim b{color:var(--fg)}
+
+/* facts strip */
+.facts{display:grid;grid-template-columns:repeat(auto-fit,minmax(8.5rem,1fr));gap:1px;background:var(--line);
+  border:1px solid var(--line);margin:2rem 0 0}
+.facts div{background:var(--surface);padding:.95rem 1rem}
+.facts b{display:block;font-size:1.35rem;font-weight:750;letter-spacing:-.02em;color:var(--brand-ink);line-height:1.1}
+.facts span{display:block;font-size:13px;color:var(--fg-2);margin-top:.25rem}
+
+/* dark band */
+.band{background:var(--dark);color:var(--dark-fg)}
+.band h2,.band h3{color:var(--dark-fg)}
+.band p,.band li{color:var(--dark-fg-2)}
+.band a{color:var(--brand-soft)}
+.band .eyebrow{color:var(--brand-2)}
+
+/* shots */
+.shots{display:grid;grid-template-columns:repeat(auto-fit,minmax(9.5rem,1fr));gap:1.4rem;margin-top:1.5rem;
+  max-width:44rem}
+.shots figure{margin:0}
+.shots img{display:block;width:100%;border:1px solid rgba(255,255,255,.14);border-radius:12px}
+.shots figcaption{font-size:13.5px;color:var(--dark-fg-2);margin-top:.6rem;line-height:1.45}
+
+/* feature list */
+.feat{list-style:none;padding:0;margin:1.2rem 0 0;max-width:44rem}
+.feat li{border-top:1px solid var(--line);padding:1rem 0 .95rem;margin:0}
+.feat li:last-child{border-bottom:1px solid var(--line)}
+.feat b{display:block;font-size:1.02rem;color:var(--fg)}
+.feat span{display:block;color:var(--fg-2);font-size:15.5px;margin-top:.25rem;line-height:1.55}
+
+/* tables */
+.tscroll{overflow-x:auto;margin:1.1rem 0 0;border:1px solid var(--line);background:var(--surface)}
+table{border-collapse:collapse;width:100%;min-width:22rem;font-size:14.5px}
+caption{text-align:left;font-size:13px;color:var(--fg-2);padding:.6rem .75rem;border-bottom:1px solid var(--line-2)}
+th,td{text-align:right;padding:.5rem .55rem;border-top:1px solid var(--line-2);vertical-align:top;white-space:nowrap}
+thead th{font-size:12px;letter-spacing:.06em;text-transform:uppercase;color:var(--fg-2);font-weight:700;border-top:0}
+tbody th{text-align:left;font-weight:600;white-space:normal;min-width:9.5rem}
+tbody th .ko{display:block;font-weight:400;font-size:12.5px;color:var(--fg-2);margin-top:.1rem}
+td.pct{font-variant-numeric:tabular-nums}
+td.lead{font-weight:700}
+.pbar{display:flex;height:4px;margin-top:.4rem;max-width:11rem;background:var(--line-2)}
+.pbar i{display:block;height:100%}
+.pbar i:nth-child(1){background:var(--brand)}
+.pbar i:nth-child(2){background:var(--draw)}
+.pbar i:nth-child(3){background:var(--brand-2)}
+.legend{font-size:12.5px;color:var(--fg-2);margin:.6rem 0 0;display:flex;flex-wrap:wrap;gap:.35rem 1rem}
+.legend b{font-weight:600;color:var(--fg)}
+.key{display:inline-block;width:10px;height:10px;margin-right:.35rem;vertical-align:baseline}
+.key.h{background:var(--brand)}.key.d{background:var(--draw)}.key.a{background:var(--brand-2)}
+
+/* group grid */
+.draw{display:grid;grid-template-columns:repeat(auto-fit,minmax(11rem,1fr));gap:1px;background:var(--line);
+  border:1px solid var(--line);margin-top:1.2rem}
+.draw div{background:var(--surface);padding:.8rem .9rem}
+.draw h3{margin:0 0 .45rem;font-size:12px;letter-spacing:.1em;text-transform:uppercase;color:var(--brand-ink)}
+.draw ol{margin:0;padding-left:1.1rem;font-size:15px;color:var(--fg-2)}
+.draw li{margin:.2em 0}
+
+/* steps */
+.steps{counter-reset:s;list-style:none;padding:0;margin:1.3rem 0 0;max-width:42rem}
+.steps li{counter-increment:s;position:relative;padding:0 0 1.15rem 2.5rem;margin:0}
+.steps li::before{content:counter(s);position:absolute;left:0;top:.05rem;width:1.7rem;height:1.7rem;
+  display:grid;place-items:center;font-size:13px;font-weight:700;
+  color:var(--dark);background:var(--brand-2);border-radius:50%}
+.band .steps li::before{color:var(--dark)}
+.steps b{display:block}
+
+/* formula */
+.formula{background:var(--surface);border:1px solid var(--line);padding:.85rem 1rem;margin:1.1rem 0;
+  font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;font-size:14px;line-height:1.75;
+  color:var(--fg);overflow-x:auto;white-space:pre}
+.band .formula{background:rgba(255,255,255,.05);border-color:rgba(255,255,255,.16);color:var(--dark-fg)}
+
+/* faq */
+.faq{max-width:42rem;margin-top:1.2rem}
+.faq h3{margin-top:1.6rem}
+.faq p{color:var(--fg-2);margin-top:.35em}
+
+/* cards / links out */
+.links{display:grid;grid-template-columns:repeat(auto-fit,minmax(14rem,1fr));gap:1px;background:var(--line);
+  border:1px solid var(--line);margin-top:1.3rem}
+.links a{background:var(--surface);padding:1rem 1.05rem;text-decoration:none;display:block;color:var(--fg)}
+.links a:hover{background:#f4f6ee}
+.links b{display:block;color:var(--brand-ink);font-size:15.5px}
+.links span{display:block;font-size:14px;color:var(--fg-2);margin-top:.25rem;line-height:1.5}
+
+/* footer */
+footer{background:var(--dark);color:var(--dark-fg-2);font-size:14px;padding:2.2rem 0 2.6rem;line-height:1.7}
+footer a{color:var(--brand-soft)}
+footer nav{display:flex;flex-wrap:wrap;gap:.35rem 1.1rem;margin-bottom:1rem}
+footer .small{font-size:13px;margin-top:1rem;max-width:44rem}
+
+@media (max-width:520px){
+  body{font-size:16px}
+  .shots{grid-template-columns:repeat(2,1fr);gap:1rem}
+}
+</style>
+<!-- aso:head:start -->
+<link rel="icon" href="/favicon.ico" sizes="any">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16.png">
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="manifest" href="/site.webmanifest">
+<meta name="theme-color" content="#106000">
+<meta name="apple-itunes-app" content="app-id=6775278722, app-argument=https://soccer-odds-2026.vercel.app/prediction-pool-guide.html">
+<link rel="canonical" href="https://soccer-odds-2026.vercel.app/prediction-pool-guide.html">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Soccer Odds 2026">
+<meta property="og:url" content="https://soccer-odds-2026.vercel.app/prediction-pool-guide.html">
+<meta property="og:image" content="https://soccer-odds-2026.vercel.app/og-image.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Soccer Odds 2026 on the App Store">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://soccer-odds-2026.vercel.app/og-image.png">
+<meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1">
+<!-- aso:head:end -->
+</head>
+<body>
+<header class="site"><div class="wrap"><a class="mark" href="/">Soccer Odds <span>2026</span></a><a href="/">Home</a><a href="/world-cup-2026-groups.html">Groups</a><a href="/world-cup-2026-bracket.html">Bracket</a><a href="/world-cup-2026-title-probabilities.html">Title odds</a><a href="/odds-to-probability.html">Odds to probability</a><a href="/poisson-football-model.html">Poisson model</a><a href="/goal-markets-explained.html">Goal markets</a><a href="/prediction-pool-guide.html" aria-current="page">Prediction pools</a></div></header>
+<main>
+<section class="hero"><div class="wrap">
+<p class="eyebrow">Use case &middot; office pools and Kicktipp rounds</p>
+<h1>How to fill in a World Cup prediction pool with probabilities</h1>
+<p class="lede">Most people enter a pool with their heart, a grudge and a vague memory of a friendly two
+years ago. A probability will not tell you the result, but it will tell you where the guessing is worth
+doing and where it is a waste of an entry.</p>
+<div class="cta"><a class="aso-badge" href="https://apps.apple.com/app/id6775278722?ct=pool-hero&amp;mt=8" data-aso-cta="pool-hero" aria-label="Download Soccer Odds 2026 on the App Store"><img src="/app-store-badge.svg" alt="Download on the App Store" width="165" height="55"></a><p class="cta-note">Free, and the numbers are on every fixture.</p></div>
+</div></section>
+
+<section><div class="wrap"><div class="prose">
+<h2>First, find out what your pool actually rewards</h2>
+<p>Pools score in one of three ways, and they call for completely different behaviour.</p>
+<ul>
+<li><b>Tendency.</b> A point for picking the right side, or the draw. Nothing else counts.</li>
+<li><b>Tendency plus goal difference.</b> More points if you also got the margin right.</li>
+<li><b>Exact score.</b> The full points only for the precise result, usually with partial credit below
+it. Kicktipp rounds are normally shaped like this.</li>
+</ul>
+<p>The reason this matters is that the reliable information and the valuable information sit in different
+places. The tendency is where a probability is genuinely strong. The exact score is close to a lottery for
+everybody, and the numbers below show how close.</p>
+
+<h2>Why exact scores are a lottery, with figures</h2>
+<p>Across all 104 matches of the 2026 World Cup, the single likeliest scoreline averaged
+14.3%. It cleared fifteen percent in 19 matches and twenty
+percent in only 8.</p>
+<p>The most extreme case makes the point better than any average. The most one-sided match of the whole
+tournament was Germany against Curaçao on
+Sun 14 June 2026, where the market gave the home side
+92.6 percent. Overwhelming. And yet the likeliest exact scoreline was
+3:0, worth 13.1 percent. Even when you are
+almost certain who wins, you are nowhere near certain by how much.</p>
+<p>So in an exact score pool, do not spend effort hunting the perfect scoreline. Spend it making sure the
+tendency is right and the scoreline is a plausible one.</p>
+
+<h2>A small set of scorelines does most of the work</h2>
+<p>The likeliest scoreline was not scattered across the whole grid. Out of 104 matches it was:</p>
+<div class="tscroll"><table><caption>How often each scoreline was the single likeliest result, 2026 World Cup.</caption><thead><tr><th scope="col">Scoreline</th><th scope="col">Matches</th><th scope="col">Share of 104</th></tr></thead><tbody><tr><th scope="row">1:1</th><td class="pct">37</td><td class="pct">36%</td></tr><tr><th scope="row">2:0</th><td class="pct">24</td><td class="pct">23%</td></tr><tr><th scope="row">1:0</th><td class="pct">13</td><td class="pct">12%</td></tr><tr><th scope="row">0:2</th><td class="pct">11</td><td class="pct">11%</td></tr><tr><th scope="row">0:1</th><td class="pct">10</td><td class="pct">10%</td></tr><tr><th scope="row">3:0</th><td class="pct">5</td><td class="pct">5%</td></tr></tbody></table></div>
+<p>1:1 and 2:0 between them led 61 of the 104 matches. If your pool gives partial
+credit for the right goal difference, those two results are doing an enormous amount of the work, and
+entering an exotic 3:2 is costing you far more often than it pays.</p>
+
+<h2>The draw is the pick nobody makes</h2>
+<p>The market gave the draw 22.2% on average, and in
+28 of the 104 matches it was worth at least
+twenty-seven percent. In most pools, almost nobody enters draws. That gap between how likely a draw is and
+how often it is picked is the clearest structural edge available in a pool.</p>
+<div class="tscroll"><table><caption>The six matches where the market rated a draw highest.</caption><thead><tr><th scope="col">Match</th><th scope="col">Home</th><th scope="col">Draw</th><th scope="col">Away</th><th scope="col">Likeliest score</th></tr></thead><tbody><tr><th scope="row">Portugal v Spain<span class="ko">6 Jul, 19:00 UTC</span><span class="pbar" aria-hidden="true"><i style="width:23.5%"></i><i style="width:34.1%"></i><i style="width:42.4%"></i></span></th><td class="pct">23.5%</td><td class="pct">34.1%</td><td class="pct lead">42.4%</td><td>0:0 <span style="color:var(--fg-2)">17.4%</span></td></tr><tr><th scope="row">Algeria v Austria<span class="ko">28 Jun, 02:00 UTC</span><span class="pbar" aria-hidden="true"><i style="width:26.8%"></i><i style="width:33.6%"></i><i style="width:39.6%"></i></span></th><td class="pct">26.8%</td><td class="pct">33.6%</td><td class="pct lead">39.6%</td><td>0:0 <span style="color:var(--fg-2)">16.1%</span></td></tr><tr><th scope="row">Belgium v Egypt<span class="ko">15 Jun, 19:00 UTC</span><span class="pbar" aria-hidden="true"><i style="width:16.8%"></i><i style="width:33.2%"></i><i style="width:50%"></i></span></th><td class="pct">16.8%</td><td class="pct">33.2%</td><td class="pct lead">50%</td><td>0:1 <span style="color:var(--fg-2)">19.8%</span></td></tr><tr><th scope="row">Paraguay v Australia<span class="ko">26 Jun, 02:00 UTC</span><span class="pbar" aria-hidden="true"><i style="width:33%"></i><i style="width:33.2%"></i><i style="width:33.8%"></i></span></th><td class="pct">33%</td><td class="pct">33.2%</td><td class="pct lead">33.8%</td><td>0:0 <span style="color:var(--fg-2)">14.8%</span></td></tr><tr><th scope="row">Ivory Coast v Ecuador<span class="ko">14 Jun, 23:00 UTC</span><span class="pbar" aria-hidden="true"><i style="width:29.6%"></i><i style="width:32.8%"></i><i style="width:37.6%"></i></span></th><td class="pct">29.6%</td><td class="pct">32.8%</td><td class="pct lead">37.6%</td><td>1:1 <span style="color:var(--fg-2)">14.5%</span></td></tr><tr><th scope="row">Egypt v Iran<span class="ko">27 Jun, 03:00 UTC</span><span class="pbar" aria-hidden="true"><i style="width:36.9%"></i><i style="width:32.7%"></i><i style="width:30.4%"></i></span></th><td class="pct lead">36.9%</td><td class="pct">32.7%</td><td class="pct">30.4%</td><td>1:1 <span style="color:var(--fg-2)">14.6%</span></td></tr></tbody></table></div>
+<p class="legend"><b>Reading the bar:</b> <span><i class="key h"></i>home win</span><span><i class="key d"></i>draw</span><span><i class="key a"></i>away win</span><span>Percentages are the fair market consensus after the bookmaker margin is removed.</span></p>
+<p>One honest caveat, because this is the point where guides usually oversell. Backing draws does not
+raise your expected number of correct picks: by definition the most likely single outcome is the most
+likely single outcome. What it does is put you on results the rest of the field does not hold. That is a
+variance play, and it is the right one only when finishing second is worth the same to you as finishing
+tenth.</p>
+
+<h2>When to follow the favourites and when not to</h2>
+<ul>
+<li><b>Leading, with matches left.</b> Follow the probabilities. Pick the highest of the three every time
+and let the field beat itself.</li>
+<li><b>Behind, near the end.</b> You need picks other people do not have. Look for the matches with the
+highest draw probability, or the underdog with the least hopeless number, and take those. Losing by more
+does not cost you anything.</li>
+<li><b>A big pool.</b> The more entrants, the more the winner will be somebody who took low-probability
+picks and got them right. Copying the consensus in a hundred person pool is a good way to finish
+comfortably in the middle.</li>
+<li><b>A small pool.</b> Consistency wins. Take the favourites and stop being clever.</li>
+</ul>
+
+<h2>A workable routine</h2>
+<ol class="steps">
+<li><b>Read the tendency off the probability split.</b> Take the largest of the three unless you have a
+deliberate reason to be contrarian.</li>
+<li><b>Pick a scoreline that matches the tendency and the goal expectation.</b> If over 2.5 is below
+forty percent, a 1:0 or a 1:1 fits. If it is above sixty, a 2:1 or a 2:0 does.</li>
+<li><b>Do not chase the perfect score.</b> Your best guess is right about one time in seven at
+best.</li>
+<li><b>Decide on draws once, before the round.</b> How many you are willing to enter is a strategy
+decision, not a match by match feeling.</li>
+</ol>
+
+<h2>What none of this does</h2>
+<p>It does not tell you the result. A ninety percent favourite loses about one time in ten, and that is
+the number working correctly rather than failing. This page is about entering a prediction pool for fun.
+It is not betting advice, no bets are taken here or in the app, and nothing on this site links to a
+bookmaker.</p>
+</div>
+
+<div class="prose"><h2>Related</h2></div>
+<div class="links">
+<a href="/world-cup-2026-groups.html"><b>All group matches</b><span>Probability split, likeliest scoreline
+and goal markets for the 72 group matches.</span></a>
+<a href="/goal-markets-explained.html"><b>Goal markets</b><span>What over 2.5 and BTTS mean, and how to
+read them when choosing a scoreline.</span></a>
+<a href="/odds-to-probability.html"><b>Where the numbers start</b><span>How a bookmaker price becomes a
+fair probability in the first place.</span></a>
+</div>
+<div class="cta"><a class="aso-badge" href="https://apps.apple.com/app/id6775278722?ct=pool-footer&amp;mt=8" data-aso-cta="pool-footer" aria-label="Download Soccer Odds 2026 on the App Store"><img src="/app-store-badge.svg" alt="Download on the App Store" width="165" height="55" loading="lazy"></a></div>
+</div></section>
+</main>
+<footer>
+<div class="wrap">
+<nav><a href="/">Home</a><a href="/world-cup-2026-groups.html">Groups</a><a href="/world-cup-2026-bracket.html">Bracket</a><a href="/world-cup-2026-title-probabilities.html">Title odds</a><a href="/odds-to-probability.html">Odds to probability</a><a href="/poisson-football-model.html">Poisson model</a><a href="/goal-markets-explained.html">Goal markets</a><span>Prediction pools</span></nav>
+<div class="cta"><a class="aso-badge" href="https://apps.apple.com/app/id6775278722?ct=footer&amp;mt=8" data-aso-cta="footer" aria-label="Download Soccer Odds 2026 on the App Store"><img src="/app-store-badge.svg" alt="Download on the App Store" width="165" height="55" loading="lazy"></a></div>
+<p><a href="/privacy.html">Privacy policy</a> &nbsp;&middot;&nbsp; <a href="/support.html">Support</a>
+&nbsp;&middot;&nbsp; <a href="mailto:levin.schwab@gmx.de">levin.schwab@gmx.de</a></p>
+<p class="small">Soccer Odds 2026 is an independent iPhone app. It is not affiliated with, endorsed by
+or connected to any football organisation or governing body. Probabilities are derived from publicly
+published bookmaker odds and describe likelihood, not certainty. Nothing on this site is advice to
+place a bet, and no bets are taken here or in the app. Kick-off times are UTC.</p>
+</div>
+</footer>
+<!-- Funnel-Messung: Seitenaufruf -> App-Store-Klick.
+     Vercel Web Analytics ist cookielos; das Ereignis nennt nur den Platz des Knopfes. -->
+<script defer src="/_vercel/insights/script.js"></script>
+<script>
+(function(){
+  window.va=window.va||function(){(window.vaq=window.vaq||[]).push(arguments)};
+  document.addEventListener('click',function(e){
+    var a=e.target.closest('a[href*="apps.apple.com"]');
+    if(!a)return;
+    va('event',{name:'appstore_click',data:{
+      placement:a.getAttribute('data-aso-cta')||'unmarked',
+      page:location.pathname
+    }});
+  },{capture:true,passive:true});
+})();
+</script>
+</body>
+</html>
