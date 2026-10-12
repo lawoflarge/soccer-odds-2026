@@ -1,6 +1,14 @@
 {
-  "originHash" : "5462ca6b176fc9611b99fbf0d9984055848db121fa11f11eb5dd93232720158d",
+  "originHash" : "691ccf2cd2c73a0c231f0dbfae4cfeedd70c56e170caa51f50be99c7acc7d9f2",
   "pins" : [
+    {
+      "identity" : "lawoflarge.app",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/lawoflarge/lawoflarge.app.git",
+      "state" : {
+        "revision" : "168dd73615cde4a62f92b0064aee3048c628c5a4"
+      }
+    },
     {
       "identity" : "swift-package-manager-google-mobile-ads",
       "kind" : "remoteSourceControl",

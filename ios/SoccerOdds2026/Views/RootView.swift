@@ -19,7 +19,7 @@ struct RootView: View {
                 .tabItem { Label("My Team", systemImage: "star.fill") }
                 .tag(2)
 
-            MoreView()
+            MoreView(isActive: selection == 3)
                 .tabItem { Label("More", systemImage: "ellipsis.circle.fill") }
                 .tag(3)
         }

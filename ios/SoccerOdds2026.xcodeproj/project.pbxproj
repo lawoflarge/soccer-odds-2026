@@ -7,13 +7,16 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0026FD568B520D30FC298E9C /* GoogleUserMessagingPlatform in Frameworks */ = {isa = PBXBuildFile; productRef = 2C98D03613CDC9354BC078E6 /* GoogleUserMessagingPlatform */; };
 		02AF3920FBD0EDB7E8D232A4 /* SkeletonShimmer.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEC6F889E1E9E472A515C516 /* SkeletonShimmer.swift */; };
+		039296A20F246DC3A347F778 /* CrossPromotion.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = FD7692D62F766E9A5672E24C /* CrossPromotion.xcstrings */; };
 		04716530A879F57B8FF2E07F /* FavoriteStoreTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2CB77F6452F1B52A2275C7A /* FavoriteStoreTests.swift */; };
 		06E84400ABC9DA6F19DDC46A /* InterstitialAdManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E006D440944091589BDEDF2 /* InterstitialAdManager.swift */; };
 		090A95D918912B6AE3FB9DE9 /* MyTeamView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F303D116E930E8C8D3E5E952 /* MyTeamView.swift */; };
 		1468B2D8F92CF23A6A952E12 /* DonutChart.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40295BA7D0A5994FF5D6324C /* DonutChart.swift */; };
 		15B1B0884BE21A73EA0BEB18 /* sample-track-record.json in Resources */ = {isa = PBXBuildFile; fileRef = 12D7B3ED1273FFE30E196894 /* sample-track-record.json */; };
 		16F0AA3FB1894F48069A28AC /* OddsHistoryDecodingTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBAF5F6BCEBBD46250A7817F /* OddsHistoryDecodingTests.swift */; };
+		196A8B67C1F734FD6ABCB23B /* AppPromotions.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB8A384FE7A406AF376E958F /* AppPromotions.swift */; };
 		2347C04B15EF1003A52563F7 /* TrackRecordService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A94D2B88E28179A76230552F /* TrackRecordService.swift */; };
 		24130C58D7ABAFD8A96509E3 /* MatchDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE9695D6877BBF66681F3C51 /* MatchDetailView.swift */; };
 		28BC0736215DD9819CA96C2A /* MatchExtensionDecodingTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15AB058CA65B59A54AEE9D8B /* MatchExtensionDecodingTests.swift */; };
@@ -27,6 +30,7 @@
 		3DC4DEB4A0A7B26C4AFC4A46 /* EdgeBadge.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC5D0CD9EF1129039D06D9D7 /* EdgeBadge.swift */; };
 		41E8BA9A6D9062901CB99FB5 /* PredictionsServiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 732DC682E91C33A304118BA6 /* PredictionsServiceTests.swift */; };
 		4A61E46D666B429EF7E5C2BD /* sample-simulation.json in Resources */ = {isa = PBXBuildFile; fileRef = 229E6986260396AC534B77E1 /* sample-simulation.json */; };
+		4B68FD22C6D41906ECA647EB /* PrivacyInfo.xcprivacy in Resources */ = {isa = PBXBuildFile; fileRef = 4D7D1A2CFE109475F25C8D12 /* PrivacyInfo.xcprivacy */; };
 		4CCDC3ADDB2F6A8C2C299F69 /* OddsHistoryService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3736306232036DEEA22F47E5 /* OddsHistoryService.swift */; };
 		4D9BAEAEF9930539861830B2 /* ProbabilityBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0036AD59A536B21C82BA73D /* ProbabilityBar.swift */; };
 		51F1CE69DCFDF34AEAF1B187 /* AdGate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31E1868420636D17F4AEEE05 /* AdGate.swift */; };
@@ -35,7 +39,7 @@
 		65734E0F028FD783FE2560A0 /* OddsSparkline.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A92FA2EF91B5D94692E6DF1 /* OddsSparkline.swift */; };
 		678F53F055C5165A0D7F6138 /* Prediction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5642033C0A828278F124C07E /* Prediction.swift */; };
 		6B30B1D6AA7FA29526437567 /* sample-predictions.json in Resources */ = {isa = PBXBuildFile; fileRef = CCFD8F74505FFB4361E9A7D3 /* sample-predictions.json */; };
-		6B690F3A5F6C4529F84BA8DD /* GoogleUserMessagingPlatform in Frameworks */ = {isa = PBXBuildFile; productRef = 2C98D03613CDC9354BC078E6 /* GoogleUserMessagingPlatform */; };
+		6B690F3A5F6C4529F84BA8DD /* CrossPromotionUI in Frameworks */ = {isa = PBXBuildFile; productRef = E3E1FAF9984BD9490D332AB2 /* CrossPromotionUI */; };
 		6BE9F092BA374C4000B0BB9C /* Config.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0FD98C995BFADDF0F0CA51F /* Config.swift */; };
 		7E93F7ED21142C7DC6C3920B /* ProGateModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = B038E57266D862A99521A30E /* ProGateModifier.swift */; };
 		82359E2E367706F647311892 /* Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA1AEBB76FBA40832EE43238 /* Theme.swift */; };
@@ -48,7 +52,7 @@
 		9DB9D20E8ADA93FB2D70D55A /* TournamentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85FB48B105DD84A3BA9E65FA /* TournamentView.swift */; };
 		9EA61099F270EDEFB111803E /* App.swift in Sources */ = {isa = PBXBuildFile; fileRef = D73678F4151D7408E2E6EE42 /* App.swift */; };
 		A3719D881F66E26BA9BF9E9F /* sample-odds-history.json in Resources */ = {isa = PBXBuildFile; fileRef = C6D35CF564830EF601C901A4 /* sample-odds-history.json */; };
-		A7EB5AFAA09A544ABCC18F66 /* GoogleMobileAds in Frameworks */ = {isa = PBXBuildFile; productRef = FF3AE00D5D50568169F57A87 /* GoogleMobileAds */; };
+		A7EB5AFAA09A544ABCC18F66 /* CrossPromotionCore in Frameworks */ = {isa = PBXBuildFile; productRef = 6FD34F16F06E56DB26AF9267 /* CrossPromotionCore */; };
 		A8F580A7C4B5C5083AA559E9 /* teams.json in Resources */ = {isa = PBXBuildFile; fileRef = 252D33F14C15CB697C1B30D2 /* teams.json */; };
 		ADAB967FEFC98D88B68AC524 /* ProStoreTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0AE4CB57A48AF32BC29010E /* ProStoreTests.swift */; };
 		B228DCA68889E8E9F9CAE93C /* sample-simulation.json in Resources */ = {isa = PBXBuildFile; fileRef = 229E6986260396AC534B77E1 /* sample-simulation.json */; };
@@ -66,6 +70,7 @@
 		E75522F3E41A7B9FE9803E98 /* SoccerOdds2026.storekit in Resources */ = {isa = PBXBuildFile; fileRef = 3E24BBFC1728095F50CEDA5B /* SoccerOdds2026.storekit */; };
 		E82E2B2A3B9A7F1BB9E59A6D /* ReachFunnel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D8C2D2136861A891DFE513B /* ReachFunnel.swift */; };
 		EC5B428970E36B62848C3757 /* ConsentManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E9A9E1540434D69A37E0308 /* ConsentManager.swift */; };
+		EDC934C4A1F5D2FB2C6B827B /* GoogleMobileAds in Frameworks */ = {isa = PBXBuildFile; productRef = FF3AE00D5D50568169F57A87 /* GoogleMobileAds */; };
 		F519823ABD01AAEFFCB8266C /* UIThemeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0B17CEE022F8A3EA7BB3701 /* UIThemeTests.swift */; };
 		F8F3E60216A1055DF3038BA9 /* TrackRecord.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53D7E97093C87B6A0DE27A89 /* TrackRecord.swift */; };
 		FA58E6A3DE8EBC24A5A28323 /* MatchRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00B1AE5E2315A37C1C74D6D8 /* MatchRow.swift */; };
@@ -103,6 +108,7 @@
 		3E24BBFC1728095F50CEDA5B /* SoccerOdds2026.storekit */ = {isa = PBXFileReference; path = SoccerOdds2026.storekit; sourceTree = "<group>"; };
 		40295BA7D0A5994FF5D6324C /* DonutChart.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DonutChart.swift; sourceTree = "<group>"; };
 		42850BCE7E4C35CEA638B670 /* SimulationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimulationService.swift; sourceTree = "<group>"; };
+		4D7D1A2CFE109475F25C8D12 /* PrivacyInfo.xcprivacy */ = {isa = PBXFileReference; path = PrivacyInfo.xcprivacy; sourceTree = "<group>"; };
 		53D7E97093C87B6A0DE27A89 /* TrackRecord.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrackRecord.swift; sourceTree = "<group>"; };
 		5546523E3B0407C97967560F /* FixturesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FixturesView.swift; sourceTree = "<group>"; };
 		5642033C0A828278F124C07E /* Prediction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Prediction.swift; sourceTree = "<group>"; };
@@ -138,8 +144,10 @@
 		DEC6F889E1E9E472A515C516 /* SkeletonShimmer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SkeletonShimmer.swift; sourceTree = "<group>"; };
 		E02C894C21CDA156BF89A0A4 /* SoccerOdds2026Tests.xctest */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.cfbundle; path = SoccerOdds2026Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		EA1AEBB76FBA40832EE43238 /* Theme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Theme.swift; sourceTree = "<group>"; };
+		EB8A384FE7A406AF376E958F /* AppPromotions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppPromotions.swift; sourceTree = "<group>"; };
 		F303D116E930E8C8D3E5E952 /* MyTeamView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyTeamView.swift; sourceTree = "<group>"; };
 		FBAF5F6BCEBBD46250A7817F /* OddsHistoryDecodingTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OddsHistoryDecodingTests.swift; sourceTree = "<group>"; };
+		FD7692D62F766E9A5672E24C /* CrossPromotion.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = CrossPromotion.xcstrings; sourceTree = "<group>"; };
 		FE9695D6877BBF66681F3C51 /* MatchDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MatchDetailView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -148,8 +156,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A7EB5AFAA09A544ABCC18F66 /* GoogleMobileAds in Frameworks */,
-				6B690F3A5F6C4529F84BA8DD /* GoogleUserMessagingPlatform in Frameworks */,
+				A7EB5AFAA09A544ABCC18F66 /* CrossPromotionCore in Frameworks */,
+				6B690F3A5F6C4529F84BA8DD /* CrossPromotionUI in Frameworks */,
+				EDC934C4A1F5D2FB2C6B827B /* GoogleMobileAds in Frameworks */,
+				0026FD568B520D30FC298E9C /* GoogleUserMessagingPlatform in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -173,6 +183,7 @@
 			isa = PBXGroup;
 			children = (
 				076B507B2BADAFB8B916C90F /* AboutView.swift */,
+				EB8A384FE7A406AF376E958F /* AppPromotions.swift */,
 				5546523E3B0407C97967560F /* FixturesView.swift */,
 				FE9695D6877BBF66681F3C51 /* MatchDetailView.swift */,
 				00B1AE5E2315A37C1C74D6D8 /* MatchRow.swift */,
@@ -221,7 +232,9 @@
 				D73678F4151D7408E2E6EE42 /* App.swift */,
 				1DC5B743FF911CE172AFAD19 /* Assets.xcassets */,
 				A0FD98C995BFADDF0F0CA51F /* Config.swift */,
+				FD7692D62F766E9A5672E24C /* CrossPromotion.xcstrings */,
 				A17D004D0F32027AE5F2CA90 /* Info.plist */,
+				4D7D1A2CFE109475F25C8D12 /* PrivacyInfo.xcprivacy */,
 				3E24BBFC1728095F50CEDA5B /* SoccerOdds2026.storekit */,
 				D2712550E869B7748B67863B /* Ads */,
 				5BE421196620D49CF4498DD8 /* Models */,
@@ -344,6 +357,8 @@
 			);
 			name = SoccerOdds2026;
 			packageProductDependencies = (
+				6FD34F16F06E56DB26AF9267 /* CrossPromotionCore */,
+				E3E1FAF9984BD9490D332AB2 /* CrossPromotionUI */,
 				FF3AE00D5D50568169F57A87 /* GoogleMobileAds */,
 				2C98D03613CDC9354BC078E6 /* GoogleUserMessagingPlatform */,
 			);
@@ -367,11 +382,21 @@
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				Base,
+				de,
 				en,
+				es,
+				"es-MX",
+				fr,
+				it,
+				ja,
+				nl,
+				pl,
+				"pt-BR",
 			);
 			mainGroup = 143C1E440D0A8FA5A011EC84;
 			minimizedProjectReferenceProxies = 1;
 			packageReferences = (
+				E23621F48258553EA56B9CC7 /* XCRemoteSwiftPackageReference "lawoflarge.app" */,
 				2865C426F4904245F09D2FE2 /* XCRemoteSwiftPackageReference "swift-package-manager-google-mobile-ads" */,
 				F65FC88EBD107E985E2EB2B9 /* XCRemoteSwiftPackageReference "swift-package-manager-google-user-messaging-platform" */,
 			);
@@ -392,6 +417,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				3945E7455A4EC04A41009653 /* Assets.xcassets in Resources */,
+				039296A20F246DC3A347F778 /* CrossPromotion.xcstrings in Resources */,
+				4B68FD22C6D41906ECA647EB /* PrivacyInfo.xcprivacy in Resources */,
 				34864D6DF27859AA6560B9ED /* SoccerOdds2026.storekit in Resources */,
 				E376B7469A020B8454C96CF5 /* sample-odds-history.json in Resources */,
 				38CB121715576BAE8C9B107C /* sample-predictions-ext.json in Resources */,
@@ -427,6 +454,7 @@
 				51F1CE69DCFDF34AEAF1B187 /* AdGate.swift in Sources */,
 				FFBED57C8615DD21D63CF10A /* AnimatedProbBar.swift in Sources */,
 				9EA61099F270EDEFB111803E /* App.swift in Sources */,
+				196A8B67C1F734FD6ABCB23B /* AppPromotions.swift in Sources */,
 				6BE9F092BA374C4000B0BB9C /* Config.swift in Sources */,
 				EC5B428970E36B62848C3757 /* ConsentManager.swift in Sources */,
 				1468B2D8F92CF23A6A952E12 /* DonutChart.swift in Sources */,
@@ -575,7 +603,8 @@
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				CODE_SIGNING_ALLOWED = NO;
 				COPY_PHASE_STRIP = NO;
-				CURRENT_PROJECT_VERSION = 1787939346;
+				CROSS_PROMOTION_BASE_URL = "https://zovzimsewjkjmazckhua.supabase.co/functions/v1/cross-promotion";
+				CURRENT_PROJECT_VERSION = 1787939347;
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
@@ -594,7 +623,7 @@
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
-				MARKETING_VERSION = 2.1.0;
+				MARKETING_VERSION = 2.1.1;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -660,7 +689,8 @@
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
-				CURRENT_PROJECT_VERSION = 1787939346;
+				CROSS_PROMOTION_BASE_URL = "https://zovzimsewjkjmazckhua.supabase.co/functions/v1/cross-promotion";
+				CURRENT_PROJECT_VERSION = 1787939347;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
@@ -673,7 +703,7 @@
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
-				MARKETING_VERSION = 2.1.0;
+				MARKETING_VERSION = 2.1.1;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -725,6 +755,14 @@
 				minimumVersion = 13.0.0;
 			};
 		};
+		E23621F48258553EA56B9CC7 /* XCRemoteSwiftPackageReference "lawoflarge.app" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/lawoflarge/lawoflarge.app.git";
+			requirement = {
+				kind = revision;
+				revision = 168dd73615cde4a62f92b0064aee3048c628c5a4;
+			};
+		};
 		F65FC88EBD107E985E2EB2B9 /* XCRemoteSwiftPackageReference "swift-package-manager-google-user-messaging-platform" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/googleads/swift-package-manager-google-user-messaging-platform.git";
@@ -740,6 +778,16 @@
 			isa = XCSwiftPackageProductDependency;
 			package = F65FC88EBD107E985E2EB2B9 /* XCRemoteSwiftPackageReference "swift-package-manager-google-user-messaging-platform" */;
 			productName = GoogleUserMessagingPlatform;
+		};
+		6FD34F16F06E56DB26AF9267 /* CrossPromotionCore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = E23621F48258553EA56B9CC7 /* XCRemoteSwiftPackageReference "lawoflarge.app" */;
+			productName = CrossPromotionCore;
+		};
+		E3E1FAF9984BD9490D332AB2 /* CrossPromotionUI */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = E23621F48258553EA56B9CC7 /* XCRemoteSwiftPackageReference "lawoflarge.app" */;
+			productName = CrossPromotionUI;
 		};
 		FF3AE00D5D50568169F57A87 /* GoogleMobileAds */ = {
 			isa = XCSwiftPackageProductDependency;

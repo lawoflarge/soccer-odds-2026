@@ -5,6 +5,9 @@ options:
     iOS: "17.0"
   createIntermediateGroups: true
 packages:
+  CrossPromotion:
+    url: https://github.com/lawoflarge/lawoflarge.app.git
+    revision: 168dd73615cde4a62f92b0064aee3048c628c5a4
   GoogleMobileAds:
     url: https://github.com/googleads/swift-package-manager-google-mobile-ads.git
     from: "13.0.0"
@@ -13,9 +16,10 @@ packages:
     from: "3.0.0"
 settings:
   base:
+    CROSS_PROMOTION_BASE_URL: "https://zovzimsewjkjmazckhua.supabase.co/functions/v1/cross-promotion"
     SWIFT_VERSION: "5.0"
-    MARKETING_VERSION: "2.1.0"
-    CURRENT_PROJECT_VERSION: "1787939346"
+    MARKETING_VERSION: "2.1.1"
+    CURRENT_PROJECT_VERSION: "1787939347"
   configs:
     Debug:
       CODE_SIGNING_ALLOWED: "NO"
@@ -28,6 +32,7 @@ targets:
     info:
       path: SoccerOdds2026/Info.plist
       properties:
+        CrossPromotionBaseURL: "$(CROSS_PROMOTION_BASE_URL)"
         CFBundleDisplayName: Soccer Odds 2026
         CFBundleShortVersionString: $(MARKETING_VERSION)
         CFBundleVersion: $(CURRENT_PROJECT_VERSION)
@@ -97,6 +102,10 @@ targets:
           CODE_SIGN_IDENTITY: "Apple Distribution"
           PROVISIONING_PROFILE_SPECIFIER: "SoccerOdds2026 ios_app_store 1780498369"
     dependencies:
+      - package: CrossPromotion
+        product: CrossPromotionCore
+      - package: CrossPromotion
+        product: CrossPromotionUI
       - package: GoogleMobileAds
         product: GoogleMobileAds
       - package: GoogleUserMessagingPlatform

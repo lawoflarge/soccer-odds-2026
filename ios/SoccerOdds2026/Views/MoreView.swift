@@ -1,13 +1,17 @@
 // ios/SoccerOdds2026/Views/MoreView.swift
 import SwiftUI
+import CrossPromotionUI
 
 struct MoreView: View {
+    var isActive = true
+    @State private var promotions = AppPromotions.makeStore()
     @Environment(ProStore.self) private var store
     @Environment(ConsentManager.self) private var consent
     @State private var showPaywall = false
 
     var body: some View {
         NavigationStack {
+            PromotionViewport { viewport in
             List {
                 // Pro-Status-Banner
                 Section {
@@ -23,6 +27,10 @@ struct MoreView: View {
                     NavigationLink { TrackRecordView() } label: {
                         Label("Track Record", systemImage: "chart.bar.fill")
                     }
+                }
+
+                if let promotions {
+                    AppPromotionSection(store: promotions, viewport: isActive && !showPaywall ? viewport : .zero)
                 }
 
                 Section("Support") {
@@ -53,6 +61,8 @@ struct MoreView: View {
             .scrollContentBackground(.hidden)
             .background(Theme.depthBase.ignoresSafeArea())
             .sheet(isPresented: $showPaywall) { PaywallView() }
+            }
+            .promotionLifecycle(promotions, isActive: isActive && !showPaywall)
         }
     }
 
